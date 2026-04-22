@@ -1,0 +1,36 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary
+*.tmp
+*.bak
+~$*
+.~lock.*#
+
+# Logs
+*.log
+
+# Sensitive (인허가 문서 중 비공개 자료 보호)
+99_원본자료_업로드저장소/**/*.pdf
+99_원본자료_업로드저장소/**/*.docx
+99_원본자료_업로드저장소/**/*.xlsx
+99_원본자료_업로드저장소/**/*.pptx
+99_원본자료_업로드저장소/**/*.zip
+!99_원본자료_업로드저장소/README.md
+
+# Credentials / Secret
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+token.txt
