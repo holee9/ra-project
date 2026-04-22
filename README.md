@@ -52,3 +52,4 @@
 
 - 2026-04-22 (초기 구축) 스케줄러 뼈대 추가 — RUN_SOP·BACKLOG·STATE 3파일
 - 2026-04-22 11:40 (#2) FDA eSTAR Device Description / IFU 가이드 정본 push + carryover 흡수 — 파일 2개(eSTAR_01 DD·IFU, eSTAR_02 SE), 2026-02 QMSR·RWE eSTAR 업데이트 반영, 3지역 매트릭스·자사 3제품 맵핑, 선행 3회차(03:00·19:30·23:50) carryover 일괄 반영
+- 2026-04-22 19:30 (#2) 이슈 정리 회차 — 중복 이슈 #1 duplicate-close, Issue #2 완료 코멘트·close. 원격 반영 내용은 11:40 회차에서 이미 완료(eSTAR_01·eSTAR_02·INDEX·README·STATE).
