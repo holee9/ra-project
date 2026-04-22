@@ -33,9 +33,21 @@
 4. 심사 질의·보완 이력은 `06_심사_QA이력/`에 지속 축적.
 
 ## 최종 갱신
-2026-04-22 (GitHub 연동 완료)
+2026-04-22 (GitHub 연동 완료 · 자동보강 스케줄 가동)
 
 ## 연동 상태
 - GitHub: <https://github.com/holee9/ra-project>
 - 연동 방식: Claude in Chrome + GitHub REST API (PAT 기반)
 - Claude 직접 push 가능 (실시간 반영)
+
+## 자동보강 스케줄
+- 실행 시각 (Local): 11:40 / 19:30 / 23:50 / 03:00 (매일 4회)
+- 실행 지침: [`.ra-scheduler/RUN_SOP.md`](.ra-scheduler/RUN_SOP.md)
+- 작업 큐: [`.ra-scheduler/BACKLOG.md`](.ra-scheduler/BACKLOG.md)
+- 상태: [`.ra-scheduler/STATE.md`](.ra-scheduler/STATE.md)
+- 회차별 이슈: GitHub Issues 라벨 `ra-auto`
+
+## 자동보강 로그
+(회차별 1줄 추가 · 50줄 초과 시 `ARCHIVE_LOG.md`로 이전)
+
+- 2026-04-22 (초기 구축) 스케줄러 뼈대 추가 — RUN_SOP·BACKLOG·STATE 3파일
