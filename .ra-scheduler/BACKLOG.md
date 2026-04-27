@@ -1,16 +1,16 @@
 # RA KB 자동보강 BACKLOG (우선순위 큐)
 
 > 매 회차 스케줄 러닝 시작 시 최상단 미완료 항목 선택.
-> 완료 항목은 \`[x]\` + \`done-YYYY-MM-DD\` 태그 처리 후 유지 (이력 추적).
+> 완료 항목은 `[x]` + `done-YYYY-MM-DD` 태그 처리 후 유지 (이력 추적).
 > 큰 주제는 세분화하여 하위 항목으로 재등록.
 > 최초 작성: 2026-04-22
 
 ## [P1] 고우선 — 기초 골격 완성
 
 ### 1. 규제 지역별 심화
-- [x] FDA eSTAR 섹션별 작성 가이드: Device Description / Indications for Use \`done-2026-04-22 (#2 push)\`
-- [x] FDA eSTAR 섹션별 작성 가이드: Substantial Equivalence 비교표 작성법 \`done-2026-04-22 (#2 push)\`
-- [ ] FDA eSTAR 섹션별 작성 가이드: Performance Testing / Bench Test
+- [x] FDA eSTAR 섹션별 작성 가이드: Device Description / Indications for Use `done-2026-04-22 (#2 push)`
+- [x] FDA eSTAR 섹션별 작성 가이드: Substantial Equivalence 비교표 작성법 `done-2026-04-22 (#2 push)`
+- [x] FDA eSTAR 섹션별 작성 가이드: Performance Testing / Bench Test `done-2026-04-24 (#3)`
 - [ ] FDA eSTAR 섹션별 작성 가이드: Cybersecurity Section (524B 기반)
 - [ ] FDA eSTAR 섹션별 작성 가이드: Software Section (62304 기반)
 - [ ] FDA eSTAR 섹션별 작성 가이드: Labeling (IFU, Form 3881)

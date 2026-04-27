@@ -1,9 +1,15 @@
 # 미푸시 회차 대기열 (PENDING_PUSH)
 
 > api.github.com 접속 차단 상황에서 로컬만 갱신된 회차의 푸시 대기 내역.
-> 다음 회차 시작 시 이 파일을 먼저 확인하여 \`일괄 푸시 + 이슈 신규 생성\`을 수행할 것.
+> 다음 회차 시작 시 이 파일을 먼저 확인하여 `일괄 푸시 + 이슈 신규 생성`을 수행할 것.
 
-## 현재 대기 없음
+## 현재 대기
+
+### 2026-04-24 (#3) Performance Testing 가이드
+- 로컬 작성 완료: `01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_03_Performance_Testing_Bench_Test.md`
+- README·BACKLOG·STATE 로컬 갱신 완료
+- GitHub push 보류: PAT 파일(`C:\Users\drake.lee\.git-credentials`) 접근 불가
+- → 다음 회차 시작 시 PAT 확보 후 일괄 push 수행할 것
 
 ## 완료 이력
 
