@@ -1,7 +1,7 @@
 # 지식베이스 인덱스 (INDEX)
 
 > 자료 추가 시 본 인덱스를 갱신하여 빠른 검색·참조가 가능하도록 유지.
-> 최종 갱신: 2026-04-29 (자동보강 #4 — eSTAR_04 Cybersecurity Section (524B 기반))
+> 최종 갱신: 2026-04-30 (자동보강 #5 — eSTAR_05 Software Section (IEC 62304 기반))
 
 ## 0. 기준 문서 (Top-level)
 - [README.md](README.md) – 프로젝트 개요
@@ -26,6 +26,7 @@
   - [eSTAR_02_Substantial_Equivalence](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_02_Substantial_Equivalence.md) – eSTAR 작성 가이드 (2) Substantial Equivalence 비교표
   - [eSTAR_03_Performance_Testing_Bench_Test](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_03_Performance_Testing_Bench_Test.md) – eSTAR 작성 가이드 (3) Performance Testing / Bench Test (3개 제품 완전 맵핑)
   - [eSTAR_04_Cybersecurity_Section](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_04_Cybersecurity_Section.md) – eSTAR 작성 가이드 (4) Cybersecurity Section (Section 524B + 2025 Final Guidance 기반, 3개 제품 맵핑)
+  - [eSTAR_05_Software_Section](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_05_Software_Section.md) – eSTAR 작성 가이드 (5) Software Section (IEC 62304 기반, Basic/Enhanced 10문서, 3개 제품 맵핑, 3지역 비교)
 - 21 CFR Part 820 → QMSR: `01_규제지식베이스/미국_FDA/QSR_21CFR820/`
 - 제품군별 Guidance: `01_규제지식베이스/미국_FDA/제품군별_가이던스/`
 
@@ -53,9 +54,4 @@
 - 수록 폴더: `04_기술문서_템플릿/`
 - 예정 템플릿: STED / Risk Management / Clinical Evaluation / DoC / Labeling
 
-## 5. 전문가 양성 교육
-- [커리큘럼](05_전문가_양성교육/커리큘럼.md) – 12주 프로그램
-- [규제_개론](05_전문가_양성교육/01_기초이론/규제_개론.md) – Week 1
-
-## 6. 심사 QA 이력
-- `06_심사_QA이력/` (
+## 
