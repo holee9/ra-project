@@ -25,7 +25,7 @@
 - [x] FDA eSTAR 섹션별 작성 가이드: Performance Testing / Bench Test `[EP:3]` `done-2026-04-24 (#3)`
 - [x] FDA eSTAR 섹션별 작성 가이드: Cybersecurity Section (524B 기반) `[EP:3]` `done-2026-04-29 (#4)`
 - [x] FDA eSTAR 섹션별 작성 가이드: Software Section (62304 기반) `[EP:3]` `done-2026-04-30 (#5)`
-- [ ] FDA eSTAR 섹션별 작성 가이드: Labeling (IFU, Form 3881) `[EP:2]`
+- [x] FDA eSTAR 섹션별 작성 가이드: Labeling (IFU, Form 3881) `[EP:2]` `done-2026-04-30 (#6)`
 - [ ] FDA Pre-Submission (Q-Sub) 작성 가이드·샘플 질문 `[EP:2]`
 - [ ] MFDS 기술문서 섹션별 작성 가이드 (사용목적·작용원리·성능·안전성) `[EP:3]`
 - [ ] MFDS 디지털의료제품법 하위 고시 추적 리스트 `[EP:1]`
@@ -102,4 +102,4 @@
 - [ ] PMS Plan 템플릿 (MDR Annex III) `[EP:2]`
 - [ ] PSUR 템플릿 (MDR) `[EP:2]`
 - [ ] FDA MDR (Medical Device Reporting) 21 CFR 803 절차 `[EP:2]`
-- [ ] Vigilance 실무 (MDR) - Seriou
+- [ ] Vigilanc
