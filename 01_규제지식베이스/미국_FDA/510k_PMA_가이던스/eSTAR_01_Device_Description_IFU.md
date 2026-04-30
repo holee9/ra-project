@@ -3,7 +3,7 @@
 
 # FDA eSTAR 섹션별 작성 가이드 (1) Device Description / Indications for Use
 
-자사 3개 제품(X-ray Detector · Handheld X-ray Source · 촬영실 GUI SW)의 510(k) 제출 시 eSTAR 템플릿 내 \`Device Description\` 및 \`Indications for Use\` 섹션을 작성하는 실무 가이드. MFDS·MDR 대응 관점 1줄 언급 포함.
+자사 3개 제품(X-ray Detector · Handheld X-ray Source · 촬영실 GUI SW)의 510(k) 제출 시 eSTAR 템플릿 내 `Device Description` 및 `Indications for Use` 섹션을 작성하는 실무 가이드. MFDS·MDR 대응 관점 1줄 언급 포함.
 
 ## 1. 규제적 배경 (Fact)
 
@@ -25,7 +25,7 @@
 - FDA Guidance, "General/Specific Intended Use" (1998 Final, 현행 유효)
 - FDA Form 3881 (Indications for Use 전용 양식)
 
-## 2. eSTAR \`Device Description\` 섹션 — 필수 구성요소
+## 2. eSTAR `Device Description` 섹션 — 필수 구성요소
 
 ### 2.1 eSTAR 프롬프트 기반 항목 (순서·탭 명칭 기준)
 1. General Device Description — 일반적 설명, 라벨링과 일치
@@ -37,7 +37,7 @@
 7. Principle Physical Dimensions / 기술적 사양 (별첨 시방서 허용)
 8. Device Photographs / Engineering Drawings (Attachment)
 
-### 2.2 eSTAR \`Indications for Use\` 섹션
+### 2.2 eSTAR `Indications for Use` 섹션
 - FDA Form 3881 본문을 **그대로** 복사·붙여넣기 (verbatim)
 - eSTAR는 Form 3881의 내용을 510(k) Summary(21 CFR 807.92) 해당 필드에 자동 반영
 - 처방용(Rx) vs 일반판매용(OTC) 구분 필수 체크박스
@@ -123,7 +123,7 @@
 
 ## 7. 체크리스트 (제출 직전)
 
-- [ ] IFU 문장 — 라벨·Summary·SE 비교표·eSTAR \`Indications for Use\` 전부 문자 단위 동일
+- [ ] IFU 문장 — 라벨·Summary·SE 비교표·eSTAR `Indications for Use` 전부 문자 단위 동일
 - [ ] Form 3881 — 처방용/OTC 체크, 서명·날짜
 - [ ] Device Description — 작용원리 단계별 기술 (3~5문장 이상)
 - [ ] 모델·구성·액세서리 리스트 Attachment

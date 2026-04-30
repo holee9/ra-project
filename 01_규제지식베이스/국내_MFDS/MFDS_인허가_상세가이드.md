@@ -124,7 +124,7 @@
 - 의료기기 전자민원창구 (emedi): https://emedi.mfds.go.kr
 - UDI 포털: https://udiportal.mfds.go.kr
 - 법제처 국가법령정보센터: https://www.law.go.kr
-- 규제과학IN(人): https://rsedu.mfds.go.kr
+- 규제과학인력: https://rsedu.mfds.go.kr
 
 ## 10. 자사 제품 인허가 전략 요약
 
