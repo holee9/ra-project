@@ -35,6 +35,25 @@
 ## 최종 갱신
 2026-04-30 (EP 기반 스케줄 정책 도입)
 
+## 3-레포 시스템 내 역할
+
+본 레포는 **RA 전문가 지식베이스(knowledge source #2)** 역할을 담당한다.
+
+| 레포 | 역할 |
+|------|------|
+| MD-process | 회사 정책·지침·SOP (knowledge source #1) |
+| **ra-project** | **RA 전문 지식베이스 (knowledge source #2)** |
+| ra-med-bot (Regula) | 두 레포 기반 사내 사용자 챗봇 |
+
+### Bot 연동 원칙
+
+- Regula(ra-med-bot)의 Agent가 이 레포를 탐색하여 팩트 기반 답변 생성
+- 미답변 발생 시 본 레포 GitHub Issue 자동 등록 → Cowork 스케줄링 처리
+- Bot 대화 이력의 미답변 패턴이 BACKLOG 우선순위에 반영 (현장 긴급도 보완)
+- 내부 EP 스케줄(완성도 중심) + bot 미답변(현장 긴급도 중심) 상호 보완 운영
+
+> 시스템 전체 브레인스토밍 확정: [ra-med-bot/.moai/plans/brainstorming-2026-05-02.md](https://github.com/holee9/ra-med-bot/blob/main/.moai/plans/brainstorming-2026-05-02.md)
+
 ## 연동 상태
 - GitHub: <https://github.com/holee9/ra-project>
 - 연동 방식: Claude in Chrome + GitHub REST API (PAT 기반)
