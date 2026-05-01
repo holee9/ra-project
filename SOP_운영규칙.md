@@ -71,3 +71,52 @@
 - [ ] 개정된 규제·가이던스 신규 반영
 - [ ] 원본자료 저장소(99_...) 잔여 자료 분류
 - [ ] `INDEX.md` 링크 점검
+
+---
+
+## 5. Regula(ra-med-bot) 연동 프로세스
+
+> 추가일: 2026-05-02 (브레인스토밍 확정 반영)
+
+### 5.1 미답변 BACKLOG 반영 원칙
+
+Regula에서 발생한 미답변 중 RA 담당자가 `knowledge-gap`으로 분류한 Issue가 본 레포에 등록된다.
+
+- Issue 라벨: `knowledge-gap`, `ra-auto`
+- 처리 우선순위: 내부 EP 스케줄(완성도 중심) + bot 미답변(현장 긴급도 중심) 상호 보완
+- 반복 미답변 주제는 EP 스케줄 상위로 조정
+
+### 5.2 미답변 Issue 처리 흐름
+
+```
+ra-med-bot 미답변 감지
+    │
+    ▼
+RA 담당자 분류 판단 → ra-project Issue 등록
+    │ 라벨: knowledge-gap, ra-auto
+    ▼
+Cowork 스케줄링 처리 (03:00 / 19:30)
+    │
+    ▼
+관련 문서 작성·보강 → commit → push
+    │
+    ▼
+Regula pgvector 재ingestion (자동)
+    │
+    ▼
+이후 동일 질문 → 답변 가능
+```
+
+### 5.3 외부 리서치 결과 저장 원칙
+
+Regula가 외부 공식 소스에서 리서치한 내용은:
+1. RA 담당자 검증 완료 후에만 저장
+2. 저장 위치: `01_규제지식베이스/` 해당 지역 폴더
+3. 파일명 규칙 준수: `[YYYYMMDD]_[출처]_[제목].md`
+4. INDEX.md에 링크 추가 필수
+
+### 5.4 bot 미답변 BACKLOG 정기 검토 (월 1회 추가)
+
+- [ ] ra-project Issue 중 `knowledge-gap` 라벨 미처리 건 확인
+- [ ] 반복 등장 주제 파악 → EP 우선순위 조정
+- [ ] 처리 완료 Issue에 `resolved` 라벨 추가

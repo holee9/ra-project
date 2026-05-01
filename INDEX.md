@@ -38,3 +38,21 @@
 - [MDR_인허가_상세가이드](01_규제지식베이스/유럽_CE_MDR/MDR_인허가_상세가이드.md) – MDR·전환기간·NB·MDCG 전체
 - MDR 2017/745 원문·해설: `01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/`
 - MDCG 가이던스: `01_규제지식베이스/유럽_CE_M
+---
+
+## Regula(ra-med-bot) 연동 현황
+
+> 추가일: 2026-05-02 (브레인스토밍 확정 반영)
+
+본 레포는 Regula(ra-med-bot)의 **Knowledge Source #2 (RA 전문 지식베이스)** 역할을 담당한다.
+
+### bot 연동 원칙
+
+- Regula Agent가 이 레포 전체를 탐색하여 팩트 기반 답변 생성
+- 미답변 중 `knowledge-gap`으로 분류된 Issue → Cowork 스케줄 처리 → 지식 보강
+- 내부 EP 스케줄(완성도 중심) + bot 미답변 BACKLOG(현장 긴급도 중심) 상호 보완
+
+### bot 연동 관련 문서
+
+- [SOP_운영규칙.md §5](SOP_운영규칙.md#5-regulara-med-bot-연동-프로세스) — bot 미답변 처리 흐름
+- [시스템 아키텍처](https://github.com/holee9/ra-med-bot/blob/main/docs/시스템_아키텍처.md) — 전체 구조
