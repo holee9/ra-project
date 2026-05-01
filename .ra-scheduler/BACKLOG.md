@@ -29,7 +29,7 @@
 - [x] FDA Pre-Submission (Q-Sub) 작성 가이드·샘플 질문 `[EP:2]` `done-2026-05-01 (#7)`
 - [x] MFDS 기술문서 섹션별 작성 가이드 (사용목적·작용원리·성능·안전성) `[EP:3]` `done-2026-05-01 (#8)`
 - [x] MFDS 디지털의료제품법 하위 고시 추적 리스트 `[EP:1]` `done-2026-05-01 (#9)`
-- [ ] MFDS 디지털의료기기 6종 가이드라인 요약 (2025.01) `[EP:2]`
+- [x] MFDS 디지털의료기기 6종 가이드라인 요약 (2025-05-07) `[EP:2]` `done-2026-05-02 (#10)`
 - [ ] MDR Annex II Technical Documentation 섹션별 템플릿 `[EP:3]`
 - [ ] MDR Annex III PMS TD 템플릿 `[EP:2]`
 - [ ] MDR Annex I GSPR 체크리스트 (전항 맵핑) `[EP:2]`
@@ -100,5 +100,4 @@
 
 ### 9. Post-Market
 - [ ] PMS Plan 템플릿 (MDR Annex III) `[EP:2]`
-- [ ] PSUR 템플릿 (MDR) `[EP:2]`
-- [ ] FDA MDR
+- [ ] PSUR 템플릿 (
