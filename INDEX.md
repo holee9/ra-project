@@ -1,7 +1,7 @@
 # 지식베이스 인덱스 (INDEX)
 
 > 자료 추가 시 본 인덱스를 갱신하여 빠른 검색·참조가 가능하도록 유지.
-> 최종 갱신: 2026-05-02 (자동보강 #11 — MDR Annex II Technical Documentation 섹션별 템플릿)
+> 최종 갱신: 2026-05-03 (자동보강 #12 — MDR Annex III PMS TD 템플릿 + Annex I GSPR 체크리스트)
 
 ## 0. 기준 문서 (Top-level)
 - [README.md](README.md) – 프로젝트 개요
@@ -39,6 +39,8 @@
 - [MDR_인허가_상세가이드](01_규제지식베이스/유럽_CE_MDR/MDR_인허가_상세가이드.md) – MDR·전환기간·NB·MDCG 전체
 - MDR 2017/745 원문·해설: `01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/`
   - [MDR_AnnexII_Technical_Documentation_Template](01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_AnnexII_Technical_Documentation_Template.md) – MDR Annex II 6개 섹션 작성 템플릿: 제품설명·라벨·설계·GSPR체크리스트·위험관리·검증, 3제품 맵핑, 3지역 비교 (#11)
+  - [MDR_AnnexIII_PMS_TD_Template](01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_AnnexIII_PMS_TD_Template.md) – MDR Annex III PMS TD 섹션별 작성 템플릿: PMS Plan·PMSR(Class I)·PSUR(IIa~III), 3지역 비교, 3제품 영향 맵핑 (#12)
+  - [MDR_AnnexI_GSPR_Checklist](01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_AnnexI_GSPR_Checklist.md) – MDR Annex I GSPR 전항(§1~§23) 맵핑 체크리스트: 3제품 적용 여부·입증 방법·조화표준 매핑, 3지역 비교 (#12)
 - MDCG 가이던스: `01_규제지식베이스/유럽_CE_MDR/MDCG_가이던스/`
 - NB 심사자료: `01_규제지식베이스/유럽_CE_MDR/NB_심사자료/`
 
