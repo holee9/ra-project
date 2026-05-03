@@ -1,7 +1,7 @@
 # 지식베이스 인덱스 (INDEX)
 
 > 자료 추가 시 본 인덱스를 갱신하여 빠른 검색·참조가 가능하도록 유지.
-> 최종 갱신: 2026-05-03 (자동보강 #13 — MDR DoC 양식 + PRRC 자격요건 + X-ray Detector DHF 목차)
+> 최종 갱신: 2026-05-04 (자동보강 #14·#15 — X-ray Detector 성능시험 매트릭스 + Handheld X-ray Source DHF 목차)
 
 ## 0. 기준 문서 (Top-level)
 - [README.md](README.md) – 프로젝트 개요
@@ -51,4 +51,4 @@
 
 ## 2. 제품별 기술파일
 - [X-ray Detector](02_제품별_기술파일/01_Xray_Detector/README.md)
-  - [Xray_Detector_DHF_목차_템플릿](02_제품별_기술파일/01_Xray_Detector/Xray_Detector_DHF_목차_템플릿.md) – DHF 전체 문서 목차 (8개 섹션·36개 항목), DQE/IEC 62220-1-1 핵심 요건
+  - [Xray_Detector_DHF_목차_템플릿](02_제품별_기술파일/01_Xray_Detector/Xray_Detector_DHF_목차_템플릿.md) – DHF 전체 문서 목차 (8개 섹션·36개 항목), DQE/IEC 62220
