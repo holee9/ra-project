@@ -1,7 +1,7 @@
 # 지식베이스 인덱스 (INDEX)
 
 > 자료 추가 시 본 인덱스를 갱신하여 빠른 검색·참조가 가능하도록 유지.
-> 최종 갱신: 2026-05-03 (자동보강 #12 — MDR Annex III PMS TD 템플릿 + Annex I GSPR 체크리스트)
+> 최종 갱신: 2026-05-03 (자동보강 #13 — MDR DoC 양식 + PRRC 자격요건 + X-ray Detector DHF 목차)
 
 ## 0. 기준 문서 (Top-level)
 - [README.md](README.md) – 프로젝트 개요
@@ -41,6 +41,8 @@
   - [MDR_AnnexII_Technical_Documentation_Template](01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_AnnexII_Technical_Documentation_Template.md) – MDR Annex II 6개 섹션 작성 템플릿: 제품설명·라벨·설계·GSPR체크리스트·위험관리·검증, 3제품 맵핑, 3지역 비교 (#11)
   - [MDR_AnnexIII_PMS_TD_Template](01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_AnnexIII_PMS_TD_Template.md) – MDR Annex III PMS TD 섹션별 작성 템플릿: PMS Plan·PMSR(Class I)·PSUR(IIa~III), 3지역 비교, 3제품 영향 맵핑 (#12)
   - [MDR_AnnexI_GSPR_Checklist](01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_AnnexI_GSPR_Checklist.md) – MDR Annex I GSPR 전항(§1~§23) 맵핑 체크리스트: 3제품 적용 여부·입증 방법·조화표준 매핑, 3지역 비교 (#12)
+  - [MDR_DoC_양식_작성지침](01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_DoC_양식_작성지침.md) – MDR Annex IV DoC 8개 필수 항목, 3제품 기재 요령, 빈 양식 템플릿, 3지역 비교 (#13)
+  - [MDR_Article15_PRRC_자격요건](01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_Article15_PRRC_자격요건.md) – PRRC 자격 2경로, 고용 형태, 5대 책임, 3지역 유사 역할 비교 (#13)
 - MDCG 가이던스: `01_규제지식베이스/유럽_CE_MDR/MDCG_가이던스/`
 - NB 심사자료: `01_규제지식베이스/유럽_CE_MDR/NB_심사자료/`
 
@@ -49,17 +51,4 @@
 
 ## 2. 제품별 기술파일
 - [X-ray Detector](02_제품별_기술파일/01_Xray_Detector/README.md)
-- [Handheld X-ray Source](02_제품별_기술파일/02_Handheld_Xray_Source/README.md)
-- [촬영실 GUI SW](02_제품별_기술파일/03_촬영실_GUI_SW/README.md)
-
-## 3. 진행 현안
-- [과제_관리대장](03_진행현안/과제_관리대장.md) – 전체 과제 단일 소스
-- 진행 중 과제: `03_진행현안/01_진행중/`
-- 완료 과제: `03_진행현안/02_완료/`
-- [전체_일정표](03_진행현안/03_일정_마일스톤/전체_일정표.md) – 마스터 타임라인
-
-## 4. 기술문서 템플릿
-- 수록 폴더: `04_기술문서_템플릿/`
-- 예정 템플릿: STED / Risk Management / Clinical Evaluation / DoC / Labeling
-
-## 
+  - [Xray_Detector_DHF_목차_템플릿](02_제품별_기술파일/01_Xray_Detector/Xray_Detector_DHF_목차_템플릿.md) – DHF 전체 문서 목차 (8개 섹션·36개 항목), DQE/IEC 62220-1-1 핵심 요건

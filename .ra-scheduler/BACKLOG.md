@@ -33,11 +33,11 @@
 - [x] MDR Annex II Technical Documentation 섹션별 템플릿 `[EP:3]` `done-2026-05-02 (#11)`
 - [x] MDR Annex III PMS TD 템플릿 `[EP:2]` `done-2026-05-03 (#12)`
 - [x] MDR Annex I GSPR 체크리스트 (전항 맵핑) `[EP:2]` `done-2026-05-03 (#12)`
-- [ ] MDR Declaration of Conformity (DoC) 양식·작성 지침 `[EP:1]`
-- [ ] MDR Article 15 PRRC 자격 요건·역할 정리 `[EP:1]`
+- [x] MDR Declaration of Conformity (DoC) 양식·작성 지침 `[EP:1]` `done-2026-05-03 (#13)`
+- [x] MDR Article 15 PRRC 자격 요건·역할 정리 `[EP:1]` `done-2026-05-03 (#13)`
 
 ### 2. 제품별 기술파일 뼈대
-- [ ] X-ray Detector DHF 목차·각 문서 템플릿 `[EP:2]`
+- [x] X-ray Detector DHF 목차·각 문서 템플릿 `[EP:2]` `done-2026-05-03 (#13)`
 - [ ] X-ray Detector 성능 시험 항목 매트릭스 (IEC 62220-1-1 DQE 등) `[EP:2]`
 - [ ] Handheld X-ray Source DHF 목차·각 문서 템플릿 `[EP:2]`
 - [ ] Handheld X-ray Source 21 CFR 1020.30 적합성 체크리스트 `[EP:1]`
@@ -135,14 +135,14 @@
 
 | 구분 | 총 EP | 완료 EP | 잔여 EP |
 |---|---|---|---|
-| P1 | 57 | 32 | 25 |
+| P1 | 57 | 36 | 21 |
 | P2 | 32 | 0 | 32 |
 | P3 | 33 | 0 | 33 |
 | P4 | 16 | 0 | 16 |
-| **합계** | **138** | **32** | **106** |
+| **합계** | **138** | **36** | **102** |
 
-> 잔여 EP 115 ÷ 6 EP/일(정상 가동) = 약 19일 → 예상 완료: 2026-05-20
-> CATCHUP 잔여 16 EP 해소 진행 중.
+> 잔여 EP 102 ÷ 6 EP/일(정상 가동) = 약 17일 → 예상 완료: 2026-05-21
+> CATCHUP 잔여 3 EP 해소 진행 중.
 
 ---
 
@@ -160,5 +160,4 @@
 - #10 (2026-05-02) MFDS 디지털의료기기 관련 가이드라인 6종 요약 (2025-05-07) `[EP:2]`
 - #11 (2026-05-02) MDR Annex II Technical Documentation 섹션별 템플릿 `[EP:3]`
 - #12 (2026-05-03) MDR Annex III PMS TD 템플릿 `[EP:2]`
-- #12 (2026-05-03) MDR Annex I GSPR 체크리스트 (전항 맵핑) `[EP:2]`
-
+- #12 (
