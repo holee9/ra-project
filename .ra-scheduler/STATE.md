@@ -5,11 +5,11 @@
 
 ## 기본 상태
 
-last_run: 2026-05-04T19:30+09:00
-last_issue: 16
+last_run: 2026-05-05T03:00+09:00
+last_issue: 17
 current_status: done
-next_candidate: 촬영실 GUI SW 문서 세트 (IEC 62304: SRS, SDS, SUP, SVP, 설계 등)
-run_count: 17
+next_candidate: 3개 제품 공통 Risk Management File (ISO 14971:2019) 템플릿
+run_count: 18
 carryover_issue: (없음)
 
 ## CATCHUP 상태
@@ -29,25 +29,25 @@ run_ep_budget_today_remaining: 0
 
 ### 누적 EP 실적
 ep_total: 138
-ep_completed: 41
-ep_remaining: 97
-ep_completion_pct: 29.7
+ep_completed: 44
+ep_remaining: 94
+ep_completion_pct: 31.9
 
 ### 속도 추적
 velocity_7day_ep: 5.1
 velocity_30day_ep: (미집계)
-runs_normal: 11
+runs_normal: 12
 runs_catchup: 10
 
 ### 완료 예측
-estimated_done_optimistic: 2026-05-20
-estimated_done_conservative: 2026-06-03
-estimated_done_basis: 잔여 EP 97 기준. optimistic=6 EP/일(정상 2회 가동), conservative=5.1 EP/일(7일 실속도).
+estimated_done_optimistic: 2026-05-21
+estimated_done_conservative: 2026-06-04
+estimated_done_basis: 잔여 EP 94 기준. optimistic=6 EP/일(정상 2회 가동), conservative=5.1 EP/일(7일 실속도).
 
 ## 최근 회차 요약 (최대 5회 유지)
 
+- 2026-05-05 03:00 (#17) [EP:3] 촬영실 GUI SW IEC 62304 문서 세트 (SDP·SRS·SAD·SDS·SVP/SVR·SCMP·SPRP). EP:3 소비. 잔여 예산 0 EP. commit f65b240. Issue #17 close.
 - 2026-05-04 19:30 (#16) [EP:1] Handheld X-ray Source 21 CFR 1020.30 적합성 체크리스트. EP:1 소비. 잔여 예산 2 EP → 次 회차 이월 (다음 최상단 EP:3 예산 부족). commit 37526e16. Issue #16 close.
 - 2026-05-04 03:00 (#14·#15) [CATCHUP 완료] X-ray Detector 성능시험 매트릭스(EP:2) + Handheld X-ray Source DHF 목차 템플릿(EP:2). EP:4 소비. CATCHUP 해소. Issue #14·#15 close.
 - 2026-05-03 19:30 (#13) [CATCHUP] MDR DoC 양식·PRRC 자격요건·X-ray Detector DHF 목차(EP:4). Issue #13 close.
-- 2026-05-03 03:00 (#12) [CATCHUP] MDR Annex III PMS TD 템플릿 + Annex I GSPR 체크리스트(EP:4). Issue #12 close.
-- 2026-05-02 19:30 (#11) [CATCHUP] MDR Annex II Technical Documentation 섹션별 템플릿(EP:3). commit 0bbe952. Issue #11 close.
+- 2026-05-03 03:00 (#12) [CATCHUP] MDR Annex III PMS TD 템플릿 + Annex I GSP
