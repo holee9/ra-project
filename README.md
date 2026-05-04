@@ -98,4 +98,7 @@
 - 2026-05-02 03:00 (#10) [EP:2] MFDS 디지털의료기기 관련 가이드라인 6종 요약 (2025-05-07) — 파일 1개, 내장형/독립형 분류 체계·3제품 맵핑·전자적 표시기재 2026-01-24 의무화 대응
 - 2026-05-02 19:30 (#11) [CATCHUP EP잔여11 EP:3] MDR Annex II Technical Documentation 섹션별 템플릿 — 파일 1개, 6개 섹션 작성 템플릿·3제품 맵핑·3지역 비교
 - 2026-05-03 03:00 (#12) [CATCHUP EP잔여7 EP:4] MDR Annex III PMS TD 템플릿 + Annex I GSPR 전항 맵핑 체크리스트 — 파일 2개, PMS Plan·PSUR 템플릿·§1~§23 체크리스트·조화표준 매핑·3지역 비교
+- 2026-05-03 19:30 (#13) [CATCHUP EP잔여3 EP:4] MDR DoC 양식·PRRC 자격요건·X-ray Detector DHF 목차 — 파일 3개, Annex IV 8개 필수항목·양식템플릿·Article15 2경로자격·DHF 36문서목차·DQE 시험요건
+- 2026-05-04 03:00 (#14) [CATCHUP EP:2] X-ray Detector 성능시험 매트릭스 — 파일 1개, IEC 62220-1-1 DQE·MTF·NPS 측정법·3지역 제출요건·V&V 체크리스트
+- 2026-05-04 03:00 (#15) [CATCHUP 완료 EP:2] Handheld X-ray Source DHF 목차·문서 템플릿 — 파일 1개, 35문서 목차·21 CFR 1020.30 방사선 성능기준·Form FDA 2579·MDR IIb NB 심사·CATCHUP 해소
 -

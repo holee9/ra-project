@@ -51,4 +51,13 @@
 
 ## 2. 제품별 기술파일
 - [X-ray Detector](02_제품별_기술파일/01_Xray_Detector/README.md)
-  - [Xray_Detector_DHF_목차_템플릿](02_제품별_기술파일/01_Xray_Detector/Xray_Detector_DHF_목차_템플릿.md) – DHF 전체 문서 목차 (8개 섹션·36개 항목), DQE/IEC 62220
+  - [Xray_Detector_DHF_목차_템플릿](02_제품별_기술파일/01_Xray_Detector/Xray_Detector_DHF_목차_템플릿.md) – DHF 전체 문서 목차 (8개 섹션·36개 항목), DQE/IEC 62220-1-1 핵심 요건, 3지역 기술문서 비교 (#13)
+  - [Xray_Detector_성능시험_매트릭스](02_제품별_기술파일/01_Xray_Detector/Xray_Detector_성능시험_매트릭스.md) – IEC 62220-1-1 DQE·MTF·NPS 시험 방법, 3개 지역 제출 요건 비교, V&V 체크리스트 (#14)
+- [Handheld X-ray Source](02_제품별_기술파일/02_Handheld_Xray_Source/README.md)
+  - [Handheld_Xray_Source_DHF_목차_템플릿](02_제품별_기술파일/02_Handheld_Xray_Source/Handheld_Xray_Source_DHF_목차_템플릿.md) – DHF 8개 섹션·35개 문서 목차, 21 CFR 1020.30 방사선 성능기준, Form FDA 2579, MDR Class IIb NB 심사, 3지역 비교 (#15)
+  - [Handheld_Xray_Source_21CFR1020_30_적합성_체크리스트](02_제품별_기술파일/02_Handheld_Xray_Source/Handheld_Xray_Source_21CFR1020_30_적합성_체크리스트.md) – 21 CFR 1020.30 전 조항 적합성 체크리스트: 누설방사선/HVL/경고라벨/인증/Form FDA 2579/배터리 표시, 3지역 비교, 시험항목 요약 (#16)
+- [촬영실 GUI SW](02_제품별_기술파일/03_촬영실_GUI_SW/README.md)
+
+## 3. 진행 현안
+- [과제_관리대장](03_진행현안/과제_관리대장.md) – 전체 과제 단일 소스
+- 진행 중 과제
