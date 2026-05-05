@@ -43,7 +43,7 @@
 - [x] Handheld X-ray Source 21 CFR 1020.30 적합성 체크리스트 `[EP:1]` `done-2026-05-04 (#16)`
 - [x] 촬영실 GUI SW 문서 세트 (IEC 62304: SRS, SDS, SUP, SVP, 설계 등) `[EP:3]` `done-2026-05-05 (#17)`
 - [x] 3개 제품 공통 Risk Management File (ISO 14971:2019) 템플릿 `[EP:3]` `done-2026-05-05 (#18)`
-- [ ] 3개 제품 공통 Usability Engineering File (IEC 62366-1:2015+AMD1:2020) 템플릿 `[EP:2]`
+- [x] 3개 제품 공통 Usability Engineering File (IEC 62366-1:2015+AMD1:2020) 템플릿 `[EP:2]` `done-2026-05-06 (#19)`
 - [ ] 3개 제품 공통 Clinical Evaluation Plan/Report (MDR) 템플릿 `[EP:2]`
 - [ ] 3개 제품 공통 Biological Evaluation (ISO 10993-1) 적용 판단 `[EP:2]`
 
@@ -135,13 +135,13 @@
 
 | 구분 | 총 EP | 완료 EP | 잔여 EP |
 |---|---|---|---|
-| P1 | 57 | 47 | 10 |
+| P1 | 57 | 49 | 8 |
 | P2 | 32 | 0 | 32 |
 | P3 | 33 | 0 | 33 |
 | P4 | 16 | 0 | 16 |
-| **합계** | **138** | **47** | **91** |
+| **합계** | **138** | **49** | **89** |
 
-> 잔여 EP 91 ÷ 6 EP/일(정상 가동) = 약 15일 → 예상 완료: 2026-05-20
+> 잔여 EP 89 ÷ 6 EP/일(정상 가동) = 약 15일 → 예상 완료: 2026-05-21
 
 ---
 
@@ -165,4 +165,4 @@
 - #13 (2026-05-03) X-ray Detector DHF 목차·각 문서 템플릿 `[EP:2]`
 - #14 (2026-05-04) X-ray Detector 성능 시험 항목 매트릭스 (IEC 62220-1-1 DQE 등) `[EP:2]`
 - #15 (2026-05-04) Handheld X-ray Source DHF 목차·각 문서 템플릿 `[EP:2]`
-- #16 (2026-05-04) Handheld X-ray Source 21 
+- #16 (2026-05-04) Ha
