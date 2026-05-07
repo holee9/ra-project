@@ -101,4 +101,11 @@
 - 2026-05-03 19:30 (#13) [CATCHUP EP잔여3 EP:4] MDR DoC 양식·PRRC 자격요건·X-ray Detector DHF 목차 — 파일 3개, Annex IV 8개 필수항목·양식템플릿·Article15 2경로자격·DHF 36문서목차·DQE 시험요건
 - 2026-05-04 03:00 (#14) [CATCHUP EP:2] X-ray Detector 성능시험 매트릭스 — 파일 1개, IEC 62220-1-1 DQE·MTF·NPS 측정법·3지역 제출요건·V&V 체크리스트
 - 2026-05-04 03:00 (#15) [CATCHUP 완료 EP:2] Handheld X-ray Source DHF 목차·문서 템플릿 — 파일 1개, 35문서 목차·21 CFR 1020.30 방사선 성능기준·Form FDA 2579·MDR IIb NB 심사·CATCHUP 해소
--
+- 2026-05-04 19:30 (#16) [EP:1] Handheld X-ray Source 21 CFR 1020.30 적합성 체크리스트 — 파일 1개, 누설방사선/HVL/경고라벨/인증/배터리표시/Form FDA 2579·3지역 비교·시험항목 요약
+- 2026-05-05 03:00 (#17) [EP:3] 촬영실 GUI SW IEC 62304 문서 세트 — 파일 1개, SDP·SRS·SAD·SDS·SVP/SVR·SCMP·SPRP 전체 템플릿·Safety Class 판단·SW 위험 항목·SOUP·SBOM·3지역 제출 요건 비교·3제품 영향 매트릭스
+- 2026-05-05 19:30 (#18) [EP:3] 3개 제품 공통 Risk Management File ISO 14971:2019 템플릿 — 파일 1개, RMP·Hazard ID·Risk Register·Risk Control 3계층·RRE·ORRE·RMR·PPI 전체 섹션·AFAP vs ALARP 3지역 비교·3제품 특화 Hazard 맵핑
+- 2026-05-06 03:00 (#19) [EP:2] 3개 제품 공통 Usability Engineering File (IEC 62366-1:2015+AMD1:2020) 템플릿 — 파일 1개, UEF-01~11 산출물 구조·URRA/Critical Task·SEP/SER·훈련 3순위 등 AMD1 변경사항·3지역 제출 비교·3제품 사용자/시나리오/위험 맵핑
+- 2026-05-06 19:30 (#20) [EP:2] 3개 제품 공통 Clinical Evaluation Plan/Report (MDR) 템플릿 — 파일 1개, CEP+CER 전체 섹션 템플릿·Art.61 동등성 경로·MDCG 2020-1/5/6/2023-7 기반·3제품 등급별 임상평가 전략·3지역 비교 매트릭스
+- 2026-05-07 03:00 (#21) [EP:2] 3개 제품 공통 ISO 10993-1 생물학적평가 적용판단 — 파일 1개, ISO 10993-1:2025(Ed 6) 주요 개정·접촉 범주 분류·3제품 비교 매트릭스(Detector=필수/Handheld=조건부/GUI SW=면제)·endpoint 결정표·3지역 비교(MFDS/FDA/MDR)·BER 구성·비용 참고
+- 2026-05-07 19:30 (#23) [EP:3] IEC 60601-1:2005+A1+A2 (Ed 3.2) 시험항목 매트릭스 — 파일 1개, Cl.4~17 전항목 시험표·3지역(MFDS/FDA/MDR) 버전·인정현황 비교·3제품 Gap분석·IECEE CB Scheme 전략·Ed 4.0 동향
+

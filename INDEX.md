@@ -1,7 +1,7 @@
 # 지식베이스 인덱스 (INDEX)
 
 > 자료 추가 시 본 인덱스를 갱신하여 빠른 검색·참조가 가능하도록 유지.
-> 최종 갱신: 2026-05-07 (자동보강 #21 — 3개 제품 공통 ISO 10993-1 생물학적평가 적용판단)
+> 최종 갱신: 2026-05-07 (자동보강 #23 — IEC 60601-1 Ed 3.2 시험항목 매트릭스)
 
 ## 0. 기준 문서 (Top-level)
 - [README.md](README.md) – 프로젝트 개요
@@ -48,6 +48,7 @@
 
 ### 1.4 국제표준 (IEC / ISO)
 - [핵심표준_목록](01_규제지식베이스/국제표준_IEC_ISO/핵심표준_목록.md) – 2026-04 기준 최신 판본 매트릭스
+- [IEC60601-1_Ed3.2_시험항목_매트릭스](01_규제지식베이스/국제표준_IEC_ISO/IEC60601-1_Ed3.2_시험항목_매트릭스.md) – Cl.4~17 전항목 시험표, 3지역 버전·인정현황 비교, 3제품 Gap분석, IECEE CB Scheme 전략 (#23)
 
 ## 2. 제품별 기술파일
 - [X-ray Detector](02_제품별_기술파일/01_Xray_Detector/README.md)
@@ -57,4 +58,24 @@
   - [Handheld_Xray_Source_DHF_목차_템플릿](02_제품별_기술파일/02_Handheld_Xray_Source/Handheld_Xray_Source_DHF_목차_템플릿.md) – DHF 8개 섹션·35개 문서 목차, 21 CFR 1020.30 방사선 성능기준, Form FDA 2579, MDR Class IIb NB 심사, 3지역 비교 (#15)
   - [Handheld_Xray_Source_21CFR1020_30_적합성_체크리스트](02_제품별_기술파일/02_Handheld_Xray_Source/Handheld_Xray_Source_21CFR1020_30_적합성_체크리스트.md) – 21 CFR 1020.30 전 조항 적합성 체크리스트: 누설방사선/HVL/경고라벨/인증/Form FDA 2579/배터리 표시, 3지역 비교, 시험항목 요약 (#16)
 - [촬영실 GUI SW](02_제품별_기술파일/03_촬영실_GUI_SW/README.md)
-  - [촬영실_GUI_SW_IEC62304_문서세트](02_제품별_기술파일/03_촬영실_GUI_SW/촬영실_GUI_SW_IEC62304_문서세트.md) – IEC 62304 기반
+  - [촬영실_GUI_SW_IEC62304_문서세트](02_제품별_기술파일/03_촬영실_GUI_SW/촬영실_GUI_SW_IEC62304_문서세트.md) – IEC 62304 기반 SW 수명주기 산출물 전체 세트(SDP·SRS·SAD·SDS·SVP·SVR·SCMP·SPRP), Safety Class 판단, 3지역 비교, 3제품 매핑 (#17)
+
+## 3. 진행 현안
+- [과제_관리대장](03_진행현안/과제_관리대장.md) – 전체 과제 단일 소스
+- 진행 중 과제: `03_진행현안/01_진행중/`
+- 완료 과제: `03_진행현안/02_완료/`
+- [전체_일정표](03_진행현안/03_일정_마일스톤/전체_일정표.md) – 마스터 타임라인
+
+## 4. 기술문서 템플릿
+- 수록 폴더: `04_기술문서_템플릿/`
+  - [Risk_Management_File_ISO14971_2019_템플릿](04_기술문서_템플릿/Risk_Management_File_ISO14971_2019_템플릿.md) – ISO 14971:2019 RMF 완전 템플릿: RMP·Hazard ID·Risk Register·Control·RMR, 3지역 AFAP/ALARP 비교, 3제품 Hazard 맵핑 (#18)
+  - [Usability_Engineering_File_IEC62366_템플릿](04_기술문서_템플릿/Usability_Engineering_File_IEC62366_템플릿.md) – IEC 62366-1:2015+AMD1:2020 UEF 완전 템플릿: UEF-01~11 산출물, URRA/Use FMEA, SEP/SER, 3지역 제출 비교, 3제품 영향 맵핑 (#19)
+
+## 2.4 공통 문서
+- 공통 문서 폴더: `02_제품별_기술파일/공통/`
+  - [공통_Clinical_Evaluation_Plan_Report_MDR_템플릿](02_제품별_기술파일/공통/공통_Clinical_Evaluation_Plan_Report_MDR_템플릿.md) – MDR Art.61+Annex XIV 기반 CEP+CER 전체 섹션 템플릿: 동등성 경로(MDCG 2020-5), 문헌 검색 전략, 안전성·성능·혜택 평가 기준, 3제품 등급별 임상평가 전략, 3지역 비교 (#20)
+  - [ISO10993-1_생물학적평가_적용판단](02_제품별_기술파일/공통/ISO10993-1_생물학적평가_적용판단.md) – ISO 10993-1:2025(Ed 6) 기반 3개 제품 접촉 분류·Endpoint 결정 매트릭스: Detector(필수)/Handheld(조건부)/GUI SW(면제), 3지역 MFDS·FDA·MDR 요건 비교, BER 구성 템플릿, 비용·일정 참고 (#21)
+
+- 예정 템플릿: STED
+
+## 
