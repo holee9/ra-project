@@ -49,7 +49,7 @@
 
 ### 3. 시험·표준 실무
 - [x] IEC 60601-1:2005+A1+A2 (Ed 3.2) 시험 항목 매트릭스 `[EP:3]` `done-2026-05-07 (#23)`
-- [ ] IEC 60601-1-2:2014+A1:2020 EMC 시험 항목·Pass Criteria `[EP:2]`
+- [x] IEC 60601-1-2:2014+A1:2020 EMC 시험 항목·Pass Criteria `[EP:2]` `done-2026-05-08 (#24)`
 - [ ] IEC 60601-1-3:2008+A1+A2 방사선 방호 시험 항목 `[EP:2]`
 - [ ] IEC 60601-2-28:2017 X-ray Source 시험 항목 `[EP:2]`
 - [ ] IEC 60601-2-54:2022 촬영·투시 시험 항목 `[EP:2]`
@@ -168,5 +168,4 @@
 - #16 (2026-05-04) Handheld X-ray Source 21 CFR 1020.30 적합성 체크리스트 `[EP:1]`
 - #18 (2026-05-05) 3개 제품 공통 Risk Management File (ISO 14971:2019) 템플릿 `[EP:3]`
 - #19 (2026-05-06) 3개 제품 공통 Usability Engineering File (IEC 62366-1:2015+AMD1:2020) 템플릿 `[EP:2]`
-- #20 (2026-05-06) 3개 제품 공통 Clinical Evaluation Plan/Report (MDR) 템플릿 `[EP:2]`
-
+- #20 (2026-05-06) 3개 제품 공통 Clinical Evaluation Plan/Report (M
