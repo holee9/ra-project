@@ -5,11 +5,11 @@
 
 ## 기본 상태
 
-last_run: 2026-05-08T19:30+09:00
-last_issue: 25
+last_run: 2026-05-09T03:00+09:00
+last_issue: 27
 current_status: done
-next_candidate: IEC 60601-2-28:2017 X-ray Source 시험 항목 [EP:2]
-run_count: 25
+next_candidate: IEC 60601-2-54:2022 촬영·투시 시험 항목 [EP:2]
+run_count: 26
 carryover_issue: (없음)
 
 ## CATCHUP 상태
@@ -25,29 +25,29 @@ catchup_note: 2026-05-04 03:00 회차 CATCHUP 완료. 정상 스케줄 재개.
 ### EP 예산 정책
 run_ep_budget_normal: 3
 run_ep_budget_catchup: 4
-run_ep_budget_today_remaining: 1  # 19:30 회차 EP:3 예산, EP:2 소비 → 잔여 1 EP (다음 항목 EP:2로 처리 불가)
+run_ep_budget_today_remaining: 0  # 03:00 회차 EP:3 예산 → EP:2(#26) + EP:1(#27) = 3 EP 소비, 잔여 0
 
 ### 누적 EP 실적
 ep_total: 138
-ep_completed: 60
-ep_remaining: 78
-ep_completion_pct: 43.5
+ep_completed: 63
+ep_remaining: 75
+ep_completion_pct: 45.7
 
 ### 속도 추적
 velocity_7day_ep: 5.1
 velocity_30day_ep: (미집계)
-runs_normal: 13
+runs_normal: 14
 runs_catchup: 10
 
 ### 완료 예측
 estimated_done_optimistic: 2026-05-21
 estimated_done_conservative: 2026-06-04
-estimated_done_basis: 잔여 EP 78 기준. optimistic=6 EP/일(정상 2회 가동), conservative=5.1 EP/일(7일 실속도).
+estimated_done_basis: 잔여 EP 75 기준. optimistic=6 EP/일(정상 2회 가동), conservative=5.1 EP/일(7일 실속도).
 
 ## 최근 회차 요약 (최대 5회 유지)
 
+- 2026-05-09 03:00 (#26,#27) [EP:3] IEC 60601-2-28:2017 X-ray Tube Assembly 시험항목 매트릭스 (EP:2) + IEC 62133-2 배터리안전 체크리스트 (EP:1). 예산 3 EP 전액 소비. commit d728cdf. Issue #26·#27 close.
 - 2026-05-08 19:30 (#25) [EP:2] IEC 60601-1-3:2008+AMD1+AMD2:2021 방사선방호 시험항목 매트릭스 (DSA 누설방사선·HVL·콜리메이터·Focal Spot·3지역·3제품). EP:2 소비. 잔여 예산 1 EP. commit 8c264e7c. Issue #25 close.
 - 2026-05-08 03:00 (#24) [EP:2] IEC 60601-1-2:2014+A1:2020 EMC 시험항목 매트릭스 (Emission+Immunity 전항목·A1:2020 신규·3지역·3제품). EP:2 소비. 잔여 예산 1 EP (다음 항목 EP:2로 처리 불가). commit 8023fbf4. Issue #24 close.
 - 2026-05-07 19:30 (#23) [EP:3] IEC 60601-1 Ed 3.2 시험항목 매트릭스 (Cl.4~17 전항목·3지역 비교·3제품 Gap분석). EP:3 소비. 잔여 예산 0 EP. commit 7f31ea0f. Issue #23 close.
-- 2026-05-07 03:00 (#21) [EP:2] 3개 제품 공통 ISO 10993-1 생물학적평가 적용판단. EP:2 소비. 잔여 예산 1 EP (다음 항목 EP:3으로 처리 불가). commit a560184. Issue #21 close.
-- 2026-05-06 19:30 (#
+- 2026-05-0
