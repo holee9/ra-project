@@ -1,7 +1,7 @@
 # 지식베이스 인덱스 (INDEX)
 
 > 자료 추가 시 본 인덱스를 갱신하여 빠른 검색·참조가 가능하도록 유지.
-> 최종 갱신: 2026-05-10 (자동보강 #30 — IEC 62304:2006+A1:2015 SW 수명주기 산출물 매핑)
+> 최종 갱신: 2026-05-11 (자동보강 #31 — ISO 13485:2016 절차서 목록 (섹션 4~8)·뼈대)
 
 ## 0. 기준 문서 (Top-level)
 - [README.md](README.md) – 프로젝트 개요
@@ -51,6 +51,7 @@
 - [IEC60601-1_Ed3.2_시험항목_매트릭스](01_규제지식베이스/국제표준_IEC_ISO/IEC60601-1_Ed3.2_시험항목_매트릭스.md) – Cl.4~17 전항목 시험표, 3지역 버전·인정현황 비교, 3제품 Gap분석, IECEE CB Scheme 전략 (#23)
   - [IEC60601-1-3_방사선방호_시험항목_매트릭스](01_규제지식베이스/국제표준_IEC_ISO/IEC60601-1-3_방사선방호_시험항목_매트릭스.md) – DSA 누설방사선·HVL·콜리메이터·Focal Spot 시험항목, 3지역 인정현황(MFDS/FDA 0.88mGy/h 차이), 3제품 영향 맵핑, 시험 체크리스트 (#25)
 - [IEC62304_SW수명주기_산출물_매핑](01_규제지식베이스/국제표준_IEC_ISO/IEC62304_SW수명주기_산출물_매핑.md) – IEC 62304:2006+A1:2015 Cl.5~9 전 조항 산출물, Safety Class A/B/C 판정·면제 조항, 3개 제품(Detector Class B·Handheld Class C·GUI SW Class C) 적용 계획, 3지역(MFDS/FDA/MDR) 요건 비교, FDA Basic/Enhanced 수준 판단 (#30)
+- [ISO13485_2016_절차서_목록_뼈대](01_규제지식베이스/국제표준_IEC_ISO/ISO13485_2016_절차서_목록_뼈대.md) – 섹션 4~8 필수(M:22)·권고(R:12)·조건부(C:3) 총 37개 절차서 목록, 표준 SOP 뼈대 템플릿, 3지역 비교(KGMP 2025-22·QMSR 2026-02-02·MDR Annex IX), 3제품 영향 맵핑, Phase-in 구현 우선순위 (#31)
 
 ## 2. 제품별 기술파일
 - [X-ray Detector](02_제품별_기술파일/01_Xray_Detector/README.md)
@@ -71,8 +72,4 @@
 ## 4. 기술문서 템플릿
 - 수록 폴더: `04_기술문서_템플릿/`
   - [Risk_Management_File_ISO14971_2019_템플릿](04_기술문서_템플릿/Risk_Management_File_ISO14971_2019_템플릿.md) – ISO 14971:2019 RMF 완전 템플릿: RMP·Hazard ID·Risk Register·Control·RMR, 3지역 AFAP/ALARP 비교, 3제품 Hazard 맵핑 (#18)
-  - [Usability_Engineering_File_IEC62366_템플릿](04_기술문서_템플릿/Usability_Engineering_File_IEC62366_템플릿.md) – IEC 62366-1:2015+AMD1:2020 UEF 완전 템플릿: UEF-01~11 산출물, URRA/Use FMEA, SEP/SER, 3지역 제출 비교, 3제품 영향 맵핑 (#19)
-
-## 2.4 공통 문서
-- 공통 문서 폴더: `02_제품별_기술파일/공통/`
-  - [공통_Clinical_Evaluation_Plan_Re
+  - [Usability_Engineering_File_IEC62
