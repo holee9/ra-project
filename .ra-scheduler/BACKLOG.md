@@ -71,7 +71,7 @@
 
 ### 5. 사이버보안·AI
 - [x] FDA Threat Model 작성 가이드·STRIDE 기반 샘플 `[EP:2]` `done-2026-05-13 (#42)`
-- [ ] SBOM 생성 실무 (SPDX vs CycloneDX 비교·도구) `[EP:2]`
+- [x] SBOM 생성 실무 (SPDX vs CycloneDX 비교·도구) `[EP:2]` `done-2026-05-14 (#43)`
 - [ ] PCCP 작성 가이드 (AI-enabled device, 2024-12-03 Final) `[EP:2]`
 - [ ] MDCG 2019-16 Rev.1 Cybersecurity 대응 체크리스트 `[EP:1]`
 - [ ] IEC 81001-5-1:2021 수명주기 활동 매핑 `[EP:2]`
