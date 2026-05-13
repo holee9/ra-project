@@ -64,9 +64,9 @@
 - [x] KGMP vs QMSR vs ISO 13485 차이·통합 전략 (3개 지역 동시 적합) `[EP:3]` `done-2026-05-11 (#32)`
 - [x] Design Controls 절차서 템플릿 (7.3) `[EP:2]` `done-2026-05-12 (#33)`
 - [x] Document Control / Record Control 절차서 템플릿 `[EP:1]` `done-2026-05-12 (#34)`
-- [ ] CAPA 절차서 템플릿 `[EP:1]`
-- [ ] Internal Audit 절차서 템플릿 `[EP:1]`
-- [ ] Management Review 절차서 템플릿 `[EP:1]`
+- [x] CAPA 절차서 템플릿 `[EP:1]` `done-2026-05-13 (#36)`
+- [x] Internal Audit 절차서 템플릿 `[EP:1]` `done-2026-05-13 (#37)`
+- [x] Management Review 절차서 템플릿 `[EP:1]` `done-2026-05-13 (#38)`
 - [ ] Supplier Control 절차서 템플릿 `[EP:1]`
 
 ### 5. 사이버보안·AI
@@ -128,43 +128,3 @@
 - [ ] 규제 변경 모니터링 자동화 (법령·가이던스 RSS) `[EP:2]`
 - [ ] 경쟁 제품 510(k) Summary 분석 DB `[EP:2]`
 - [ ] EUDAMED 모듈별 대응 로드맵 `[EP:2]`
-
----
-
-## EP 집계
-
-| 구분 | 총 EP | 완료 EP | 잔여 EP |
-|---|---|---|---|
-| P1 | 57 | 58 | -1 → 완료 |
-| P2 | 32 | 0 | 32 |
-| P3 | 33 | 0 | 33 |
-| P4 | 16 | 0 | 16 |
-| **합계** | **138** | **58** | **80** |
-
-> 잔여 EP 87 ÷ 6 EP/일(정상 가동) = 약 14.5일 → 예상 완료: 2026-05-21
-
----
-
-## 완료 이력
-
-- #2 (2026-04-22) FDA eSTAR Device Description / IFU `[EP:3]`
-- #2 (2026-04-22) FDA eSTAR Substantial Equivalence `[EP:3]`
-- #3 (2026-04-24) FDA eSTAR Performance Testing `[EP:3]`
-- #4 (2026-04-29) FDA eSTAR Cybersecurity `[EP:3]`
-- #5 (2026-04-30) FDA eSTAR Software Section `[EP:3]`
-- #6 (2026-04-30) FDA eSTAR Labeling (IFU, Form 3881) `[EP:2]`
-- #7 (2026-05-01) FDA Pre-Submission (Q-Sub) 가이드·샘플 질문 `[EP:2]`
-- #8 (2026-05-01) MFDS 기술문서 섹션별 작성가이드 (사용목적·작용원리·성능·안전성) `[EP:3]`
-- #9 (2026-05-01) MFDS 디지털의료제품법 하위 고시 추적 리스트 `[EP:1]`
-- #10 (2026-05-02) MFDS 디지털의료기기 관련 가이드라인 6종 요약 (2025-05-07) `[EP:2]`
-- #11 (2026-05-02) MDR Annex II Technical Documentation 섹션별 템플릿 `[EP:3]`
-- #12 (2026-05-03) MDR Annex III PMS TD 템플릿 `[EP:2]`
-- #12 (2026-05-03) MDR Annex I GSPR 체크리스트 (전항 맵핑) `[EP:2]`
-- #13 (2026-05-03) MDR Declaration of Conformity (DoC) 양식·작성 지침 `[EP:1]`
-- #13 (2026-05-03) MDR Article 15 PRRC 자격 요건·역할 정리 `[EP:1]`
-- #13 (2026-05-03) X-ray Detector DHF 목차·각 문서 템플릿 `[EP:2]`
-- #14 (2026-05-04) X-ray Detector 성능 시험 항목 매트릭스 (IEC 62220-1-1 DQE 등) `[EP:2]`
-- #15 (2026-05-04) Handheld X-ray Source DHF 목차·각 문서 템플릿 `[EP:2]`
-- #16 (2026-05-04) Handheld X-ray Source 21 CFR 1020.30 적합성 체크리스트 `[EP:1]`
-- #18 (2026-05-05) 3개 제품 공통 Risk Management File (ISO 14971:2019) 템플릿 `[EP:3]`
-- #19 (2026-05-06) 3개 제품 공통 Usability Engine
