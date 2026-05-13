@@ -67,7 +67,7 @@
 - [x] CAPA 절차서 템플릿 `[EP:1]` `done-2026-05-13 (#36)`
 - [x] Internal Audit 절차서 템플릿 `[EP:1]` `done-2026-05-13 (#37)`
 - [x] Management Review 절차서 템플릿 `[EP:1]` `done-2026-05-13 (#38)`
-- [ ] Supplier Control 절차서 템플릿 `[EP:1]`
+- [x] Supplier Control 절차서 템플릿 `[EP:1]` `done-2026-05-13 (#41)`
 
 ### 5. 사이버보안·AI
 - [ ] FDA Threat Model 작성 가이드·STRIDE 기반 샘플 `[EP:2]`
