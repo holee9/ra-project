@@ -120,3 +120,5 @@
 - 2026-05-13 03:00 (#37) [EP:1] Internal Audit 절차서 템플릿 (ISO 13485 §8.2.4) — 파일 1개, 연간 계획·심사원 자격·착수/종결 회의·NC 분류(Major/Minor/OBS)·CAPA 연계·3지역 비교(QMSR §820.22·MDR Annex IX·KGMP)·3제품 핵심 심사 영역·양식 포함
 - 2026-05-13 03:00 (#38) [EP:1] Management Review 절차서 템플릿 (ISO 13485 §5.6) — 파일 1개, 12개 입력 항목·출력(Action Item)·QMSR adverse event 추가 요건·MDR PMS 연계·3지역 비교(QMSR §820.20(c)·MDR Annex IX·KGMP)·3제품 맵핑·의사록 양식 포함
 - 2026-05-13 19:30 [CATCHUP EP:4] (#35/#39/#40/#41) CAPA·Internal Audit·Management Review·Supplier Control 절차서 템플릿 4개 — SOP-QMS-008/009/010/011 파일 4개 신규, ISO 13485 §8.5.2/§8.2.4/§5.6/§7.4 기준, 3지역 비교(QMSR/MDR/KGMP)·3제품 맵핑·양식 포함. CATCHUP EP:4 전액 소비
+
+- 2026-05-13 19:30 (#42) [EP:2] FDA Threat Model 작성 가이드·STRIDE 기반 샘플 — 파일 1개, Section 524B 법적 근거·STRIDE 6범주 수행 절차·DREAD 우선순위화·3개 제품 Cyber Device 판정 및 위협 매트릭스·eSTAR 제출 패키지 구조·샘플 분석표 7항목·3지역 비교(FDA/MDR/MFDS)·AAMI TIR57/IEC 81001-5-1 연계

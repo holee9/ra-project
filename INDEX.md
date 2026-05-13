@@ -28,6 +28,7 @@
   - [eSTAR_01_Device_Description_IFU](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_01_Device_Description_IFU.md) – eSTAR 작성 가이드 (1) Device Description / IFU
   - [eSTAR_02_Substantial_Equivalence](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_02_Substantial_Equivalence.md) – eSTAR 작성 가이드 (2) Substantial Equivalence 비교표
   - [eSTAR_03_Performance_Testing_Bench_Test](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_03_Performance_Testing_Bench_Test.md) – eSTAR 작성 가이드 (3) Performance Testing / Bench Test (3개 제품 완전 맵핑)
+  - [FDA_Threat_Model_STRIDE_가이드](01_규제지식베이스/미국_FDA/FDA_Threat_Model_STRIDE_가이드.md) – FDA Section 524B Threat Model 작성 가이드·STRIDE 6범주·DREAD 점수화·3제품 Cyber Device 판정·eSTAR 제출 패키지·샘플 분석표·3지역 비교
   - [eSTAR_04_Cybersecurity_Section](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_04_Cybersecurity_Section.md) – eSTAR 작성 가이드 (4) Cybersecurity Section (Section 524B + 2025 Final Guidance 기반, 3개 제품 맵핑)
   - [eSTAR_05_Software_Section](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_05_Software_Section.md) – eSTAR 작성 가이드 (5) Software Section (IEC 62304 기반, Basic/Enhanced 10문서, 3개 제품 맵핑, 3지역 비교)
   - [eSTAR_06_Labeling_IFU_Form3881](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_06_Labeling_IFU_Form3881.md) – eSTAR 작성 가이드 (6) Labeling — IFU·Form 3881·21 CFR 801 기반, 3개 제품 맵핑
