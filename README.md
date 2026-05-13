@@ -111,3 +111,11 @@
 -
 - 2026-05-09 19:30 (#28) [EP:2] IEC 60601-2-54:2022 촬영·투시 X선 장비 시험항목 매트릭스 — 파일 1개, 투시 최대 AK Rate·AEC·Exposure Index·DAP 표시·3지역 비교(FDA §1020.32 vs IEC)·3제품 갭분석
 - 2026-05-10 03:00 (#29) [EP:2] IEC 62220-1-1:2015 DQE 측정절차 가이드 — 파일 1개, Step-by-step MTF/NNPS/DQE 계산·RQA3/RQA5 빔 품질·Lag보정·3지역 규제 요구·3제품 영향 맵핑. commit 02abfec
+- 2026-05-10 19:30 (#30) [EP:3] IEC 62304:2006+A1:2015 SW 수명주기 산출물 매핑 — 파일 1개, Cl.5~9 전 조항 산출물·Safety Class A/B/C 판정·면제 조항·3제품 적용 계획(Detector B/Handheld C/GUI SW C)·FDA Basic/Enhanced 수준 판단·3지역(MFDS/FDA/MDR) 요건 비교
+- 2026-05-11 03:00 (#31) [EP:2] ISO 13485:2016 절차서 목록 (섹션 4~8)·뼈대 — 파일 1개, 37개 절차서(M:22/R:12/C:3) 전체 목록·표준 SOP 뼈대 템플릿·3지역 비교(KGMP 2025-22·QMSR 2026-02-02·MDR Annex IX)·3제품 영향 맵핑·Phase-in 구현 우선순위
+- 2026-05-11 19:30 (#32) [EP:3] KGMP vs QMSR vs ISO 13485 차이·통합 전략 — 파일 1개, 3지역 QMS 체계 비교·조항별 차이 매트릭스·QMSR ARR 추가 요건·KGMP 한국어 문서 요건·MDR PMS/Vigilance/PRRC·통합 QMS 단계별 로드맵·MDSAP 활용 전략·3제품 갭 분석 체크리스트
+- 2026-05-12 03:00 (#33) [EP:2] Design Controls 절차서 템플릿 (ISO 13485 §7.3) — 파일 1개, §7.3.2~7.3.10 전 단계 절차·DHF 구성·3지역 비교 매트릭스(QMSR/MDR/KGMP 2025-22)·3제품 적용 맵핑·추적성 매트릭스 템플릿·변경 유형 분류·기록 보존 기준
+- 2026-05-12 03:00 (#34) [EP:1] Document Control / Record Control 절차서 템플릿 (ISO 13485 §4.2.4/4.2.5) — 파일 1개, 문서 계층·번호체계·수명주기·기록 15년 보존기준·3지역 비교(QMSR §820.40/180·MDR Annex IX·KGMP)·3제품 맵핑
+- 2026-05-13 03:00 (#36) [EP:1] CAPA 절차서 템플릿 (ISO 13485 §8.5.2/§8.5.3) — 파일 1개, CA/PA Flow·5-Why/Fishbone/FTA RCA·심각도 3등급·효과성 검증·3지역 비교(QMSR §820.100·MDR Annex IX·KGMP)·3제품 맵핑·양식 포함
+- 2026-05-13 03:00 (#37) [EP:1] Internal Audit 절차서 템플릿 (ISO 13485 §8.2.4) — 파일 1개, 연간 계획·심사원 자격·착수/종결 회의·NC 분류(Major/Minor/OBS)·CAPA 연계·3지역 비교(QMSR §820.22·MDR Annex IX·KGMP)·3제품 핵심 심사 영역·양식 포함
+- 2026-05-13 03:00 (#38) [EP:1] Management Review 절차서 템플릿 (ISO 13485 §5.6) — 파일 1개, 12개 입력 항목·출력(Action Item)·QMSR adverse event 추가 요건·MDR PMS 연계·3지역 비교(QMSR §820.20(c)·MDR Annex IX·KGMP)·3제품 맵핑·의사록 양식 포함
