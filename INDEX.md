@@ -1,7 +1,7 @@
 # 지식베이스 인덱스 (INDEX)
 
 > 자료 추가 시 본 인덱스를 갱신하여 빠른 검색·참조가 가능하도록 유지.
-> 최종 갱신: 2026-05-13 (자동보강 #36/#37/#38 — CAPA / Internal Audit / Management Review 절차서 템플릿 (ISO 13485 §8.5.2 / §8.2.4 / §5.6))
+> 최종 갱신: 2026-05-13 (자동보강 #41 — CAPA·Internal Audit·Management Review·Supplier Control 절차서 템플릿 4개 (ISO 13485 §8.5.2/§8.2.4/§5.6/§7.4))
 
 ## 0. 기준 문서 (Top-level)
 - [README.md](README.md) – 프로젝트 개요
@@ -79,8 +79,8 @@
   - [SOP_CAPA_ISO13485_8.5.2_템플릿](04_기술문서_템플릿/SOP_CAPA_ISO13485_8.5.2_템플릿.md) – ISO 13485 §8.5.2/§8.5.3 CAPA 절차서: CA/PA Flow, 5-Why/Fishbone/FTA RCA 기법, 심각도 3등급(Critical/Major/Minor)·처리 기한, 효과성 검증, CAPA 레코드 양식(FM-CAP-001), 3지역 비교(QMSR §820.100·MDR·KGMP), 3제품 맵핑 (#36)
   - [SOP_Internal_Audit_ISO13485_8.2.4_템플릿](04_기술문서_템플릿/SOP_Internal_Audit_ISO13485_8.2.4_템플릿.md) – ISO 13485 §8.2.4 내부심사 절차서: 연간 계획, 심사원 자격, 착수·수행·종결 회의, NC 분류(Major/Minor/OBS), CAPA 연계, 심사 보고서·체크리스트 양식(FM-AUD-001~005), 3지역 비교(QMSR §820.22·MDR·KGMP), 3제품 핵심 심사 영역 (#37)
   - [SOP_Management_Review_ISO13485_5.6_템플릿](04_기술문서_템플릿/SOP_Management_Review_ISO13485_5.6_템플릿.md) – ISO 13485 §5.6 경영검토 절차서: 12개 입력 항목(내부심사·CAPA·고객불만·규제변경·PMS 등), 출력(Action Item·자원 배분), QMSR §820.20(c) adverse event 추가 요건, MDR Annex IX PMS 연계, 의사록 양식(FM-MGT-002), 3지역 비교, 3제품 맵핑 (#38)
+  - [SOP_Supplier_Control_ISO13485_7.4_템플릿](04_기술문서_템플릿/SOP_Supplier_Control_ISO13485_7.4_템플릿.md) – ISO 13485 §7.4 공급업체 관리 절차서: 위험 기반 3등급 분류(Class A/B/C), ASL 운영, 선정·적격성 평가·재평가 기준, Supplier Scorecard, 입고 검사 수준, 3지역 비교(QMSR §820.50·MDR Annex IX·KGMP), 3제품 핵심 공급업체 맵핑, ASL 양식 (#41)
 
 ## 2.4 공통 문서
 - 공통 문서 폴더: `02_제품별_기술파일/공통/`
-  - [공통_Clinical_Evaluation_Plan_Report_MDR_템플릿](02_제품별_기술파일/공통/공통_Clinical_Evaluation_Plan_Report_MDR_템플릿.md) – MDR Art.61+Annex XIV 기반 CEP+CER 전체 섹션 템플릿: 동등성 경로(MDCG 2020-5), 문헌 검색 전략, 안전성·성능·혜택 평가 기준, 3제품 등급별 임상평가 전략, 3지역 비교 (#20)
-  - [ISO10993-1_생물학적평가_적용판단](02_�
+  -

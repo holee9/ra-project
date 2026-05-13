@@ -119,3 +119,4 @@
 - 2026-05-13 03:00 (#36) [EP:1] CAPA 절차서 템플릿 (ISO 13485 §8.5.2/§8.5.3) — 파일 1개, CA/PA Flow·5-Why/Fishbone/FTA RCA·심각도 3등급·효과성 검증·3지역 비교(QMSR §820.100·MDR Annex IX·KGMP)·3제품 맵핑·양식 포함
 - 2026-05-13 03:00 (#37) [EP:1] Internal Audit 절차서 템플릿 (ISO 13485 §8.2.4) — 파일 1개, 연간 계획·심사원 자격·착수/종결 회의·NC 분류(Major/Minor/OBS)·CAPA 연계·3지역 비교(QMSR §820.22·MDR Annex IX·KGMP)·3제품 핵심 심사 영역·양식 포함
 - 2026-05-13 03:00 (#38) [EP:1] Management Review 절차서 템플릿 (ISO 13485 §5.6) — 파일 1개, 12개 입력 항목·출력(Action Item)·QMSR adverse event 추가 요건·MDR PMS 연계·3지역 비교(QMSR §820.20(c)·MDR Annex IX·KGMP)·3제품 맵핑·의사록 양식 포함
+- 2026-05-13 19:30 [CATCHUP EP:4] (#35/#39/#40/#41) CAPA·Internal Audit·Management Review·Supplier Control 절차서 템플릿 4개 — SOP-QMS-008/009/010/011 파일 4개 신규, ISO 13485 §8.5.2/§8.2.4/§5.6/§7.4 기준, 3지역 비교(QMSR/MDR/KGMP)·3제품 맵핑·양식 포함. CATCHUP EP:4 전액 소비
