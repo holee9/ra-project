@@ -72,7 +72,7 @@
 ### 5. 사이버보안·AI
 - [x] FDA Threat Model 작성 가이드·STRIDE 기반 샘플 `[EP:2]` `done-2026-05-13 (#42)`
 - [x] SBOM 생성 실무 (SPDX vs CycloneDX 비교·도구) `[EP:2]` `done-2026-05-14 (#43)`
-- [ ] PCCP 작성 가이드 (AI-enabled device, 2024-12-03 Final) `[EP:2]`
+- [x] PCCP 작성 가이드 (AI-enabled device, 2024-12-03 Final) `[EP:2]` `done-2026-05-15 (#45)`
 - [x] MDCG 2019-16 Rev.1 Cybersecurity 대응 체크리스트 `[EP:1]` `done-2026-05-14 (#44)`
 - [ ] IEC 81001-5-1:2021 수명주기 활동 매핑 `[EP:2]`
 - [ ] MFDS 사이버보안 가이드라인 (2025.01 개정) 대응 `[EP:2]`
@@ -127,5 +127,4 @@
 - [ ] 예상 Q&A DB (3개 지역·제품별) `[EP:3]`
 - [ ] 규제 변경 모니터링 자동화 (법령·가이던스 RSS) `[EP:2]`
 - [ ] 경쟁 제품 510(k) Summary 분석 DB `[EP:2]`
-- [ ] EUDAMED 모듈별 대응 로드맵 `[EP:2]`
-
+- [ ] EUDAMED 모듈별 대
