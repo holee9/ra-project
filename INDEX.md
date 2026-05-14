@@ -1,7 +1,7 @@
 # 지식베이스 인덱스 (INDEX)
 
 > 자료 추가 시 본 인덱스를 갱신하여 빠른 검색·참조가 가능하도록 유지.
-> 최종 갱신: 2026-05-13 (자동보강 #41 — CAPA·Internal Audit·Management Review·Supplier Control 절차서 템플릿 4개 (ISO 13485 §8.5.2/§8.2.4/§5.6/§7.4))
+> 최종 갱신: 2026-05-14 (자동보강 #44 — MDCG 2019-16 Rev.1 Cybersecurity 대응 체크리스트)
 
 ## 0. 기준 문서 (Top-level)
 - [README.md](README.md) – 프로젝트 개요
@@ -45,6 +45,7 @@
   - [MDR_DoC_양식_작성지침](01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_DoC_양식_작성지침.md) – MDR Annex IV DoC 8개 필수 항목, 3제품 기재 요령, 빈 양식 템플릿, 3지역 비교 (#13)
   - [MDR_Article15_PRRC_자격요건](01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_Article15_PRRC_자격요건.md) – PRRC 자격 2경로, 고용 형태, 5대 책임, 3지역 유사 역할 비교 (#13)
 - MDCG 가이던스: `01_규제지식베이스/유럽_CE_MDR/MDCG_가이던스/`
+  - [MDCG_2019-16_Rev1_Cybersecurity_대응_체크리스트](01_규제지식베이스/유럽_CE_MDR/MDCG_가이던스/MDCG_2019-16_Rev1_Cybersecurity_대응_체크리스트.md) — MDCG 2019-16 Rev.1(2020-07) 기반 8대 보안 개발 실무·Pre/Post-market 체크리스트·MDR Annex I §17.2/§17.4/§18.8 조항 매핑·IFU 사이버보안 체크리스트·3제품 보안 역량 매트릭스 (#44)
 - NB 심사자료: `01_규제지식베이스/유럽_CE_MDR/NB_심사자료/`
 
 ### 1.4 국제표준 (IEC / ISO)
@@ -80,8 +81,4 @@
   - [SOP_CAPA_ISO13485_8.5.2_템플릿](04_기술문서_템플릿/SOP_CAPA_ISO13485_8.5.2_템플릿.md) – ISO 13485 §8.5.2/§8.5.3 CAPA 절차서: CA/PA Flow, 5-Why/Fishbone/FTA RCA 기법, 심각도 3등급(Critical/Major/Minor)·처리 기한, 효과성 검증, CAPA 레코드 양식(FM-CAP-001), 3지역 비교(QMSR §820.100·MDR·KGMP), 3제품 맵핑 (#36)
   - [SOP_Internal_Audit_ISO13485_8.2.4_템플릿](04_기술문서_템플릿/SOP_Internal_Audit_ISO13485_8.2.4_템플릿.md) – ISO 13485 §8.2.4 내부심사 절차서: 연간 계획, 심사원 자격, 착수·수행·종결 회의, NC 분류(Major/Minor/OBS), CAPA 연계, 심사 보고서·체크리스트 양식(FM-AUD-001~005), 3지역 비교(QMSR §820.22·MDR·KGMP), 3제품 핵심 심사 영역 (#37)
   - [SOP_Management_Review_ISO13485_5.6_템플릿](04_기술문서_템플릿/SOP_Management_Review_ISO13485_5.6_템플릿.md) – ISO 13485 §5.6 경영검토 절차서: 12개 입력 항목(내부심사·CAPA·고객불만·규제변경·PMS 등), 출력(Action Item·자원 배분), QMSR §820.20(c) adverse event 추가 요건, MDR Annex IX PMS 연계, 의사록 양식(FM-MGT-002), 3지역 비교, 3제품 맵핑 (#38)
-  - [SOP_Supplier_Control_ISO13485_7.4_템플릿](04_기술문서_템플릿/SOP_Supplier_Control_ISO13485_7.4_템플릿.md) – ISO 13485 §7.4 공급업체 관리 절차서: 위험 기반 3등급 분류(Class A/B/C), ASL 운영, 선정·적격성 평가·재평가 기준, Supplier Scorecard, 입고 검사 수준, 3지역 비교(QMSR §820.50·MDR Annex IX·KGMP), 3제품 핵심 공급업체 맵핑, ASL 양식 (#41)
-
-## 2.4 공통 문서
-- 공통 문서 폴더: `02_제품별_기술파일/공통/`
-  -
+  - [SOP_Supplier_Control_ISO13485_7.4_템플릿](04_기술문서_템플릿/SOP_Supplier_Control_ISO13485_7.4_템플릿.md) – ISO 13485 §7.4 공급업체 관리 절차
