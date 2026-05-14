@@ -29,6 +29,7 @@
   - [eSTAR_02_Substantial_Equivalence](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_02_Substantial_Equivalence.md) – eSTAR 작성 가이드 (2) Substantial Equivalence 비교표
   - [eSTAR_03_Performance_Testing_Bench_Test](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_03_Performance_Testing_Bench_Test.md) – eSTAR 작성 가이드 (3) Performance Testing / Bench Test (3개 제품 완전 맵핑)
   - [FDA_Threat_Model_STRIDE_가이드](01_규제지식베이스/미국_FDA/FDA_Threat_Model_STRIDE_가이드.md) – FDA Section 524B Threat Model 작성 가이드·STRIDE 6범주·DREAD 점수화·3제품 Cyber Device 판정·eSTAR 제출 패키지·샘플 분석표·3지역 비교
+  - [PCCP_AI_Device_작성가이드](01_규제지식베이스/미국_FDA/PCCP_AI_Device_작성가이드.md) – FDA 2024-12-04 Final Guidance 기반 PCCP 3대 구성요소·변경 유형·경로별 고려사항·라벨링·3지역 비교(MFDS 사전변경관리계획/EU AI Act)·3제품 영향 맵핑·제출 체크리스트 (#45)
   - [eSTAR_04_Cybersecurity_Section](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_04_Cybersecurity_Section.md) – eSTAR 작성 가이드 (4) Cybersecurity Section (Section 524B + 2025 Final Guidance 기반, 3개 제품 맵핑)
   - [eSTAR_05_Software_Section](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_05_Software_Section.md) – eSTAR 작성 가이드 (5) Software Section (IEC 62304 기반, Basic/Enhanced 10문서, 3개 제품 맵핑, 3지역 비교)
   - [eSTAR_06_Labeling_IFU_Form3881](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_06_Labeling_IFU_Form3881.md) – eSTAR 작성 가이드 (6) Labeling — IFU·Form 3881·21 CFR 801 기반, 3개 제품 맵핑
@@ -80,5 +81,4 @@
   - [SOP_Document_Record_Control_ISO13485_4.2.4-5_템플릿](04_기술문서_템플릿/SOP_Document_Record_Control_ISO13485_4.2.4-5_템플릿.md) – ISO 13485 §4.2.4/4.2.5 문서·기록 관리 절차서 템플릿: 문서 계층·번호체계·수명주기(작성/검토/배포/폐기), 기록 식별·가독성·검색·보호·15년 보존 기준, 3지역 비교(QMSR §820.40/180·MDR Annex IX·KGMP), 3제품 맵핑 (#34)
   - [SOP_CAPA_ISO13485_8.5.2_템플릿](04_기술문서_템플릿/SOP_CAPA_ISO13485_8.5.2_템플릿.md) – ISO 13485 §8.5.2/§8.5.3 CAPA 절차서: CA/PA Flow, 5-Why/Fishbone/FTA RCA 기법, 심각도 3등급(Critical/Major/Minor)·처리 기한, 효과성 검증, CAPA 레코드 양식(FM-CAP-001), 3지역 비교(QMSR §820.100·MDR·KGMP), 3제품 맵핑 (#36)
   - [SOP_Internal_Audit_ISO13485_8.2.4_템플릿](04_기술문서_템플릿/SOP_Internal_Audit_ISO13485_8.2.4_템플릿.md) – ISO 13485 §8.2.4 내부심사 절차서: 연간 계획, 심사원 자격, 착수·수행·종결 회의, NC 분류(Major/Minor/OBS), CAPA 연계, 심사 보고서·체크리스트 양식(FM-AUD-001~005), 3지역 비교(QMSR §820.22·MDR·KGMP), 3제품 핵심 심사 영역 (#37)
-  - [SOP_Management_Review_ISO13485_5.6_템플릿](04_기술문서_템플릿/SOP_Management_Review_ISO13485_5.6_템플릿.md) – ISO 13485 §5.6 경영검토 절차서: 12개 입력 항목(내부심사·CAPA·고객불만·규제변경·PMS 등), 출력(Action Item·자원 배분), QMSR §820.20(c) adverse event 추가 요건, MDR Annex IX PMS 연계, 의사록 양식(FM-MGT-002), 3지역 비교, 3제품 맵핑 (#38)
-  - [SOP_Supplier_Control_ISO13485_7.4_템플릿](04_기술문서_템플릿/SOP_Supplier_Control_ISO13485_7.4_템플릿.md) – ISO 13485 §7.4 공급업체 관리 절차
+  - [SOP_Management_Review_ISO13485_5.6_템플릿](04_기술문서_템플릿/SOP_Management_Review_ISO13485_5.6_템플릿.md) – ISO 13485 §5.6 경영검토 절차서: 12개 입력 항목(내부심사·CAPA·고객불만·규제변경·PMS 등), 출력(Actio
