@@ -85,7 +85,7 @@
 
 ### 7. 임상
 - [x] Clinical Evaluation (MDR) 심화 - 동등성·충분성 기준 `[EP:3]` `done-2026-05-18 (#52)`
-- [ ] FDA Clinical Data 필요 판단 기준 (510(k) vs De Novo vs PMA) `[EP:2]`
+- [x] FDA Clinical Data 필요 판단 기준 (510(k) vs De Novo vs PMA) `[EP:2]` `done-2026-05-19 (#53)`
 - [ ] MFDS 임상시험 계획 승인 절차 `[EP:2]`
 - [ ] MDCG 2020-5 (Equivalence) / 2020-6 (Legacy) / 2020-7 (PMCF Plan) / 2020-8 (PMCF Report) 요약 `[EP:2]`
 
@@ -124,5 +124,4 @@
 - [ ] 과제 Gate Review 체크리스트 (DHF → STED → 제출 → AI 대응 → 승인) `[EP:2]`
 - [ ] 원가·일정 예측 모델 (지역·등급·시험비) `[EP:3]`
 - [ ] 글로벌 동시 제출 전략 (MDSAP 활용) `[EP:2]`
-- [ ] 예상 Q&A DB (3개 지역·제품별) `[EP:3]`
-- [ ] 규제 변
+- [ ] 예상 Q&A DB (3개 지역·제품별) `
