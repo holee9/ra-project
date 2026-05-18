@@ -125,4 +125,4 @@
 - 2026-05-14 03:00 (#43) [EP:2] SBOM 생성 실무 (SPDX vs CycloneDX 비교·도구) — 파일 1개, SPDX 2.3/CycloneDX 1.6 형식 비교·NTIA 7개 최소 필수요소·3지역 규제 요구(FDA §524B/MDR §17.2/MFDS 2025.01)·생성 도구 비교·3제품 적용 맵핑·실무 체크리스트. commit SHA 미기록
 - 2026-05-14 19:30 (#44) [EP:1] MDCG 2019-16 Rev.1 Cybersecurity 대응 체크리스트 — 파일 1개, 8대 보안 개발 실무(P1~P8)·Pre/Post-market 체크리스트·MDR Annex I §17.2/§17.4/§18.8 조항 매핑·IFU 사이버보안 체크리스트·3개 제품 보안 역량 매트릭스·3지역 규제 비교(MDR/FDA/MFDS). commit 91babcb6
 - 2026-05-14 03:00 (#43) [EP:2] SBOM 생성 실무 (SPDX vs CycloneDX) — 파일 1개, NTIA 7개 최소 요소·도구 비교(syft/cdxgen 등)·FDA §524B/MDR §17.2/MFDS 2025.01 요구사항·3제품 영향 맵핑·실무 체크리스트
-- 2026-05-14 
+- 2026-05-18 
