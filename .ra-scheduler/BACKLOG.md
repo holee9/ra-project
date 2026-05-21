@@ -96,7 +96,7 @@
 - [x] FDA RTA (Refuse to Accept) 회피 체크리스트 `[EP:1]` `done-2026-05-20 (#56)`
 - [x] MFDS 보완자료 대응 전략·샘플 `[EP:2]` `done-2026-05-21 (#58)`
 - [x] NB Deficiency Letter 대응 전략·샘플 `[EP:2]` `done-2026-05-21 (#60)`
-- [ ] 3개 지역 공통 빈번 지적사항 Top 20 `[EP:2]`
+- [x] 3개 지역 공통 빈번 지적사항 Top 20 `[EP:2]` `done-2026-05-22 (#61)`
 
 ### 9. Post-Market
 - [ ] PMS Plan 템플릿 (MDR Annex III) `[EP:2]`
