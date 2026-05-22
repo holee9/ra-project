@@ -1,7 +1,7 @@
 # 지식베이스 인덱스 (INDEX)
 
 > 자료 추가 시 본 인덱스를 갱신하여 빠른 검색·참조가 가능하도록 유지.
-> 최종 갱신: 2026-05-22 (자동보강 #61 — 3개 지역 공통 빈번 지적사항 Top 20)
+> 최종 갱신: 2026-05-22 (자동보강 #62 — PMS Plan MDR Article 84 실용 템플릿)
 
 ## 0. 기준 문서 (Top-level)
 - [README.md](README.md) – 프로젝트 개요
@@ -71,4 +71,31 @@
 - [IEC81001-5-1_수명주기_보안활동_매핑](01_규제지식베이스/국제표준_IEC_ISO/IEC81001-5-1_수명주기_보안활동_매핑.md) – IEC 81001-5-1:2021/ISH1:2025 전 수명주기 사이버보안 프로세스: 64개 보안 요건·5대 Clause·IEC 62304 단계별 통합 매핑·3지역 비교(MFDS N60/FDA SPDF/MDR §17.2)·3제품 영향 맵핑·문서 산출물 체크리스트 (#47)
 
 ## 2. 제품별 기술파일
-- [X-ray Detector](02_제품별_기술파일/01_Xray_Detector/README.md)
+
+### 2.1 X-ray Detector
+- [Xray_Detector_DHF_목차_템플릿](02_제품별_기술파일/01_Xray_Detector/Xray_Detector_DHF_목차_템플릿.md) – DHF 전체 문서 목차 (8개 섹션·36개 항목), DQE/IEC 62220-1-1 핵심 요건, 3지역 기술문서 비교 (#13)
+- [Xray_Detector_성능시험_매트릭스](02_제품별_기술파일/01_Xray_Detector/Xray_Detector_성능시험_매트릭스.md) – X-ray Detector 성능 시험 항목 매트릭스, IEC 62220-1 기반 (#14)
+- [IEC62220-1-1_DQE_측정절차_가이드](02_제품별_기술파일/01_Xray_Detector/IEC62220-1-1_DQE_측정절차_가이드.md) – IEC 62220-1-1:2015 DQE 측정 절차 상세 가이드 (#29)
+
+### 2.2 Handheld X-ray Source
+- [Handheld_Xray_Source_DHF_목차_템플릿](02_제품별_기술파일/02_Handheld_Xray_Source/Handheld_Xray_Source_DHF_목차_템플릿.md) – DHF 전체 문서 목차, 방사선 안전 특화 요건, 3지역 비교 (#15)
+- [Handheld_Xray_Source_21CFR1020_30_적합성_체크리스트](02_제품별_기술파일/02_Handheld_Xray_Source/Handheld_Xray_Source_21CFR1020_30_적합성_체크리스트.md) – 21 CFR 1020.30 적합성 체크리스트 (#16)
+
+### 2.3 촬영실 GUI SW
+- [촬영실_GUI_SW_IEC62304_문서세트](02_제품별_기술파일/03_촬영실_GUI_SW/촬영실_GUI_SW_IEC62304_문서세트.md) – IEC 62304 기반 SW 수명주기 문서 세트 (#17)
+
+### 2.4 공통
+- [공통_Clinical_Evaluation_Plan_Report_MDR_템플릿](02_제품별_기술파일/공통/공통_Clinical_Evaluation_Plan_Report_MDR_템플릿.md) – 3개 제품 공통 CEP/CER MDR 템플릿 (#20)
+- [ISO10993-1_생물학적평가_적용판단](02_제품별_기술파일/공통/ISO10993-1_생물학적평가_적용판단.md) – ISO 10993-1 생물학적 안전성 평가 적용 판단 가이드 (#21)
+
+## 3. 기술문서 템플릿
+
+- [Risk_Management_File_ISO14971_2019_템플릿](04_기술문서_템플릿/Risk_Management_File_ISO14971_2019_템플릿.md) – ISO 14971:2019 위험관리 파일 공통 템플릿 (#18)
+- [Usability_Engineering_File_IEC62366_템플릿](04_기술문서_템플릿/Usability_Engineering_File_IEC62366_템플릿.md) – IEC 62366 사용적합성 엔지니어링 파일 템플릿 (#19)
+- [SOP_Design_Controls_ISO13485_7.3_템플릿](04_기술문서_템플릿/SOP_Design_Controls_ISO13485_7.3_템플릿.md) – SOP: 설계 및 개발 관리 (ISO 13485 §7.3) (#33)
+- [SOP_Document_Record_Control_ISO13485_4.2.4-5_템플릿](04_기술문서_템플릿/SOP_Document_Record_Control_ISO13485_4.2.4-5_템플릿.md) – SOP: 문서·기록 관리 (ISO 13485 §4.2.4-5) (#34)
+- [SOP_CAPA_ISO13485_8.5.2_템플릿](04_기술문서_템플릿/SOP_CAPA_ISO13485_8.5.2_템플릿.md) – SOP: CAPA 절차서 (ISO 13485 §8.5.2) (#35)
+- [SOP_Internal_Audit_ISO13485_8.2.4_템플릿](04_기술문서_템플릿/SOP_Internal_Audit_ISO13485_8.2.4_템플릿.md) – SOP: 내부감사 절차서 (ISO 13485 §8.2.4) (#39)
+- [SOP_Management_Review_ISO13485_5.6_템플릿](04_기술문서_템플릿/SOP_Management_Review_ISO13485_5.6_템플릿.md) – SOP: 경영검토 절차서 (ISO 13485 §5.6) (#40)
+- [SOP_Supplier_Control_ISO13485_7.4_템플릿](04_기술문서_템플릿/SOP_Supplier_Control_ISO13485_7.4_템플릿.md) – SOP: 공급업체 관리 절차서 (ISO 13485 §7.4) (#41)
+- [PMS_Plan_MDR_Article84_템플릿](04_기술문서_템플릿/PMS_Plan_MDR_Article84_템플릿.md) – MDR Article 84 / Annex III §1.1 PMS Plan 실용 템플릿·3지역 비교(MDR/FDA 21 CFR 822/MFDS)·3제품 특화 고려사항·MDCG 2025-10 기반 (#62)
