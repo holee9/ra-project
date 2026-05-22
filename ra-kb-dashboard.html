@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Ra Kb Dashboard",
+  "schemaVersion": 1,
+  "description": "RA 지식베이스 자동보강 진척 현황 대시보드. EP 기반 진척률·예상 완료일·스케줄 상태를 표시. 회차 완료 후 Claude에게 갱신 요청."
+}
+</script>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RA KB 진척 대시보드</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; color: #1a1a1a; background: #f5f5f3; padding: 20px; }
+  h1 { font-size: 16px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+  .meta { font-size: 12px; color: #888; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .sync-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 4px; }
+  .badge-green { background: #eaf3de; color: #27500a; }
+  .badge-info { background: #e6f1fb; color: #0c447c; }
+  .sync-dot { width: 6px; height: 6px; border-radius: 50%; }
+  .dot-green { background: #3B6D11; }
+  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 20px; }
+  .card { background: #fff; border-radius: 10px; border: 0.5px solid #e0e0dc; padding: 14px 16px; }
+  .metric-label { font-size: 11px; color: #888; margin-bottom: 6px; }
+  .metric-value { font-size: 26px; font-weight: 600; line-height: 1; }
+  .metric-sub { font-size: 11px; color: #aaa; margin-top: 5px; }
+  .v-green { color: #3B6D11; }
+  .v-orange { color: #ba7517; }
+  .v-blue { color: #185fa5; }
+  .section-label { font-size: 12px; font-weight: 600; color: #555; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 9px; }
+  .bar-name { font-size: 12px; color: #333; width: 160px; flex-shrink: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar-track { flex: 1; background: #f0ede8; border-radius: 4px; height: 8px; overflow: hidden; }
+  .bar-fill { height: 8px; border-radius: 4px; }
+  .bar-stat { font-size: 11px; color: #888; width: 82px; text-align: right; flex-shrink: 0; }
+  .policy-row { display: flex; justify-content: space-between; align-items: center; padding: 7px 0; border-bottom: 0.5px solid #f0ede8; font-size: 13px; }
+  .policy-row:last-child { border-bottom: none; }
+  .policy-key { color: #555; }
+  .policy-val { font-weight: 500; color: #1a1a1a; }
+  .log-item { font-size: 12px; color: #444; padding: 5px 0; border-bottom: 0.5px solid #f0ede8; line-height: 1.6; }
+  .log-item:last-child { border-bottom: none; }
+  .log-issue { font-weight: 600; color: #185fa5; }
+  .log-normal { color: #3B6D11; font-size: 11px; font-weight: 500; }
+  .ep-tag { display: inline-block; background: #f0ede8; color: #555; font-size: 10px; padding: 1px 5px; border-radius: 3px; font-weight: 500; }
+  .update-note { font-size: 11px; color: #aaa; text-align: center; margin-top: 16px; padding-top: 12px; border-top: 0.5px solid #e8e5e0; }
+  .divider { border: none; border-top: 0.5px solid #e8e5e0; margin: 4px 0; }
+</style>
+</head>
+<body>
+
+<h1>RA KB 자동보강 진척 대시보드</h1>
+<div class="meta">
+  <span>마지막 갱신: 2026-05-22</span>
+  <span class="sync-badge badge-green"><span class="sync-dot dot-green"></span>GitHub 동기화 완료</span>
+  <span class="sync-badge badge-green">이슈 #65 완료 · P3 진행중</span>
+</div>
+
+<div class="grid4">
+  <div class="card">
+    <div class="metric-label">전체 EP</div>
+    <div class="metric-value">165</div>
+    <div class="metric-sub">P1~P4 합계</div>
+  </div>
+  <div class="card">
+    <div class="metric-label">완료 EP</div>
+    <div class="metric-value v-green">123</div>
+    <div class="metric-sub">74.5% 달성</div>
+  </div>
+  <div class="card">
+    <div class="metric-label">잔여 EP</div>
+    <div class="metric-value v-orange">42</div>
+    <div class="metric-sub">P3 → P4 순</div>
+  </div>
+  <div class="card">
+    <div class="metric-label">7일 평균 속도</div>
+    <div class="metric-value v-blue">5.1</div>
+    <div class="metric-sub">EP / 일</div>
+  </div>
+</div>
+
+<div class="grid2">
+
+  <div class="card">
+    <div class="section-label">우선순위별 EP 진척</div>
+    <div class="bar-row">
+      <span class="bar-name">[P1] 기초 골격</span>
+      <div class="bar-track"><div class="bar-fill" style="width:100%; background:#3B6D11;"></div></div>
+      <span class="bar-stat">70 / 70 ✓</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-name">[P2] 중우선</span>
+      <div class="bar-track"><div class="bar-fill" style="width:100%; background:#1D9E75;"></div></div>
+      <span class="bar-stat">37 / 37 ✓</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-name">[P3] 실전 대응</span>
+      <div class="bar-track"><div class="bar-fill" style="width:38.1%; background:#378ADD;"></div></div>
+      <span class="bar-stat">16 / 42 EP</span>
+    </div>
+    <div class="bar-row">
+      <span class="bar-name">[P4] 고도화</span>
+      <div class="bar-track"><div class="bar-fill" style="width:0%; background:#7F77DD;"></div></div>
+      <span class="bar-stat">0 / 16 EP</span>
+    </div>
+
+    <div style="margin-top:16px;">
+      <div class="section-label">P3 세부 진행 현황</div>
+      <div class="bar-row">
+        <span class="bar-name">임상평가·PMCF·RTA</span>
+        <div class="bar-track"><div class="bar-fill" style="width:100%; background:#378ADD;"></div></div>
+        <span class="bar-stat">완료</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-name">결함 대응·지적사항</span>
+        <div class="bar-track"><div class="bar-fill" style="width:100%; background:#378ADD;"></div></div>
+        <span class="bar-stat">완료</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-name">나머지 P3 항목</span>
+        <div class="bar-track"><div class="bar-fill" style="width:0%; background:#378ADD;"></div></div>
+        <span class="bar-stat">6 EP 잔여</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex; flex-direction:column; gap:14px;">
+
+    <div class="card" style="text-align:center;">
+      <div class="section-label" style="text-align:left;">전체 EP 완료율</div>
+      <div style="position:relative; height:150px;">
+        <canvas id="donutChart" role="img" aria-label="전체 EP 완료율 도넛 차트. 완료 123 EP, 잔여 42 EP.">완료 123 EP / 잔여 42 EP</canvas>
+      </div>
+      <div style="display:flex; justify-content:center; gap:16px; margin-top:6px; font-size:12px; color:#666;">
+        <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#3B6D11;display:inline-block;"></span>완료 123</span>
+        <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#e8e5e0;display:inline-block;"></span>잔여 42</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">예상 완료일</div>
+      <div class="policy-row">
+        <span class="policy-key">낙관 (6 EP/일)</span>
+        <span class="policy-val">2026-05-29</span>
+      </div>
+      <div class="policy-row">
+        <span class="policy-key">보수 (5.1 EP/일)</span>
+        <span class="policy-val">2026-05-31</span>
+      </div>
+      <div class="policy-row">
+        <span class="policy-key">7일 실속도</span>
+        <span class="policy-val v-green">5.1 EP/일</span>
+      </div>
+      <div class="policy-row">
+        <span class="policy-key">완료 이슈</span>
+        <span class="policy-val">#1 ~ #65 (65건)</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="grid2">
+
+  <div class="card">
+    <div class="section-label">EP 예산 정책</div>
+    <div class="policy-row">
+      <span class="policy-key">1회차 (03:00)</span>
+      <span class="policy-val">3 EP <span class="sync-badge badge-info" style="font-size:10px;padding:1px 6px;">정상</span></span>
+    </div>
+    <div class="policy-row">
+      <span class="policy-key">2회차 (19:30)</span>
+      <span class="policy-val">3 EP <span class="sync-badge badge-info" style="font-size:10px;padding:1px 6px;">정상</span></span>
+    </div>
+    <div class="policy-row">
+      <span class="policy-key">CATCHUP 모드</span>
+      <span class="policy-val"><span class="sync-badge badge-green" style="font-size:10px;padding:1px 6px;">완료 2026-05-13</span></span>
+    </div>
+    <div class="policy-row">
+      <span class="policy-key">다음 항목</span>
+      <span class="policy-val" style="font-size:11px;">FSCA / FSN 절차·템플릿 [EP:1]</span>
+    </div>
+    <hr class="divider" style="margin:8px 0;">
+    <div class="section-label" style="margin-top:4px;">EP 등급</div>
+    <div class="policy-row"><span class="policy-key">S — EP:1</span><span class="policy-val" style="font-size:12px;color:#666;">체크리스트·목록</span></div>
+    <div class="policy-row"><span class="policy-key">M — EP:2</span><span class="policy-val" style="font-size:12px;color:#666;">단일 지역·제품 가이드</span></div>
+    <div class="policy-row"><span class="policy-key">L — EP:3</span><span class="policy-val" style="font-size:12px;color:#666;">3지역 + 3제품 대형 문서</span></div>
+  </div>
+
+  <div class="card">
+    <div class="section-label">최근 실행 로그</div>
+    <div class="log-item">
+      <span class="log-issue">#65</span> <span class="log-normal">[수동]</span> 2026-05-22<br>
+      MDR Vigilance Serious Incident 판정기준 <span class="ep-tag">EP:1</span>
+    </div>
+    <div class="log-item">
+      <span class="log-issue">#64</span> <span class="log-normal">[수동]</span> 2026-05-22<br>
+      FDA MDR 21 CFR 803 보고절차 <span class="ep-tag">EP:2</span>
+    </div>
+    <div class="log-item">
+      <span class="log-issue">#63</span> <span class="log-normal">[수동]</span> 2026-05-22<br>
+      PSUR 템플릿 (MDR Article 86) <span class="ep-tag">EP:2</span>
+    </div>
+    <div class="log-item">
+      <span class="log-issue">#62</span> <span class="log-normal">[수동]</span> 2026-05-22<br>
+      PMS Plan 템플릿 (MDR Article 84 / Annex III) <span class="ep-tag">EP:2</span>
+    </div>
+    <div class="log-item">
+      <span class="log-issue">#61</span> <span class="log-normal">[정상]</span> 2026-05-22 03:00<br>
+      3지역 공통 빈번 지적사항 Top 20 <span class="ep-tag">EP:2</span>
+    </div>
+  </div>
+
+</div>
+
+<p class="update-note">자동보강 회차는 자동 업데이트되지 않습니다. 진척 확인 후 Claude에게 "대시보드 갱신해줘" 요청하세요.</p>
+
+<script>
+new Chart(document.getElementById('donutChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['완료', '잔여'],
+    datasets: [{
+      data: [123, 42],
+      backgroundColor: ['#3B6D11', '#e8e5e0'],
+      borderWidth: 0,
+      hoverOffset: 4
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    cutout: '72%',
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: { label: ctx => ` ${ctx.label}: ${ctx.parsed} EP` }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
+                                                                    
