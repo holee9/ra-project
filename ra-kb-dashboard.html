@@ -46,6 +46,7 @@
   .log-item:last-child { border-bottom: none; }
   .log-issue { font-weight: 600; color: #185fa5; }
   .log-normal { color: #3B6D11; font-size: 11px; font-weight: 500; }
+  .log-manual { color: #ba7517; font-size: 11px; font-weight: 500; }
   .ep-tag { display: inline-block; background: #f0ede8; color: #555; font-size: 10px; padding: 1px 5px; border-radius: 3px; font-weight: 500; }
   .update-note { font-size: 11px; color: #aaa; text-align: center; margin-top: 16px; padding-top: 12px; border-top: 0.5px solid #e8e5e0; }
   .divider { border: none; border-top: 0.5px solid #e8e5e0; margin: 4px 0; }
@@ -57,7 +58,7 @@
 <div class="meta">
   <span>마지막 갱신: 2026-05-22</span>
   <span class="sync-badge badge-green"><span class="sync-dot dot-green"></span>GitHub 동기화 완료</span>
-  <span class="sync-badge badge-green">이슈 #65 완료 · P3 진행중</span>
+  <span class="sync-badge badge-green">이슈 #67 완료 · Post-Market 섹션 완료</span>
 </div>
 
 <div class="grid4">
@@ -68,17 +69,17 @@
   </div>
   <div class="card">
     <div class="metric-label">완료 EP</div>
-    <div class="metric-value v-green">123</div>
-    <div class="metric-sub">74.5% 달성</div>
+    <div class="metric-value v-green">125</div>
+    <div class="metric-sub">75.8% 달성</div>
   </div>
   <div class="card">
     <div class="metric-label">잔여 EP</div>
-    <div class="metric-value v-orange">42</div>
-    <div class="metric-sub">P3 → P4 순</div>
+    <div class="metric-value v-orange">40</div>
+    <div class="metric-sub">P3 교육 + P4 고도화</div>
   </div>
   <div class="card">
     <div class="metric-label">7일 평균 속도</div>
-    <div class="metric-value v-blue">5.1</div>
+    <div class="metric-value v-blue">5.2</div>
     <div class="metric-sub">EP / 일</div>
   </div>
 </div>
@@ -99,8 +100,8 @@
     </div>
     <div class="bar-row">
       <span class="bar-name">[P3] 실전 대응</span>
-      <div class="bar-track"><div class="bar-fill" style="width:38.1%; background:#378ADD;"></div></div>
-      <span class="bar-stat">16 / 42 EP</span>
+      <div class="bar-track"><div class="bar-fill" style="width:42.9%; background:#378ADD;"></div></div>
+      <span class="bar-stat">18 / 42 EP</span>
     </div>
     <div class="bar-row">
       <span class="bar-name">[P4] 고도화</span>
@@ -111,19 +112,19 @@
     <div style="margin-top:16px;">
       <div class="section-label">P3 세부 진행 현황</div>
       <div class="bar-row">
-        <span class="bar-name">임상평가·PMCF·RTA</span>
+        <span class="bar-name">심사 Q&amp;A (9 EP)</span>
         <div class="bar-track"><div class="bar-fill" style="width:100%; background:#378ADD;"></div></div>
-        <span class="bar-stat">완료</span>
+        <span class="bar-stat">9 / 9 ✓</span>
       </div>
       <div class="bar-row">
-        <span class="bar-name">결함 대응·지적사항</span>
+        <span class="bar-name">Post-Market (9 EP)</span>
         <div class="bar-track"><div class="bar-fill" style="width:100%; background:#378ADD;"></div></div>
-        <span class="bar-stat">완료</span>
+        <span class="bar-stat">9 / 9 ✓</span>
       </div>
       <div class="bar-row">
-        <span class="bar-name">나머지 P3 항목</span>
+        <span class="bar-name">전문가 교육 (24 EP)</span>
         <div class="bar-track"><div class="bar-fill" style="width:0%; background:#378ADD;"></div></div>
-        <span class="bar-stat">6 EP 잔여</span>
+        <span class="bar-stat">0 / 24 EP</span>
       </div>
     </div>
   </div>
@@ -133,11 +134,11 @@
     <div class="card" style="text-align:center;">
       <div class="section-label" style="text-align:left;">전체 EP 완료율</div>
       <div style="position:relative; height:150px;">
-        <canvas id="donutChart" role="img" aria-label="전체 EP 완료율 도넛 차트. 완료 123 EP, 잔여 42 EP.">완료 123 EP / 잔여 42 EP</canvas>
+        <canvas id="donutChart" role="img" aria-label="전체 EP 완료율 도넛 차트. 완료 125 EP, 잔여 40 EP.">완료 125 EP / 잔여 40 EP</canvas>
       </div>
       <div style="display:flex; justify-content:center; gap:16px; margin-top:6px; font-size:12px; color:#666;">
-        <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#3B6D11;display:inline-block;"></span>완료 123</span>
-        <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#e8e5e0;display:inline-block;"></span>잔여 42</span>
+        <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#3B6D11;display:inline-block;"></span>완료 125</span>
+        <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#e8e5e0;display:inline-block;"></span>잔여 40</span>
       </div>
     </div>
 
@@ -145,19 +146,19 @@
       <div class="section-label">예상 완료일</div>
       <div class="policy-row">
         <span class="policy-key">낙관 (6 EP/일)</span>
+        <span class="policy-val">2026-05-27</span>
+      </div>
+      <div class="policy-row">
+        <span class="policy-key">보수 (5.2 EP/일)</span>
         <span class="policy-val">2026-05-29</span>
       </div>
       <div class="policy-row">
-        <span class="policy-key">보수 (5.1 EP/일)</span>
-        <span class="policy-val">2026-05-31</span>
-      </div>
-      <div class="policy-row">
         <span class="policy-key">7일 실속도</span>
-        <span class="policy-val v-green">5.1 EP/일</span>
+        <span class="policy-val v-green">5.2 EP/일</span>
       </div>
       <div class="policy-row">
         <span class="policy-key">완료 이슈</span>
-        <span class="policy-val">#1 ~ #65 (65건)</span>
+        <span class="policy-val">#1 ~ #67 (67건)</span>
       </div>
     </div>
 
@@ -182,7 +183,7 @@
     </div>
     <div class="policy-row">
       <span class="policy-key">다음 항목</span>
-      <span class="policy-val" style="font-size:11px;">FSCA / FSN 절차·템플릿 [EP:1]</span>
+      <span class="policy-val" style="font-size:11px;">Week 2: 국내 MFDS 체계 상세 [EP:2]</span>
     </div>
     <hr class="divider" style="margin:8px 0;">
     <div class="section-label" style="margin-top:4px;">EP 등급</div>
@@ -194,24 +195,24 @@
   <div class="card">
     <div class="section-label">최근 실행 로그</div>
     <div class="log-item">
-      <span class="log-issue">#65</span> <span class="log-normal">[수동]</span> 2026-05-22<br>
-      MDR Vigilance Serious Incident 판정기준 <span class="ep-tag">EP:1</span>
+      <span class="log-issue">#66·#67</span> <span class="log-normal">[정상]</span> 2026-05-22 19:30<br>
+      FSCA/FSN 절차·템플릿 + MFDS 이상사례 보고 <span class="ep-tag">EP:2</span>
     </div>
     <div class="log-item">
-      <span class="log-issue">#64</span> <span class="log-normal">[수동]</span> 2026-05-22<br>
-      FDA MDR 21 CFR 803 보고절차 <span class="ep-tag">EP:2</span>
+      <span class="log-issue">#63·64·65</span> <span class="log-manual">[수동]</span> 2026-05-22<br>
+      PSUR 템플릿·FDA MDR 803·Vigilance 판정기준 <span class="ep-tag">EP:5</span>
     </div>
     <div class="log-item">
-      <span class="log-issue">#63</span> <span class="log-normal">[수동]</span> 2026-05-22<br>
-      PSUR 템플릿 (MDR Article 86) <span class="ep-tag">EP:2</span>
-    </div>
-    <div class="log-item">
-      <span class="log-issue">#62</span> <span class="log-normal">[수동]</span> 2026-05-22<br>
+      <span class="log-issue">#62</span> <span class="log-normal">[정상]</span> 2026-05-22 19:30<br>
       PMS Plan 템플릿 (MDR Article 84 / Annex III) <span class="ep-tag">EP:2</span>
     </div>
     <div class="log-item">
       <span class="log-issue">#61</span> <span class="log-normal">[정상]</span> 2026-05-22 03:00<br>
       3지역 공통 빈번 지적사항 Top 20 <span class="ep-tag">EP:2</span>
+    </div>
+    <div class="log-item">
+      <span class="log-issue">#60</span> <span class="log-normal">[정상]</span> 2026-05-21 19:30<br>
+      NB Deficiency Letter 대응 전략·샘플 <span class="ep-tag">EP:2</span>
     </div>
   </div>
 
@@ -225,7 +226,7 @@ new Chart(document.getElementById('donutChart'), {
   data: {
     labels: ['완료', '잔여'],
     datasets: [{
-      data: [123, 42],
+      data: [125, 40],
       backgroundColor: ['#3B6D11', '#e8e5e0'],
       borderWidth: 0,
       hoverOffset: 4
@@ -238,12 +239,4 @@ new Chart(document.getElementById('donutChart'), {
     plugins: {
       legend: { display: false },
       tooltip: {
-        callbacks: { label: ctx => ` ${ctx.label}: ${ctx.parsed} EP` }
-      }
-    }
-  }
-});
-</script>
-</body>
-</html>
-                                                                    
+        callbacks: 
