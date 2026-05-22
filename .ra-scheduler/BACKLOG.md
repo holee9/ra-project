@@ -103,8 +103,8 @@
 - [x] PSUR 템플릿 (MDR) `[EP:2]` `done-2026-05-22 (#63)`
 - [x] FDA MDR (Medical Device Reporting) 21 CFR 803 절차 `[EP:2]` `done-2026-05-22 (#64)`
 - [x] Vigilance 실무 (MDR) - Serious Incident 판정 기준 `[EP:1]` `done-2026-05-22 (#65)`
-- [ ] FSCA / FSN 절차·템플릿 `[EP:1]`
-- [ ] MFDS 이상사례·부작용 보고 절차 `[EP:1]`
+- [x] FSCA / FSN 절차·템플릿 `[EP:1]` `done-2026-05-22 (#66)`
+- [x] MFDS 이상사례·부작용 보고 절차 `[EP:1]` `done-2026-05-22 (#67)`
 
 ### 10. 전문가 교육 Week 2~12
 - [ ] Week 2: 국내 MFDS 체계 상세 (커리큘럼·실습·평가) `[EP:2]`
@@ -127,4 +127,4 @@
 - [ ] 예상 Q&A DB (3개 지역·제품별) `[EP:3]`
 - [ ] 규제 변경 모니터링 자동화 (법령·가이던스 RSS) `[EP:2]`
 - [ ] 경쟁 제품 510(k) Summary 분석 DB `[EP:2]`
-- [ ] EUDAMED 모듈별 대응 로드맵 `[EP:2]`
+- 
