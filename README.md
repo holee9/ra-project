@@ -33,7 +33,7 @@
 4. 심사 질의·보완 이력은 `06_심사_QA이력/`에 지속 축적.
 
 ## 최종 갱신
-2026-05-20 (자동보강 #55, #56 반영)
+2026-05-22 (진척 현황 및 자동보강 로그 갱신 — #61 반영)
 
 ## 연동 상태
 - GitHub: <https://github.com/holee9/ra-project>
@@ -42,21 +42,25 @@
 
 ## 진척 현황 (EP 기반)
 
-> 최종 갱신: 2026-05-20 | 기준: BACKLOG.md 실집계
+> 최종 갱신: 2026-05-22 | 기준: BACKLOG.md 실집계 | 마지막 이슈: #61
 
 | 구분 | 총 EP | 완료 EP | 잔여 EP | 완료율 |
 |---|---|---|---|---|
 | [P1] 기초 골격 | 70 | 70 | 0 | **100%** ✓ |
 | [P2] 중우선 | 37 | 37 | 0 | **100%** ✓ |
-| [P3] 실전 대응 | 42 | 1 | 41 | **2.4%** |
+| [P3] 실전 대응 | 42 | 9 | 33 | **21.4%** |
 | [P4] 고도화 | 16 | 0 | 16 | 0% |
-| **합계** | **165** | **108** | **57** | **65.5%** |
+| **합계** | **165** | **116** | **49** | **70.3%** |
 
-> **P2 완료** ✓ | **P3 시작**: FDA RTA 체크리스트 `[EP:1]` 완료
+> **P3 완료 현황**
+> - 심사 Q&A 5개 항목 완료 (9 EP): FDA AI 대응·FDA RTA·MFDS 보완자료·NB Deficiency Letter·빈번 지적사항 Top 20
+> - 잔여: Post-Market 6개 항목 (9 EP) · 전문가 교육 Week 2~12 (24 EP)
 
-- 예상 완료 (낙관): 2026-05-29 (6 EP/일 기준, 잔여 57 EP)
-- 예상 완료 (보수): 2026-06-02 (5.1 EP/일 기준, 7일 실속도)
-- 다음 작업: FDA Additional Information (AI) 대응 전략 `[EP:2]`
+> **P4 고도화** (16 EP): Gate Review 체크리스트·원가모델·글로벌 동시제출 전략·Q&A DB·모니터링 자동화 등
+
+- 예상 완료 (낙관): 2026-05-25 (6 EP/일 기준)
+- 예상 완료 (보수): 2026-06-02 (5.1 EP/일, 7일 실속도 기준)
+- 다음 작업: PMS Plan 템플릿 (MDR Annex III) `[EP:2]`
 
 ## 자동보강 스케줄
 
@@ -86,50 +90,47 @@
 (회차별 1줄 추가 · 50줄 초과 시 `ARCHIVE_LOG.md`로 이전)
 
 - 2026-04-22 (초기 구축) 스케줄러 뼈대 추가 — RUN_SOP·BACKLOG·STATE 3파일
-- 2026-04-22 11:40 (#2) [EP:3×2] FDA eSTAR Device Description / IFU + Substantial Equivalence — 파일 2개, 3지역 매트릭스·3제품 맵핑
+- 2026-04-22 (#2) [EP:6] FDA eSTAR Device Description/IFU + Substantial Equivalence — 파일 2개, 3지역 매트릭스·3제품 맵핑
 - 2026-04-24 (#3) [EP:3] FDA eSTAR Performance Testing / Bench Test — 파일 1개, IEC 62220-1-1·21 CFR 1020.30·IEC 62304 V&V
-- 2026-04-29 19:30 (#4) [CATCHUP EP:3] FDA eSTAR Cybersecurity Section — 파일 1개, 524B·STRIDE·SBOM·3제품 판정
-- 2026-04-30 03:00 (#5) [CATCHUP EP:3] FDA eSTAR Software Section — 파일 1개, IEC 62304·Documentation Level·SOUP
-- 2026-04-30 (정책 개편) EP 기반 스케줄 정책 도입 — BACKLOG EP 태그·STATE 속도 추적·RUN_SOP 개정·README 갱신
-- 2026-04-30 19:30 (#6) [EP:2] FDA eSTAR Labeling (IFU, Form 3881, 21 CFR 801) — 파일 2개, 3제품 IFU 샘플 문구·라벨 체크리스트·3지역 비교
-- 2026-05-01 03:00 (#7) [EP:2] FDA Pre-Submission (Q-Sub) 가이드·샘플 질문 — 파일 2개, Q-Sub 4종·MDUFA 70/100일·3제품 Q&A·3지역 비교
-- 2026-05-01 19:30 (#8) [CATCHUP EP:3] MFDS 기술문서 섹션별 작성가이드 (사용목적·작용원리·성능·안전성) — 파일 1개, 3지역 매트릭스·3제품 맵핑
-- 2026-05-01 19:30 (#9) [CATCHUP EP:1] MFDS 디지털의료제품법 하위 고시 추적 리스트 — 파일 1개, 법령·고시·가이드라인 6종·자사 영향 판단표
-- 2026-05-02 03:00 (#10) [EP:2] MFDS 디지털의료기기 가이드라인 6종 요약 (2025-05-07) — 파일 1개, 내장형/독립형 분류·3제품 맵핑·전자적 표시기재 2026-01-24 의무화
-- 2026-05-02 19:30 (#11) [CATCHUP EP:3] MDR Annex II Technical Documentation 섹션별 템플릿 — 파일 1개, 6섹션 작성 템플릿·3제품 맵핑·3지역 비교
-- 2026-05-03 03:00 (#12) [CATCHUP EP:4] MDR Annex III PMS TD 템플릿 + Annex I GSPR 전항 맵핑 체크리스트 — 파일 2개, PMS Plan·PSUR 템플릿·§1~§23 체크리스트·3지역 비교
-- 2026-05-03 19:30 (#13) [CATCHUP EP:4] MDR DoC 양식·PRRC 자격요건·X-ray Detector DHF 목차 — 파일 3개, Annex IV 8항목·Article15 2경로자격·DHF 36문서목차
-- 2026-05-04 03:00 (#14) [CATCHUP EP:2] X-ray Detector 성능시험 매트릭스 — 파일 1개, IEC 62220-1-1 DQE·MTF·NPS·3지역 제출요건·V&V 체크리스트
-- 2026-05-04 03:00 (#15) [CATCHUP 완료 EP:2] Handheld X-ray Source DHF 목차·문서 템플릿 — 파일 1개, 35문서 목차·21 CFR 1020.30·Form FDA 2579·MDR IIb NB 심사
-- 2026-05-04 19:30 (#16) [EP:1] Handheld X-ray Source 21 CFR 1020.30 적합성 체크리스트 — 파일 1개, 누설방사선/HVL/경고라벨/인증/배터리표시·3지역 비교
-- 2026-05-05 03:00 (#17) [EP:3] 촬영실 GUI SW IEC 62304 문서 세트 — 파일 1개, SDP·SRS·SAD·SDS·SVP/SVR·SCMP·SPRP 전체 템플릿·Safety Class·SOUP·SBOM·3지역 비교
-- 2026-05-05 19:30 (#18) [EP:3] 3개 제품 공통 Risk Management File ISO 14971:2019 템플릿 — 파일 1개, RMP·Hazard ID·Risk Register·Risk Control·RRE·ORRE·AFAP vs ALARP 3지역 비교
-- 2026-05-06 03:00 (#19) [EP:2] 3개 제품 공통 Usability Engineering File (IEC 62366-1+AMD1) 템플릿 — 파일 1개, UEF-01~11 산출물·URRA/Critical Task·SEP/SER·AMD1 변경사항·3지역 비교
-- 2026-05-06 19:30 (#20) [EP:2] 3개 제품 공통 Clinical Evaluation Plan/Report (MDR) 템플릿 — 파일 1개, CEP+CER 전체 섹션·Art.61 동등성 경로·MDCG 2020-1/5/6/2023-7·3지역 비교
-- 2026-05-07 03:00 (#21) [EP:2] 3개 제품 공통 ISO 10993-1 생물학적평가 적용판단 — 파일 1개, ISO 10993-1:2025(Ed 6)·3제품 비교 매트릭스·endpoint 결정표·3지역 비교
-- 2026-05-07 19:30 (#23) [EP:3] IEC 60601-1:2005+A1+A2 (Ed 3.2) 시험항목 매트릭스 — 파일 1개, Cl.4~17 전항목·3지역 버전·인정현황·3제품 Gap분석·IECEE CB Scheme·Ed 4.0 동향
-- 2026-05-08 (#24,#25) [EP:4] IEC 60601-1-2 EMC 시험항목·Pass Criteria + IEC 60601-1-3 방사선방호 시험항목 — 파일 2개, CISPR/IEC 기준·3지역 비교·3제품 갭분석
-- 2026-05-09 (#26,#27,#28) [EP:5] IEC 60601-2-28 X-ray Source 시험항목 + IEC 62133-2 배터리 안전 + IEC 60601-2-54 촬영·투시 시험항목 — 파일 3개, 3지역 비교·3제품 맵핑
-- 2026-05-10 03:00 (#29) [EP:2] IEC 62220-1-1:2015 DQE 측정절차 가이드 — 파일 1개, MTF/NNPS/DQE Step-by-step·RQA3/RQA5·Lag보정·3지역 규제 요구. commit 02abfec
-- 2026-05-10 19:30 (#30) [EP:3] IEC 62304:2006+A1:2015 SW 수명주기 산출물 매핑 — 파일 1개, Cl.5~9 전 조항·Safety Class A/B/C·3제품 적용 계획·FDA Basic/Enhanced·3지역 비교
-- 2026-05-11 03:00 (#31) [EP:2] ISO 13485:2016 절차서 목록 (섹션 4~8)·뼈대 — 파일 1개, 37개 절차서(M:22/R:12/C:3)·SOP 뼈대 템플릿·3지역 비교·Phase-in 구현 우선순위
-- 2026-05-11 19:30 (#32) [EP:3] KGMP vs QMSR vs ISO 13485 차이·통합 전략 — 파일 1개, 3지역 QMS 비교·ARR 추가 요건·통합 QMS 로드맵·MDSAP 전략·3제품 갭분석
-- 2026-05-12 03:00 (#33,#34) [EP:3] Design Controls 절차서 (§7.3) + Document/Record Control 절차서 (§4.2.4/4.2.5) — 파일 2개, 3지역 비교·3제품 맵핑·추적성 매트릭스·15년 보존기준
-- 2026-05-13 03:00 (#36,#37,#38) [EP:3] CAPA·Internal Audit·Management Review 절차서 템플릿 — 파일 3개, SOP-QMS-008/009/010, 5-Why/Fishbone RCA·NC 3분류·12개 MR 입력항목·3지역 비교
-- 2026-05-13 19:30 [CATCHUP EP:4] (#35,#39,#40,#41) CAPA·Internal Audit·Management Review·Supplier Control 절차서 4개 — SOP-QMS-008~011 신규, §8.5.2/§8.2.4/§5.6/§7.4 기준, 3지역 비교·3제품 맵핑. CATCHUP 완료
-- 2026-05-13 19:30 (#42) [EP:2] FDA Threat Model 작성 가이드·STRIDE 기반 샘플 — 파일 1개, Section 524B 근거·STRIDE 6범주·DREAD 우선순위화·3제품 Cyber Device 판정·eSTAR 제출 패키지·3지역 비교
-- 2026-05-14 03:00 (#43) [EP:2] SBOM 생성 실무 (SPDX vs CycloneDX 비교·도구) — 파일 1개, SPDX 2.3/CycloneDX 1.6·NTIA 7개 최소요소·도구 비교(syft/cdxgen)·3지역 요구·3제품 맵핑
-- 2026-05-14 19:30 (#44) [EP:1] MDCG 2019-16 Rev.1 Cybersecurity 대응 체크리스트 — 파일 1개, 8대 보안 실무(P1~P8)·Pre/Post-market 체크리스트·MDR Annex I §17.2/17.4/18.8 매핑·3제품 역량 매트릭스. commit 91babcb6
-- 2026-05-15 (#45,#46) [EP:3] PCCP 작성 가이드 (AI-enabled device, 2024-12-03 Final) + ISO 15223-1:2021 심볼 적용 가이드 — 파일 2개, PCCP 5단계 구조·SaMD 리스크 분류·ISO 15223-1 심볼 카탈로그·3제품 적용 맵핑·3지역 비교
-- 2026-05-16 03:00 (#47) [EP:2] IEC 81001-5-1:2021 수명주기 보안 활동 매핑 — 파일 1개, IEC 62304 단계별 통합 매핑·5대 Clause·64개 보안 요건·3지역 비교(MFDS N60/FDA SPDF/MDR)·3제품 맵핑. commit eb7847b
-- 2026-05-16 19:30 (#48) [EP:1] UDI 구조 3개 지역 비교 (GUDID/EUDAMED/UDI포털) — 파일 1개, DI·PI 구조·GS1/HIBCC/ICCBBA·EUDAMED Basic UDI-DI 2계층·2026-05-28 의무화·3제품 라벨 체크리스트. commit 66ea10b2
-- 2026-05-17 19:30 (#49) [EP:2] MFDS 사이버보안 가이드라인 2025.01 개정 대응 — 파일 1개, 요구사항 15→35개(RA-01~35)·IMDRF N60/N70/N73 한글화·5종 제출 서류·3지역 비교·3제품 맵핑. commit 8e6f97b0
-- 2026-05-18 03:00 (#50) [EP:2] IFU 필수요소 3지역 비교표 — 파일 1개, MFDS/FDA/MDR 36개 IFU 항목 비교 매트릭스·방사선 전용 요건·3제품 IFU 필수항목 체크리스트
-- 2026-05-18 19:30 (#51,#52) [EP:4] 디지털의료기기 표시기재 가이드라인(MFDS 2025.01) + Clinical Evaluation(MDR) 심화 — 파일 2개, 전자적 표시 의무화 대응·동등성 충분성 기준·MDCG 2020-5/6/2023-7 기반·3지역 비교
-- 2026-05-19 03:00 (#53) [EP:2] FDA Clinical Data 필요 판단 기준 (510(k) vs De Novo vs PMA) — 파일 1개, Clinical Data Decision Tree·Substantial Equivalence 임상 판단·De Novo 요건·3제품 전략 맵핑
-- 2026-05-19 19:30 (#54) [EP:2] MFDS 임상시험 계획 승인 절차 — 파일 1개, 의료기기법 §10 승인 절차·제출 서류·심사 기준·처리기한 30일·변경승인·3지역 비교(MFDS/FDA IDE/EU MDR Art.62)·3제품 임상 요건 맵핑·체크리스트
-- 2026-05-20 03:00 (#55) [EP:2] MDCG 2020-5/6/7/8 임상평가 & PMCF 가이던스 요약 — 파일 1개, 동등성 3특성(기술·생물·임상)·MDR vs MEDDEV 차이·임상근거 위계(12단계)·WET 기준·PMCF Plan/Report 섹션 요건·3지역 비교·3제품 맵핑·제출 체크리스트. commit 1e1d29f
-- 2026-05-20 03:00 (#56) [EP:1] FDA RTA (Refuse to Accept) 회피 체크리스트 — 파일 1개, Traditional 510(k) A~K 섹션 전항목·자사 3제품 적용 매핑·빈번한 반려사유 Top10·De Novo RTA 특이사항. commit f631749
-- 2026-05-20 19:30 (#57) [EP:2] FDA AI (Additional Information) 대응 전략·샘플 답변 — 파일 1개, AI Request vs RTA vs Interactive Review 비교·180일 타임라인·명확화 회의·SIR Meeting·샘플 응답 템플릿·결함 유형별 전략·3지역 비교(FDA/MFDS/EU NB)·3제품 영향 맵핑·Anti-Patterns·제출 체크리스트
-- 2026-05-21 03:00 (#58) [EP:2] MFDS 보완자료 대응 전략·샘플 — 파일 1개, 의료기기법 §12 근거·보완 기간(60일·IND 2차 30일)·4대 보완 유형별 전략·샘플 답변·타임라인·3지역 비교(MFDS/FDA AI 180일/EU NB)·3제품 맵핑·Anti-Patterns·체크리스트. commit 5075a05
-- 2026-05-21 19:30 (#60) [EP:2] NB Deficiency Letter 대응 전략·샘플 — 파일 1개, 2026/977 clock-stop 규칙(중단 최대 4회/90일)·4대 결함 유형(CER/TD/QMS NC/라벨링)·샘플 답변 템플릿·3지역 비교(EU NB/MFDS/FDA AI)·3제품 위험 맵핑·Anti-Patterns·Structured Dialogue(Art.7) 활용법·제출 체크리스트
+- 2026-04-29 (#4) [CATCHUP EP:3] FDA eSTAR Cybersecurity Section — 파일 1개, 524B·STRIDE·SBOM·3제품 판정
+- 2026-04-30 (#5) [CATCHUP EP:3] FDA eSTAR Software Section — 파일 1개, IEC 62304·Documentation Level·SOUP
+- 2026-04-30 (정책 개편) EP 기반 스케줄 정책 도입 — BACKLOG EP 태그·STATE 속도 추적·RUN_SOP 개정
+- 2026-04-30 (#6) [EP:2] FDA eSTAR Labeling (IFU, Form 3881, 21 CFR 801) — 파일 2개, 3제품 IFU 샘플 문구·라벨 체크리스트·3지역 비교
+- 2026-05-01 (#7) [EP:2] FDA Pre-Submission (Q-Sub) 가이드·샘플 질문 — 파일 2개, Q-Sub 4종·MDUFA 70/100일·3제품 Q&A
+- 2026-05-01 (#8,#9) [CATCHUP EP:4] MFDS 기술문서 섹션별 작성가이드 + 디지털의료제품법 하위 고시 추적 리스트 — 파일 2개, 3지역 매트릭스·3제품 맵핑
+- 2026-05-02 (#10) [EP:2] MFDS 디지털의료기기 가이드라인 6종 요약 (2025-05-07) — 파일 1개, 내장형/독립형 분류·3제품 맵핑·전자적 표시기재 의무화
+- 2026-05-02 (#11) [CATCHUP EP:3] MDR Annex II Technical Documentation 섹션별 템플릿 — 파일 1개, 6섹션 작성 템플릿·3지역 비교
+- 2026-05-03 (#12) [CATCHUP EP:4] MDR Annex III PMS TD 템플릿 + Annex I GSPR 전항 맵핑 체크리스트 — 파일 2개, §1~§23 체크리스트·조화표준 매핑
+- 2026-05-03 (#13) [CATCHUP EP:4] MDR DoC 양식·PRRC 자격요건·X-ray Detector DHF 목차 — 파일 3개, Annex IV 8항목·DHF 36문서목차
+- 2026-05-04 (#14,#15) [CATCHUP EP:4] X-ray Detector 성능시험 매트릭스 + Handheld X-ray Source DHF 목차·문서 템플릿 — 파일 2개, IEC 62220-1-1 DQE·21 CFR 1020.30·Form FDA 2579
+- 2026-05-04 (#16) [EP:1] Handheld X-ray Source 21 CFR 1020.30 적합성 체크리스트 — 파일 1개, 누설방사선/HVL/경고라벨·3지역 비교
+- 2026-05-05 (#17) [EP:3] 촬영실 GUI SW IEC 62304 문서 세트 — 파일 1개, SDP·SRS·SAD·SDS·SVP/SVR·SCMP·SPRP 전체 템플릿·Safety Class·SOUP·SBOM
+- 2026-05-05 (#18) [EP:3] 3개 제품 공통 Risk Management File ISO 14971:2019 템플릿 — 파일 1개, RMP·Hazard ID·Risk Register·Risk Control·AFAP vs ALARP 3지역 비교
+- 2026-05-06 (#19) [EP:2] 3개 제품 공통 Usability Engineering File (IEC 62366-1+AMD1) 템플릿 — 파일 1개, UEF-01~11 산출물·URRA/Critical Task·SEP/SER
+- 2026-05-06 (#20) [EP:2] 3개 제품 공통 Clinical Evaluation Plan/Report (MDR) 템플릿 — 파일 1개, CEP+CER 전체 섹션·Art.61 동등성 경로·MDCG 2020-1/5/6/2023-7
+- 2026-05-07 (#21) [EP:2] 3개 제품 공통 ISO 10993-1 생물학적평가 적용판단 — 파일 1개, ISO 10993-1:2025(Ed 6)·3제품 비교 매트릭스·endpoint 결정표·3지역 비교
+- 2026-05-07 (#23) [EP:3] IEC 60601-1:2005+A1+A2 (Ed 3.2) 시험항목 매트릭스 — 파일 1개, Cl.4~17 전항목·3지역 버전·인정현황·3제품 Gap분석·IECEE CB Scheme
+- 2026-05-08 (#24,#25) [EP:4] IEC 60601-1-2 EMC 시험항목·Pass Criteria + IEC 60601-1-3 방사선방호 시험항목 — 파일 2개, CISPR/IEC 기준·3지역 비교
+- 2026-05-09 (#26,#27,#28) [EP:5] IEC 60601-2-28 X-ray Source + IEC 62133-2 배터리 안전 + IEC 60601-2-54 촬영·투시 시험항목 — 파일 3개, 3지역 비교·3제품 맵핑
+- 2026-05-10 (#29) [EP:2] IEC 62220-1-1:2015 DQE 측정절차 가이드 — 파일 1개, MTF/NNPS/DQE Step-by-step·RQA3/RQA5·Lag보정. commit 02abfec
+- 2026-05-10 (#30) [EP:3] IEC 62304:2006+A1:2015 SW 수명주기 산출물 매핑 — 파일 1개, Cl.5~9 전 조항·Safety Class A/B/C·3제품 적용 계획·FDA Basic/Enhanced
+- 2026-05-11 (#31) [EP:2] ISO 13485:2016 절차서 목록 (섹션 4~8)·뼈대 — 파일 1개, 37개 절차서·SOP 뼈대 템플릿·3지역 비교(KGMP/QMSR/MDR)·Phase-in 우선순위
+- 2026-05-11 (#32) [EP:3] KGMP vs QMSR vs ISO 13485 차이·통합 전략 — 파일 1개, 3지역 QMS 비교·ARR 추가 요건·통합 QMS 로드맵·MDSAP 전략·3제품 갭분석
+- 2026-05-12 (#33,#34) [EP:3] Design Controls 절차서 (§7.3) + Document/Record Control 절차서 (§4.2.4/4.2.5) — 파일 2개, 3지역 비교·추적성 매트릭스·15년 보존기준
+- 2026-05-13 (#35~#41) [CATCHUP EP:7] CAPA·Internal Audit·Management Review·Supplier Control 절차서 4개 — SOP-QMS-008~011, §8.5.2/§8.2.4/§5.6/§7.4 기준·3지역 비교·3제품 맵핑. CATCHUP 완료
+- 2026-05-13 (#42) [EP:2] FDA Threat Model 작성 가이드·STRIDE 기반 샘플 — 파일 1개, Section 524B·STRIDE 6범주·DREAD·3제품 Cyber Device 판정·eSTAR 제출 패키지
+- 2026-05-14 (#43) [EP:2] SBOM 생성 실무 (SPDX vs CycloneDX 비교·도구) — 파일 1개, SPDX 2.3/CycloneDX 1.6·NTIA 7개 최소요소·도구 비교(syft/cdxgen)·3지역 요구
+- 2026-05-14 (#44) [EP:1] MDCG 2019-16 Rev.1 Cybersecurity 대응 체크리스트 — 파일 1개, 8대 보안 실무(P1~P8)·MDR Annex I §17.2/17.4/18.8 매핑·3제품 역량 매트릭스. commit 91babcb6
+- 2026-05-15 (#45,#46) [EP:3] PCCP 작성 가이드 (AI-enabled device, 2024-12-03 Final) + ISO 15223-1:2021 심볼 적용 가이드 — 파일 2개, PCCP 5단계 구조·SaMD 리스크 분류·심볼 카탈로그
+- 2026-05-16 (#47) [EP:2] IEC 81001-5-1:2021 수명주기 보안 활동 매핑 — 파일 1개, IEC 62304 단계별 통합 매핑·5대 Clause·64개 보안 요건·3지역 비교(MFDS N60/FDA SPDF/MDR). commit eb7847b
+- 2026-05-16 (#48) [EP:1] UDI 구조 3개 지역 비교 (GUDID/EUDAMED/UDI포털) — 파일 1개, DI·PI 구조·GS1/HIBCC/ICCBBA·EUDAMED Basic UDI-DI·2026-05-28 의무화. commit 66ea10b2
+- 2026-05-17 (#49) [EP:2] MFDS 사이버보안 가이드라인 2025.01 개정 대응 — 파일 1개, 요구사항 15→35개(RA-01~35)·IMDRF N60/N70/N73 한글화·5종 제출 서류·3지역 비교. commit 8e6f97b0
+- 2026-05-17 (#50,#51) [EP:3] IFU 필수요소 3지역 비교표 + 디지털의료기기 표시기재 가이드라인 (MFDS 2025.01) — 파일 2개, MFDS/FDA/MDR 36개 IFU 항목 비교 매트릭스·전자적 표시 의무화
+- 2026-05-18 (#52) [EP:3] Clinical Evaluation (MDR) 심화 - 동등성·충분성 기준 — 파일 1개, MDCG 2020-5/6/2023-7 기반·Art.61 경로·동등성 3요소·충분성 판단 매트릭스·3제품 전략
+- 2026-05-19 (#53) [EP:2] FDA Clinical Data 필요 판단 기준 (510(k) vs De Novo vs PMA) — 파일 1개, Clinical Data Decision Tree·Substantial Equivalence 임상 판단·3제품 전략 맵핑
+- 2026-05-19 (#54) [EP:2] MFDS 임상시험 계획 승인 절차 — 파일 1개, 의료기기법 §10·IND 신청 요건·임상시험계획서 구성·IRB·3지역 비교(MFDS/FDA IDE/MDR CIP). commit c6563c72
+- 2026-05-20 (#55,#56) [EP:3] MDCG 2020-5/6/7/8 임상평가 & PMCF 가이던스 요약 + FDA RTA 회피 체크리스트 — 파일 2개, PMCF Plan/Report 섹션별 요건·동등성 기준·RTA A~K 전항목·3제품 맵핑. commit 1e1d29f/f631749
+- 2026-05-20 (#57) [EP:2] FDA AI (Additional Information) 대응 전략·샘플 답변 — 파일 1개, AI Request vs RTA vs Interactive Review·180일 타임라인·SIR Meeting·샘플 응답 템플릿·7종 결함 유형별 전략·3지역 비교. commit e2a0aebe
+- 2026-05-21 (#58) [EP:2] MFDS 보완자료 대응 전략·샘플 — 파일 1개, 의료기기법 §12 근거·보완 기간(60일)·4대 유형별 전략·샘플 답변(기술문서/임상/라벨링)·3지역 비교·Anti-Patterns. commit 5075a05
+- 2026-05-21 (#60) [EP:2] NB Deficiency Letter 대응 전략·샘플 — 파일 1개, 2026/977 clock-stop(최대 4회/90일)·4대 결함 유형·샘플 답변(CER 동등성·CAPA Major NC)·3지역 비교·Structured Dialogue. commit db85403
+- 2026-05-22 (#61) [EP:2] 3개 지역 공통 빈번 지적사항 Top 20 — 파일 1개, FDA RTA 33%·AI 67%·NSE 15% 통계·MDR Team NB BPG V3(2025-04) 기반·지적사항별 Fact/해석/Action 3계층·3제품 위험 맵핑·예방 체크리스트. commit b6fd9bb
