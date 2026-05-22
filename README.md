@@ -134,4 +134,7 @@
 - 2026-05-21 (#58) [EP:2] MFDS 보완자료 대응 전략·샘플 — 파일 1개, 의료기기법 §12 근거·보완 기간(60일)·4대 유형별 전략·샘플 답변(기술문서/임상/라벨링)·3지역 비교·Anti-Patterns. commit 5075a05
 - 2026-05-21 (#60) [EP:2] NB Deficiency Letter 대응 전략·샘플 — 파일 1개, 2026/977 clock-stop(최대 4회/90일)·4대 결함 유형·샘플 답변(CER 동등성·CAPA Major NC)·3지역 비교·Structured Dialogue. commit db85403
 - 2026-05-22 (#61) [EP:2] 3개 지역 공통 빈번 지적사항 Top 20 — 파일 1개, FDA RTA 33%·AI 67%·NSE 15% 통계·MDR Team NB BPG V3(2025-04) 기반·지적사항별 Fact/해석/Action 3계층·3제품 위험 맵핑·예방 체크리스트. commit b6fd9bb
-- 2026-05-22 (#62) [EP:2] PMS Plan 템플릿 (MDR Article 84 / Annex III §1.1) — 파일 1개(+INDEX 갱신), MDCG 2025-10 기반 실용 템플릿·3지역 비교(MDR/FDA 21 CFR 822/MFDS)·S1~S10 수집원·데이터 활용 계획·3제품 특화 고려사항·Vigilance 연계·작성 체크리스트. commit d61dd75e
+- 2026-05-22 (#62) [EP:2] PMS Plan 템플릿 (MDR Article 84 / Annex III §1.1)
+- 2026-05-22 (#63) [EP:2] PSUR 템플릿 (MDR Article 86) — 파일 1개, Class IIa/IIb/III 전용·데이터수집기간·판매량·주요발견·benefit-risk·PMCF 연계·EUDAMED 제출·3지역 비교(MDR/FDA PMA/MFDS 재심사)·3제품 갱신주기 맵핑·PSUR 체크리스트. commit 6b3b69ae
+- 2026-05-22 (#64) [EP:2] FDA MDR 21 CFR 803 보고절차 — 파일 1개, 30 역일/5 근무일 이원 타임라인·Serious Injury 정의·기능불량 판단기준·eMDR 3500A·Supplemental Report·MDR Event Files 2년 보존·3지역 타임라인 비교·3제품 시나리오별 판단 매트릭스·내부 SOP 뼈대. commit 6b3b69ae
+- 2026-05-22 (#65) [EP:1] MDR Vigilance Serious Incident 판정기준 — 파일 1개, Art.2(65) 6대 판정기준·판정 플로우차트·2일/10일/15일 타임라인·EUDAMED Vigilance Module·FSCA 유형·3지역 타임라인 비교·3제품 시나리오별 판정표·내부 SOP 핵심. commit 6b3b69ae — 파일 1개(+INDEX 갱신), MDCG 2025-10 기반 실용 템플릿·3지역 비교(MDR/FDA 21 CFR 822/MFDS)·S1~S10 수집원·데이터 활용 계획·3제품 특화 고려사항·Vigilance 연계·작성 체크리스트. commit d61dd75e

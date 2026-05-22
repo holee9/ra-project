@@ -100,9 +100,9 @@
 
 ### 9. Post-Market
 - [x] PMS Plan 템플릿 (MDR Annex III) `[EP:2]` `done-2026-05-22 (#62)`
-- [ ] PSUR 템플릿 (MDR) `[EP:2]`
-- [ ] FDA MDR (Medical Device Reporting) 21 CFR 803 절차 `[EP:2]`
-- [ ] Vigilance 실무 (MDR) - Serious Incident 판정 기준 `[EP:1]`
+- [x] PSUR 템플릿 (MDR) `[EP:2]` `done-2026-05-22 (#63)`
+- [x] FDA MDR (Medical Device Reporting) 21 CFR 803 절차 `[EP:2]` `done-2026-05-22 (#64)`
+- [x] Vigilance 실무 (MDR) - Serious Incident 판정 기준 `[EP:1]` `done-2026-05-22 (#65)`
 - [ ] FSCA / FSN 절차·템플릿 `[EP:1]`
 - [ ] MFDS 이상사례·부작용 보고 절차 `[EP:1]`
 

@@ -1,7 +1,7 @@
 # 지식베이스 인덱스 (INDEX)
 
 > 자료 추가 시 본 인덱스를 갱신하여 빠른 검색·참조가 가능하도록 유지.
-> 최종 갱신: 2026-05-22 (자동보강 #62 — PMS Plan MDR Article 84 실용 템플릿)
+> 최종 갱신: 2026-05-22 (자동보강 #65 — Post-Market 3종 완료: PSUR·FDA MDR 803·Vigilance)
 
 ## 0. 기준 문서 (Top-level)
 - [README.md](README.md) – 프로젝트 개요
@@ -43,7 +43,8 @@
   - [FDA_임상데이터_필요판단_기준](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/FDA_임상데이터_필요판단_기준.md) – 510(k)/De Novo/PMA 경로별 임상데이터 필요 판단 기준·4대 필요 조건·3지역 비교 매트릭스·3제품 임상데이터 요구 수준 맵핑·제출 체크리스트 3종 (#53)
 - 심사 대응: `01_규제지식베이스/미국_FDA/`
   - [FDA_RTA_Refuse_to_Accept_회피_체크리스트](01_규제지식베이스/미국_FDA/FDA_RTA_Refuse_to_Accept_회피_체크리스트.md) – Traditional 510(k) A~K 섹션 전항목·자사 3제품 적용 매핑·빈번한 반려사유 Top10·De Novo RTA 특이사항 (#56)
-  - [FDA_AI_Additional_Information_대응_전략](01_규제지식베이스/미국_FDA/FDA_AI_Additional_Information_대응_전략.md) – AI Request vs RTA vs Interactive Review 비교·180일 타임라인·명확화 회의·SIR Meeting 활용법·샘플 응답 템플릿·결함 유형별 대응·3지역 비교(FDA/MFDS/EU NB)·3제품 AI Request 위험 맵핑·Anti-Patterns·제출 체크리스트 (#57)
+  - [FDA_AI_Additional_Information_대응_전략](01_규제지식베이스/미국_FDA/FDA_AI_Additional_Information_대응_전략.md)
+  - [FDA_MDR_21CFR803_보고절차](01_규제지식베이스/미국_FDA/FDA_MDR_21CFR803_보고절차.md) – 21 CFR Part 803 MDR 보고절차·30일/5근무일 타임라인·Serious Injury 정의·기능불량 판단기준·eMDR 3500A·내부 SOP 뼈대·3지역 비교·3제품 시나리오 판단 매트릭스 (#64) – AI Request vs RTA vs Interactive Review 비교·180일 타임라인·명확화 회의·SIR Meeting 활용법·샘플 응답 템플릿·결함 유형별 대응·3지역 비교(FDA/MFDS/EU NB)·3제품 AI Request 위험 맵핑·Anti-Patterns·제출 체크리스트 (#57)
 - 21 CFR Part 820 → QMSR: `01_규제지식베이스/미국_FDA/QSR_21CFR820/`
 - 제품군별 Guidance: `01_규제지식베이스/미국_FDA/제품군별_가이던스/`
 
@@ -57,7 +58,8 @@
   - [MDR_Article15_PRRC_자격요건](01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_Article15_PRRC_자격요건.md) – PRRC 자격 2경로, 고용 형태, 5대 책임, 3지역 유사 역할 비교 (#13)
 - MDCG 가이던스: `01_규제지식베이스/유럽_CE_MDR/MDCG_가이던스/`
   - [MDCG_2019-16_Rev1_Cybersecurity_대응_체크리스트](01_규제지식베이스/유럽_CE_MDR/MDCG_가이던스/MDCG_2019-16_Rev1_Cybersecurity_대응_체크리스트.md) — MDCG 2019-16 Rev.1(2020-07) 기반 8대 보안 개발 실무·Pre/Post-market 체크리스트·MDR Annex I §17.2/§17.4/§18.8 조항 매핑·IFU 사이버보안 체크리스트·3제품 보안 역량 매트릭스 (#44)
-  - [Clinical_Evaluation_MDR_동등성_충분성_기준](01_규제지식베이스/유럽_CE_MDR/MDCG_가이던스/Clinical_Evaluation_MDR_동등성_충분성_기준.md) — MDR Art. 61 구조·Annex XIV 동등성 3대 기준(기술/생물/임상)·MDCG 2020-5/6/2023-7 충분성 판단·임상조사 면제 4 Case·FDA SE 비교·MFDS 비교·3지역 매트릭스·3제품 영향 맵핑·실무 체크리스트 (#52)
+  - [Clinical_Evaluation_MDR_동등성_충분성_기준](01_규제지식베이스/유럽_CE_MDR/MDCG_가이던스/Clinical_Evaluation_MDR_동등성_충분성_기준.md)
+  - [MDR_Vigilance_Serious_Incident_판정기준](01_규제지식베이스/유럽_CE_MDR/MDR_Vigilance_Serious_Incident_판정기준.md) – Art.2(65) 정의·6대 판정기준·2일/10일/15일 타임라인·EUDAMED Vigilance·FSCA 유형·3지역 타임라인 비교·3제품 시나리오 판정표 (#65) — MDR Art. 61 구조·Annex XIV 동등성 3대 기준(기술/생물/임상)·MDCG 2020-5/6/2023-7 충분성 판단·임상조사 면제 4 Case·FDA SE 비교·MFDS 비교·3지역 매트릭스·3제품 영향 맵핑·실무 체크리스트 (#52)
 - NB 심사자료: `01_규제지식베이스/유럽_CE_MDR/NB_심사자료/`
 
 ### 1.4 국제표준 (IEC / ISO)
@@ -98,4 +100,5 @@
 - [SOP_Internal_Audit_ISO13485_8.2.4_템플릿](04_기술문서_템플릿/SOP_Internal_Audit_ISO13485_8.2.4_템플릿.md) – SOP: 내부감사 절차서 (ISO 13485 §8.2.4) (#39)
 - [SOP_Management_Review_ISO13485_5.6_템플릿](04_기술문서_템플릿/SOP_Management_Review_ISO13485_5.6_템플릿.md) – SOP: 경영검토 절차서 (ISO 13485 §5.6) (#40)
 - [SOP_Supplier_Control_ISO13485_7.4_템플릿](04_기술문서_템플릿/SOP_Supplier_Control_ISO13485_7.4_템플릿.md) – SOP: 공급업체 관리 절차서 (ISO 13485 §7.4) (#41)
-- [PMS_Plan_MDR_Article84_템플릿](04_기술문서_템플릿/PMS_Plan_MDR_Article84_템플릿.md) – MDR Article 84 / Annex III §1.1 PMS Plan 실용 템플릿·3지역 비교(MDR/FDA 21 CFR 822/MFDS)·3제품 특화 고려사항·MDCG 2025-10 기반 (#62)
+- [PMS_Plan_MDR_Article84_템플릿](04_기술문서_템플릿/PMS_Plan_MDR_Article84_템플릿.md)
+- [PSUR_템플릿_MDR_Article86](04_기술문서_템플릿/PSUR_템플릿_MDR_Article86.md) – MDR Article 86 PSUR 실용 템플릿·데이터수집기간·판매량·주요발견·benefit-risk·PMCF 연계·EUDAMED 제출·3지역 비교(MDR/FDA PMA/MFDS)·3제품 갱신주기 맵핑 (#63) – MDR Article 84 / Annex III §1.1 PMS Plan 실용 템플릿·3지역 비교(MDR/FDA 21 CFR 822/MFDS)·3제품 특화 고려사항·MDCG 2025-10 기반 (#62)
