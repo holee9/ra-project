@@ -101,4 +101,15 @@
 - [SOP_Management_Review_ISO13485_5.6_템플릿](04_기술문서_템플릿/SOP_Management_Review_ISO13485_5.6_템플릿.md) – SOP: 경영검토 절차서 (ISO 13485 §5.6) (#40)
 - [SOP_Supplier_Control_ISO13485_7.4_템플릿](04_기술문서_템플릿/SOP_Supplier_Control_ISO13485_7.4_템플릿.md) – SOP: 공급업체 관리 절차서 (ISO 13485 §7.4) (#41)
 - [PMS_Plan_MDR_Article84_템플릿](04_기술문서_템플릿/PMS_Plan_MDR_Article84_템플릿.md)
-- [PSUR_템플릿_MDR_Article86](04_기술문서_템플릿/PSUR_템플릿_MDR_Article86.md) – MDR Article 86 PSUR 실용 템플릿·데이터수집기간·판매량·주요발견·benefit-risk·PMCF 연계·EUDAMED 제출·3지역 비교(MDR/FDA PMA/MFDS)·3제품 갱신주기 맵핑 (#63) – MDR Article 84 / Annex III §1.1 PMS Plan 실용 템플릿·3지역 비교(MDR/FDA 21 CFR 822/MFDS)·3제품 특화 고려사항·MDCG 2025-10 기반 (#6
+- [PSUR_템플릿_MDR_Article86](04_기술문서_템플릿/PSUR_템플릿_MDR_Article86.md) – MDR Article 86 PSUR 실용 템플릿·데이터수집기간·판매량·주요발견·benefit-risk·PMCF 연계·EUDAMED 제출·3지역 비교(MDR/FDA PMA/MFDS)·3제품 갱신주기 맵핑 (#63) – MDR Article 84 / Annex III §1.1 PMS Plan 실용 템플릿·3지역 비교(MDR/FDA 21 CFR 822/MFDS)·3제품 특화 고려사항·MDCG 2025-10 기반 (#62)
+
+## 5. 전문가 교육 (12주 커리큘럼)
+
+- [Week02_MFDS_체계_상세](05_전문가교육/Week02_MFDS_체계_상세.md) – MFDS 법령 계층·4등급 분류·허가/인증/신고 프로세스·GMP 체계·3지역 비교·3제품 경로 맵핑·실습 과제·평가 기준 (#68)
+- [Week03_FDA_510k_상세](05_전문가교육/Week03_FDA_510k_상세.md) – 510(k) 3종 유형·SE 5단계·eSTAR 절차·심사 타임라인·21 CFR 1020 방사선기준·3지역 비교·3제품 맵핑·실습·평가기준 (#69)
+- [Week04_MDR_EU_체계_상세](05_전문가교육/Week04_MDR_EU_체계_상세.md) – MDR 2017/745 발효·전환기간(2027/2028)·Annex VIII 등급분류·적합성평가(Annex IX/X/XI)·EUDAMED 의무화·NB 선정·3지역 비교·3제품 로드맵·실습·평가기준 (#70)
+- [Week05_국제표준_ISO13485_14971_62366](05_전문가교육/Week05_국제표준_ISO13485_14971_62366.md) – ISO 13485:2016(QMS)·ISO 14971:2019(위험관리)·IEC 62366-1:2015+AMD1(사용적합성) 3표준 구조·핵심요건·3지역 인정현황·3제품 맵핑·Golden Triangle 도식·실습 3종·평가기준 (#71)
+- [Week06_Xray특화표준_60601시리즈_62220](05_전문가교육/Week06_Xray특화표준_60601시리즈_62220.md) – IEC 60601-1 Ed.3.2(AMD2:2020)·60601-1-2(EMC)·60601-1-3(방사선방호)·60601-2-28(X-ray 관구)·60601-2-54:2022(촬영·투시)·IEC 62220-1-1/1-3(DQE) 구조·시험항목·3지역 인정현황·3제품 적용 매트릭스·실습 3종·평가기준 (#72)
+- [Week07_기술문서_작성_실습_STED](05_전문가교육/Week07_기술문서_작성_실습_STED.md) – GHTF/SG1/N011:2008 STED 기원·FDA eSTAR vs MDR Annex II vs MFDS 기술문서 3지역 구조 비교·섹션별 작성 요령(Device Description/SE/GSPR/동등비교/Performance Testing/Risk Management/Software/Labeling/Clinical Data)·3제품 기술문서 구성 계획·Common Core 전략·실습 3종·평가기준 (#73)
+- [Week09_임상평가](05_전문가교육/Week09_임상평가.md) – MFDS 2025-07 임상평가 신제도·FDA Solid State X-ray Imaging Device Guidance 임상이미지 평가 방법론·MDR Art.61+MDCG 2020-1/5/6/2023-7 동등성 3기준·CEP/CER 구조·PRISMA 문헌평가 방법론·PMCF 판단 기준·3제품 임상증거 전략 매트릭스·지적사항 대응·실습 3종·평가기준 (#77)
+- [Week10_QMS심사대응](05_전문가교육/Week10_QMS심사대응.md) – MFDS KGMP 현장심사 준비 체크리스트·FDA QMSR CP 7382.850(2026-02-02) Risk-Based Inspection·ARR 3개·FDA-483 응답 구조·MDR NB Annex IX/X/XI 심사 단계·NB Deficiency 유형 3가지·3지역 심사 비교 매트릭스·3제품 위험 요인 맵핑·연간 심사 대응 달력·실습 3종·평가기준 (#76)
