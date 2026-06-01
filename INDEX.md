@@ -1,7 +1,7 @@
 # 지식베이스 인덱스 (INDEX)
 
 > 자료 추가 시 본 인덱스를 갱신하여 빠른 검색·참조가 가능하도록 유지.
-> 최종 갱신: 2026-05-24 (자동보강 #71 — 전문가교육 Week 5 국제표준 ISO13485/14971/62366)
+> 최종 갱신: 2026-06-01 (자동보강 #79 — 전문가교육 Week 11 심사 Q&A 시뮬레이션)
 
 ## 0. 기준 문서 (Top-level)
 - [README.md](README.md) – 프로젝트 개요
@@ -111,5 +111,7 @@
 - [Week05_국제표준_ISO13485_14971_62366](05_전문가교육/Week05_국제표준_ISO13485_14971_62366.md) – ISO 13485:2016(QMS)·ISO 14971:2019(위험관리)·IEC 62366-1:2015+AMD1(사용적합성) 3표준 구조·핵심요건·3지역 인정현황·3제품 맵핑·Golden Triangle 도식·실습 3종·평가기준 (#71)
 - [Week06_Xray특화표준_60601시리즈_62220](05_전문가교육/Week06_Xray특화표준_60601시리즈_62220.md) – IEC 60601-1 Ed.3.2(AMD2:2020)·60601-1-2(EMC)·60601-1-3(방사선방호)·60601-2-28(X-ray 관구)·60601-2-54:2022(촬영·투시)·IEC 62220-1-1/1-3(DQE) 구조·시험항목·3지역 인정현황·3제품 적용 매트릭스·실습 3종·평가기준 (#72)
 - [Week07_기술문서_작성_실습_STED](05_전문가교육/Week07_기술문서_작성_실습_STED.md) – GHTF/SG1/N011:2008 STED 기원·FDA eSTAR vs MDR Annex II vs MFDS 기술문서 3지역 구조 비교·섹션별 작성 요령(Device Description/SE/GSPR/동등비교/Performance Testing/Risk Management/Software/Labeling/Clinical Data)·3제품 기술문서 구성 계획·Common Core 전략·실습 3종·평가기준 (#73)
+- [Week08_사이버보안_AI_SBOM_ThreatModel_PCCP](05_전문가교육/Week08_사이버보안_AI_SBOM_ThreatModel_PCCP.md) – FD&C Act §524B Cyber Device·FDA 2025-06-27 Final Guidance Section VII·STRIDE Threat Model 6범주·SBOM SPDX/CycloneDX·PCCP 3대 구성요소·IEC 81001-5-1 vs 62304 매핑·3지역 비교 매트릭스·3제품 영향 맵핑·실습 4종·평가기준 (#74)
 - [Week09_임상평가](05_전문가교육/Week09_임상평가.md) – MFDS 2025-07 임상평가 신제도·FDA Solid State X-ray Imaging Device Guidance 임상이미지 평가 방법론·MDR Art.61+MDCG 2020-1/5/6/2023-7 동등성 3기준·CEP/CER 구조·PRISMA 문헌평가 방법론·PMCF 판단 기준·3제품 임상증거 전략 매트릭스·지적사항 대응·실습 3종·평가기준 (#77)
 - [Week10_QMS심사대응](05_전문가교육/Week10_QMS심사대응.md) – MFDS KGMP 현장심사 준비 체크리스트·FDA QMSR CP 7382.850(2026-02-02) Risk-Based Inspection·ARR 3개·FDA-483 응답 구조·MDR NB Annex IX/X/XI 심사 단계·NB Deficiency 유형 3가지·3지역 심사 비교 매트릭스·3제품 위험 요인 맵핑·연간 심사 대응 달력·실습 3종·평가기준 (#76)
+- [Week11_심사_QA_시뮬레이션](05_전문가교육/Week11_심사_QA_시뮬레이션.md) – MFDS 기술문서 심사 Q10 유형·FDA CDRH AI Request 패턴(SE 5단계·SW문서·선량클레임·483 CAPA 응답)·MDR NB Deficiency 3유형(문서부재·데이터불충분·해석차이)·X-ray 3제품 특화 Q&A·금기 답변 패턴 6종·시뮬레이션 3세트(FDA AI/MDR NB/MFDS 보완) (#79)
