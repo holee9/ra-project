@@ -1,5 +1,5 @@
-> 최종 갱신: 2026-05-06 (자동보강 #19)
-> 근거: https://webstore.iec.ch/en/publication/67220 | https://www.fda.gov/media/80481/download | https://www.fda.gov/media/163694/download | https://health.ec.europa.eu/document/download/ee7ee8eb-841a-4085-a8dc-af6d55ebf1bd_en | https://udiportal.mfds.go.kr/brd/view/P04_03_02?ntceSn=265
+> 최종 갱신: 2026-06-05 (자동보강 #89)
+> 근거: https://webstore.iec.ch/en/publication/67220 | https://www.fda.gov/media/80481/download | https://www.federalregister.gov/documents/2026/05/29/2026-10734/content-of-human-factors-information-in-medical-device-marketing-submissions-guidance-for-industry | https://health.ec.europa.eu/document/download/ee7ee8eb-841a-4085-a8dc-af6d55ebf1bd_en | https://udiportal.mfds.go.kr/brd/view/P04_03_02?ntceSn=265
 
 # Usability Engineering File (UEF) 템플릿
 ## IEC 62366-1:2015+AMD1:2020 기반 · 3개 제품 공통
@@ -13,8 +13,21 @@
 | 지역 | 요구 근거 | 적용 기준 |
 |---|---|---|
 | **MFDS (국내)** | 의료기기 제조 및 품질관리기준(KGMP) 설계개발 절차; 사용적합성 단계적 의무화 (2등급 2022-01, 3등급 2021-07, 4등급 2021-01) | IEC 62366-1:2015+AMD1:2020 준용 |
-| **FDA (미국)** | 21 CFR 820 (QMSR) Design Controls; FDA HFE Guidance 2016; FDA HF Submission Guidance 2022 (final) | IEC 62366-1:2015+AMD1:2020 (FDA Recognized Consensus Standard) + FDA HFE Guidance 병행 적용 |
+| **FDA (미국)** | 21 CFR 820 (QMSR 2026-02-02 발효) Design Controls §7.3; FDA "Applying HFE to Medical Devices" (2016); FDA HF Submission Guidance **Final 2026-05-29** (91 FR 32061) | IEC 62366-1:2015+AMD1:2020 (FDA Recognized Consensus Standard) + FDA HF Submission Guidance (Final) 병행 적용. **2026-08-01 이후 신규 제출부터 Risk-Based HF Submission Category 적용.** |
 | **MDR (유럽)** | MDR 2017/745 Annex I GSPR §5 (ergonomics/usability), §23.4 (labeling); Annex II §6.1 (설계개발); MDCG 2021-5 (state-of-art) | IEC 62366-1:2015+AMD1:2020 (조화표준 미등재, state-of-art 표준으로 적용 권고) |
+
+### FDA HF Submission Category (2026-05-29 Final Guidance 기반)
+
+FDA는 기기 위험 수준에 따라 마케팅 제출 시 포함할 HF 정보를 3개 등급으로 구분한다.
+
+| Category | 기준 | 자사 제품 적용 | 제출 요건 |
+|---|---|---|---|
+| **Category 1** (High Risk) | Complex UI; Critical Task 다수; 사용 오류 시 심각한 위해 가능 | **Handheld X-ray Source** (방사선 노출 직접 제어), **촬영실 GUI SW** (환자 식별·프로토콜 선택) | 완전한 HFE Report — Formative + Summative Evaluation 전체 |
+| **Category 2** (Moderate Risk) | 일부 Critical Task; 기존 유사 제품과 UI 유사 | **X-ray Detector** (UI 제한적, 기존 선행 제품 데이터 존재 시) | HFE Summary + Summative Evaluation 결과 |
+| **Category 3** (Low Risk) | UI 변경 없음; Critical Task 없음 또는 선행 데이터 충분 | 해당 없음 (자사 3개 제품은 방사선 관련 Critical Task 존재) | HF 정보 면제 논거 제공만으로 충분 |
+
+> **적용 시점**: 2026-08-01 이후 수신되는 신규 510(k)/De Novo/PMA 제출부터 적용 강력 권고.
+> 2026-08-01 이전 pending 제출은 기존 방식 유지 (FDA가 추가 정보 요청 시 Category에 따라 보완).
 
 ### AMD1:2020 주요 변경사항
 
@@ -257,37 +270,4 @@ Fail 항목: 없음.
 | **표준 참조** | IEC 62366-1:2015+AMD1:2020 (KGMP 준용) | IEC 62366-1:2015+AMD1:2020 (Recognized Consensus Standard No. 41235) | IEC 62366-1 (state-of-art; MDCG 2021-5) |
 | **Summative 참가자 수** | 명시 기준 없음 (실질적 대표성 요구) | 최소 15명/그룹 권고 (HFE Guidance) | 명시 없음 (GSPR §5 대표성 요건) |
 | **제출 시점** | 기술문서 내 포함 | 510(k) 또는 PMA에 HFE Report 제출 | NB 심사 시 Technical Documentation에 포함 |
-| **외부 시험 기관 필요** | 필수 아님 (내부 수행 가능) | 필수 아님 (단, 독립성 권고) | 필수 아님 (단, 절차·독립성 입증) |
-| **훈련 허용 여부** | 허용 (3순위 위험통제) | 허용 (단, 보조 수단; 설계·라벨 우선) | 허용 (AMD1:2020 반영, 보조 수단) |
-
----
-
-## 10. 위험통제 우선순위 (IEC 62366-1 §5.6, AMD1:2020 반영)
-
-```
-1순위: 고유 안전 설계 (Inherently safe design)
-         예) 방사선 방향 물리적 잠금, 조준 인터락
-2순위: 안전 관련 정보 (Information for safety, labeling, IFU)
-         예) 경고음·LED 표시, 화면 경고 메시지
-3순위: 훈련 (Training) ← AMD1:2020 신규 추가
-         예) 출시 전 사용자 교육, e-Learning
-```
-
----
-
-## 11. 문서 관리 및 버전 이력
-
-| 버전 | 날짜 | 변경 내용 | 작성자 |
-|---|---|---|---|
-| 1.0 | 2026-05-06 | 최초 작성 (자동보강 #19) | RA Auto Runner |
-
----
-
-## 12. 참조 문서
-
-| 문서 | 연계 |
-|---|---|
-| ISO 14971:2019 Risk Management File | [Risk_Management_File_ISO14971_2019_템플릿.md](Risk_Management_File_ISO14971_2019_템플릿.md) |
-| IEC 62304 SW 문서세트 | [촬영실_GUI_SW_IEC62304_문서세트.md](../02_제품별_기술파일/03_촬영실_GUI_SW/촬영실_GUI_SW_IEC62304_문서세트.md) |
-| MDR Annex I GSPR 체크리스트 | [MDR_AnnexI_GSPR_Checklist.md](../01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_AnnexI_GSPR_Checklist.md) |
-| MDR Annex II Technical Documentation | [MDR_AnnexII_Technical_Documentation_Template.md](../01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_AnnexII_Technical_Documentation_Template.md) |
+| **외부 시험 기관 필요** | 필수 아님 (내부 수행 가능) | 필수 아님 (단, 독립성 권고) | 필수 아님 (단, 절차
