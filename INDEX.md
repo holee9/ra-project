@@ -1,7 +1,7 @@
 # 지식베이스 인덱스 (INDEX)
 
 > 자료 추가 시 본 인덱스를 갱신하여 빠른 검색·참조가 가능하도록 유지.
-> 최종 갱신: 2026-06-04 (자동보강 #87 — EUDAMED 모듈별 등록 실무 가이드)
+> 최종 갱신: 2026-06-04 (자동보강 #88 — 2026 Q2 규제 업데이트 종합 패치)
 
 ## 0. 기준 문서 (Top-level)
 - [README.md](README.md) – 프로젝트 개요
@@ -21,6 +21,7 @@
 - [규제변경_모니터링_자동화_RSS](01_규제지식베이스/규제변경_모니터링_자동화_RSS.md) – MFDS RSS 공식 채널·law.go.kr 법령 추적·FDA CDRH 이메일 구독 목록·Federal Register API/RSS·EUR-Lex 맞춤 RSS·EUDAMED 모니터링·3지역 비교 매트릭스·3제품별 모니터링 우선순위·Python 자동화 스크립트·2025~2026 규제 변경 트래커·점검 주기 가이드 (#85)
 - [경쟁제품_510k_Summary_분석DB](01_규제지식베이스/경쟁제품_510k_Summary_분석DB.md) – FDA OpenFDA API 기반 MQB(FPD Detector)/IZL(Mobile X-ray)/LLZ(DR SW) 경쟁사 510(k) 2024~2026 분석·Special vs Traditional 전략·번들 제출 패턴·자사 K251223 포지셔닝·3지역 비교·3제품 행동 지시 (#86)
 - [EUDAMED_모듈별_등록_실무가이드](01_규제지식베이스/EUDAMED_모듈별_등록_실무가이드.md) – Commission Decision (EU) 2025/2371 기반 6개 모듈 구조·4개 모듈 2026-05-28 의무화·ACT(SRN)/UDI-DEV/NB-CERT/MSU 등록 절차·Module 5(Vigilance ~Q2 2027)·3지역 비교(FDA GUDID/MFDS UDI포털/EUDAMED)·3제품 Phase별 체크리스트 (#87)
+- [2026_Q2_규제_업데이트_종합패치](01_규제지식베이스/2026_Q2_규제_업데이트_종합패치.md) – Phase 5 유지관리 #1: FDA QMSR 발효(2026-02-02)·CP 7382.850·HF 최종 가이던스(2026-05-29)·EU COM(2025)1023 간소화 제안·Implementing Reg. 2026/977·EUDAMED 의무화·MFDS RWE 확대·음성 변경허가·AI 공통부품 선평가·3지역 매트릭스·3제품 영향 맵핑 (#88)
 
 ### 1.1 국내 (MFDS / 식약처)
 - [MFDS_인허가_상세가이드](01_규제지식베이스/국내_MFDS/MFDS_인허가_상세가이드.md) – 국내 전체 가이드
@@ -124,4 +125,4 @@
 - [Week09_임상평가](05_전문가교육/Week09_임상평가.md) – MFDS 2025-07 임상평가 신제도·FDA Solid State X-ray Imaging Device Guidance 임상이미지 평가 방법론·MDR Art.61+MDCG 2020-1/5/6/2023-7 동등성 3기준·CEP/CER 구조·PRISMA 문헌평가 방법론·PMCF 판단 기준·3제품 임상증거 전략 매트릭스·지적사항 대응·실습 3종·평가기준 (#77)
 - [Week10_QMS심사대응](05_전문가교육/Week10_QMS심사대응.md) – MFDS KGMP 현장심사 준비 체크리스트·FDA QMSR CP 7382.850(2026-02-02) Risk-Based Inspection·ARR 3개·FDA-483 응답 구조·MDR NB Annex IX/X/XI 심사 단계·NB Deficiency 유형 3가지·3지역 심사 비교 매트릭스·3제품 위험 요인 맵핑·연간 심사 대응 달력·실습 3종·평가기준 (#76)
 - [Week11_심사_QA_시뮬레이션](05_전문가교육/Week11_심사_QA_시뮬레이션.md) – MFDS 기술문서 심사 Q10 유형·FDA CDRH AI Request 패턴(SE 5단계·SW문서·선량클레임·483 CAPA 응답)·MDR NB Deficiency 3유형(문서부재·데이터불충분·해석차이)·X-ray 3제품 특화 Q&A·금기 답변 패턴 6종·시뮬레이션 3세트(FDA AI/MDR NB/MFDS 보완) (#79)
-- [Week12_종합실습_평가](05_전문가교육/Week12_종합실습_평가.md) – 3시나리오 종합 실습(Handheld MFDS 허가·Detector FDA 510(k)·GUI SW MDR CE Marking)·SE 비교 매트릭스·Common Core TD 글로벌 전략·3지역 허가 일정 로드맵·이론(30점)+실기(40점)+구술(30점) 최종 평가·20개 역량 자기점검 체크리스트·수료 후 3Phase 실무 로드맵·3제품×3지역 종합 매트릭스 (#80)
+- [Week12_종합실습_평가]
