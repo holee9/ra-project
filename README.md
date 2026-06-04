@@ -59,11 +59,11 @@
 - 다음 작업: 기존 KB 문서 갱신 — QMSR 발효·HF 가이던스 반영 `[EP:2]`
 
 ### 자동보강 성장 로그 (최근 5회)
+- 2026-06-05 03:00 [CATCHUP] (#89) QMSR 발효·HF 가이던스 반영 — 2파일 갱신(KGMP_QMSR_ISO13485 비교 + UEF 템플릿), EP 2 소비. missed_ep 11→9
+- 2026-06-04 19:30 (#88) 2026 Q2 규제 업데이트 종합 패치 (MFDS/FDA/MDR) — 1파일 신규, EP 3 소비. missed_ep 14→11
+- 2026-06-04 03:00 [CATCHUP] (#86·#87) 경쟁제품 510(k) Summary 분석 DB + EUDAMED 모듈별 등록 실무 가이드 — 2파일 신규, EP 4 소비. missed_ep 18→14
+- 2026-06-03 19:30 (#85) 규제 변경 모니터링 자동화 (법령·가이던스 RSS) — 1파일 신규, EP 2 소비. missed_ep 20→18
 - 2026-06-03 03:00 [CATCHUP] (#84) 예상 Q&A DB (3개 지역·제품별) — 1파일 신규, EP 3 소비. missed_ep 23→20
-- 2026-06-02 19:30 [CATCHUP] (#83) 원가·일정 예측 모델 (지역·등급·시험비) — 1파일 신규, EP 3 소비. missed_ep 26→23
-- 2026-06-02 03:00 [CATCHUP] (#81·#82) Gate Review 체크리스트 5Gate + 글로벌 동시제출 전략 MDSAP — 2파일 신규, EP 4 소비. missed_ep 30→26
-- 2026-06-01 19:30 [CATCHUP] (#80) Week 12 종합 실습·평가 Capstone — 1파일 신규, EP 3 소비. missed_ep 33→30
-- 2026-06-01 19:30 [CATCHUP] (#79) Week 11 심사 Q&A 시뮬레이션 — 1파일 신규, EP 2 소비. missed_ep 35→33
 
 ## 자동보강 스케줄
 
@@ -158,4 +158,4 @@
 - 2026-06-03 19:30 (#85) [EP:2] 규제 변경 모니터링 자동화 (법령·가이던스 RSS) — 파일 1개 신규(01_규제지식베이스), MFDS RSS 공식 채널·law.go.kr 법령 추적·FDA CDRH 이메일 구독 목록·Federal Register API·EUR-Lex 맞춤 RSS·EUDAMED 모니터링·3지역 비교 매트릭스·3제품별 모니터링 우선순위·Python 자동화 스크립트·2025~2026 규제 변경 트래커·High/Medium/Low 분류 기준. EP 2 소비.
 - 2026-06-04 03:00 [CATCHUP] (#86) [EP:2] 경쟁 제품 510(k) Summary 분석 DB — 파일 1개 신규(01_규제지식베이스), FDA OpenFDA API 기반 MQB/IZL/LLZ product code 2024~2026 경쟁사 510(k) 분석·DRTECH·Vieworks·Carestream·DRGEM·Samsung·H&abyz(자사 K251223) 포함·3지역 비교·Special vs Traditional 전략·번들 제출 패턴·자사 3제품 영향 맵핑·OpenFDA API 조회 스크립트. EP 2 소비. missed_ep 18→16.
 - 2026-06-04 03:00 [CATCHUP] (#87) [EP:2] EUDAMED 모듈별 등록 실무 가이드 — 파일 1개 신규(01_규제지식베이스), Commission Decision (EU) 2025/2371(2025-11-27) 기반·4개 모듈 2026-05-28 의무화·ACT(SRN)/UDI-DEV(Basic UDI-DI)/NB-CERT/MSU 등록 절차·Module 5(Vigilance ~Q2 2027)/Module 6(CI/PS) 개발 현황·등록 플로우·3지역 비교(FDA GUDID/MFDS UDI포털/EUDAMED)·자사 3제품 Phase별 체크리스트. EP 2 소비. missed_ep 16→14.
-- 2026-06-04 19:30 [정상 EP:3] (#88) 2026 Q2 규제 업데이트 종합 패치 (MFDS/FDA/MDR) — Phase 5 유지관리 #1. 파일 1개 신규(01_규제지식베이스). FDA QMSR 2026-02-02 
+- 2026-06-04 19:30 [정상 EP:3] (#88) 2026 Q2 규제 업데이트 종합 패치 (MFDS/FDA/MDR) — Phase 5 유지관리 #1. 파일 1
