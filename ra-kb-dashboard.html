@@ -59,12 +59,12 @@
 
 <h1>RA KB 자동보강 진척 대시보드</h1>
 <div class="meta">
-  <span>마지막 갱신: 2026-06-04 19:30</span>
+  <span>마지막 갱신: 2026-06-05 03:00</span>
   <span class="sync-badge badge-green"><span class="sync-dot dot-green"></span>GitHub 동기화 완료</span>
-  <span class="sync-badge badge-gold">이슈 #88 완료 · Phase 5 유지관리 개시 🎉</span>
+  <span class="sync-badge badge-gold">이슈 #89 완료 · CATCHUP missed_ep 9 잔류</span>
 </div>
 
-<div class="complete-banner">🎯 P1~P5 전체 완료 — ep_completed 168 / 168 (100%) · 총 69회차 · 88개 이슈 · Phase 5 유지관리 진행 중</div>
+<div class="complete-banner">🎯 P1~P5 전체 완료 — ep_completed 168 / 168 (100%) · 총 70회차 · 89개 이슈 · Phase 5 유지관리 진행 중</div>
 
 <div class="grid4">
   <div class="card">
@@ -164,15 +164,15 @@
       </div>
       <div class="policy-row">
         <span class="policy-key">완료 이슈</span>
-        <span class="policy-val">#1 ~ #88 (88건)</span>
+        <span class="policy-val">#1 ~ #89 (89건)</span>
       </div>
       <div class="policy-row">
         <span class="policy-key">총 실행 회차</span>
-        <span class="policy-val">69회 (정상 31 + CATCHUP 17 + 기타)</span>
+        <span class="policy-val">70회 (정상 31 + CATCHUP 18 + 기타)</span>
       </div>
       <div class="policy-row">
         <span class="policy-key">CATCHUP 잔여</span>
-        <span class="policy-val v-orange">missed_ep 11 EP 잔류</span>
+        <span class="policy-val v-orange">missed_ep 9 EP 잔류</span>
       </div>
     </div>
 
@@ -193,11 +193,11 @@
     </div>
     <div class="policy-row">
       <span class="policy-key">CATCHUP 모드</span>
-      <span class="policy-val">4 EP <span class="sync-badge badge-gold" style="font-size:10px;padding:1px 6px;">진행 중 (잔여 11 EP)</span></span>
+      <span class="policy-val">4 EP <span class="sync-badge badge-gold" style="font-size:10px;padding:1px 6px;">진행 중 (잔여 9 EP)</span></span>
     </div>
     <div class="policy-row">
       <span class="policy-key">다음 항목</span>
-      <span class="policy-val" style="font-size:11px;color:#3B6D11;">KB 갱신 — QMSR·HF 가이던스 반영 [EP:2]</span>
+      <span class="policy-val" style="font-size:11px;color:#3B6D11;">Q3 규제 업데이트 패치 (MDR 간소화) [EP:3]</span>
     </div>
     <hr class="divider" style="margin:8px 0;">
     <div class="section-label" style="margin-top:4px;">EP 등급</div>
@@ -208,6 +208,10 @@
 
   <div class="card">
     <div class="section-label">최근 실행 로그</div>
+    <div class="log-item">
+      <span class="log-issue">#89</span> <span class="log-manual">[CATCHUP]</span> 2026-06-05 03:00<br>
+      QMSR 발효·HF 가이던스 반영 — KGMP비교 갱신 + IEC 62366 UEF 템플릿 갱신 (HF Submission Category 추가) <span class="ep-tag">EP:2</span>
+    </div>
     <div class="log-item">
       <span class="log-issue">#88</span> <span class="log-normal">[정상]</span> 2026-06-04 19:30<br>
       2026 Q2 규제 업데이트 종합 패치 — FDA QMSR 발효·HF 가이던스·EU COM(2025)1023·EUDAMED 4모듈·MFDS RWE 확대 <span class="ep-tag">EP:3</span>
@@ -223,10 +227,6 @@
     <div class="log-item">
       <span class="log-issue">#85</span> <span class="log-normal">[정상]</span> 2026-06-03 19:30<br>
       규제 변경 모니터링 자동화 (법령·가이던스 RSS·Python 스크립트) <span class="ep-tag">EP:2</span>
-    </div>
-    <div class="log-item">
-      <span class="log-issue">#84</span> <span class="log-manual">[CATCHUP]</span> 2026-06-03 03:00<br>
-      예상 Q&amp;A DB (3지역×3제품 심사 질문·최적 답변 패턴) <span class="ep-tag">EP:3</span>
     </div>
   </div>
 
@@ -268,4 +268,4 @@ new Chart(document.getElementById('donutChart'), {
       const cx = (left + right) / 2, cy = (top + bottom) / 2;
       ctx.save();
       ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      ctx.fill
+      ctx.fillStyle 
