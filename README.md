@@ -56,14 +56,14 @@
 > **전체 완료** (168 EP / 168 EP). P1~P5 모든 Phase 100%.
 > Phase 5 유지관리 시리즈 개시 — 분기별 규제 변경 패치 (#88~).
 
-- 다음 작업: 기존 KB 문서 갱신 — QMSR 발효·HF 가이던스 반영 `[EP:2]`
+- 다음 작업: (분기) MFDS 디지털의료제품법 하위 법령 보완 (2026 신규 고시) `[EP:2]` / (주간) 시간민감 규제 모니터링
 
 ### 자동보강 성장 로그 (최근 5회)
+- 2026-06-05 [QUARTERLY] 분기 심층패치 — 2파일 신규(Q3 규제 종합패치 + FDA AI/ML PCCP 운영) + 표준매트릭스/INDEX 갱신. EU MDR 간소화 미채택 확인·EUDAMED 4모듈 의무화 발효(legacy D-176)·IEC 62304 Ed.2 동향. EP 5 처리
 - 2026-06-05 03:00 [CATCHUP] (#89) QMSR 발효·HF 가이던스 반영 — 2파일 갱신(KGMP_QMSR_ISO13485 비교 + UEF 템플릿), EP 2 소비. missed_ep 11→9
 - 2026-06-04 19:30 (#88) 2026 Q2 규제 업데이트 종합 패치 (MFDS/FDA/MDR) — 1파일 신규, EP 3 소비. missed_ep 14→11
 - 2026-06-04 03:00 [CATCHUP] (#86·#87) 경쟁제품 510(k) Summary 분석 DB + EUDAMED 모듈별 등록 실무 가이드 — 2파일 신규, EP 4 소비. missed_ep 18→14
 - 2026-06-03 19:30 (#85) 규제 변경 모니터링 자동화 (법령·가이던스 RSS) — 1파일 신규, EP 2 소비. missed_ep 20→18
-- 2026-06-03 03:00 [CATCHUP] (#84) 예상 Q&A DB (3개 지역·제품별) — 1파일 신규, EP 3 소비. missed_ep 23→20
 
 ## 자동보강 스케줄
 
@@ -158,4 +158,6 @@
 - 2026-06-03 19:30 (#85) [EP:2] 규제 변경 모니터링 자동화 (법령·가이던스 RSS) — 파일 1개 신규(01_규제지식베이스), MFDS RSS 공식 채널·law.go.kr 법령 추적·FDA CDRH 이메일 구독 목록·Federal Register API·EUR-Lex 맞춤 RSS·EUDAMED 모니터링·3지역 비교 매트릭스·3제품별 모니터링 우선순위·Python 자동화 스크립트·2025~2026 규제 변경 트래커·High/Medium/Low 분류 기준. EP 2 소비.
 - 2026-06-04 03:00 [CATCHUP] (#86) [EP:2] 경쟁 제품 510(k) Summary 분석 DB — 파일 1개 신규(01_규제지식베이스), FDA OpenFDA API 기반 MQB/IZL/LLZ product code 2024~2026 경쟁사 510(k) 분석·DRTECH·Vieworks·Carestream·DRGEM·Samsung·H&abyz(자사 K251223) 포함·3지역 비교·Special vs Traditional 전략·번들 제출 패턴·자사 3제품 영향 맵핑·OpenFDA API 조회 스크립트. EP 2 소비. missed_ep 18→16.
 - 2026-06-04 03:00 [CATCHUP] (#87) [EP:2] EUDAMED 모듈별 등록 실무 가이드 — 파일 1개 신규(01_규제지식베이스), Commission Decision (EU) 2025/2371(2025-11-27) 기반·4개 모듈 2026-05-28 의무화·ACT(SRN)/UDI-DEV(Basic UDI-DI)/NB-CERT/MSU 등록 절차·Module 5(Vigilance ~Q2 2027)/Module 6(CI/PS) 개발 현황·등록 플로우·3지역 비교(FDA GUDID/MFDS UDI포털/EUDAMED)·자사 3제품 Phase별 체크리스트. EP 2 소비. missed_ep 16→14.
-- 2026-06-04 19:30 [정상 EP:3] (#88) 2026 Q2 규제 업데이트 종합 패치 (MFDS/FDA/MDR) — Phase 5 유지관리 #1. 파일 1
+- 2026-06-05 07:00 [weekly] 주간 모니터 #1 — 신규 규제변경 없음. 6소스 폴링(openFDA recall/enforcement 0건·Federal Register FDA 4건 전부 비관련[정형외과 분류 3·미분류기기 면제가이던스 1]·EUR-Lex MDR 0건·law.go.kr 행정규칙 최신 2026-05-19/현행법령 최신 2026-01-02 신규없음·data.go.kr 추적관리 baseline 639). 고/중영향 0건, 이슈·커밋 없음.
+- 2026-06-04 19:30 [정상 EP:3] (#88) 2026 Q2 규제 업데이트 종합 패치 (MFDS/FDA/MDR) — Phase 5 유지관리 #1. 파일 1개 신규(01_규제지식베이스). FDA QMSR 2026-02-02 발효(ISO 13485:2016 통합·ARR 3항목)·CP 7382.850 Risk-Based 검사·HF 최종 가이던스(2026-05-29, 2026-08-01 적용)·EU COM(2025)1023 MDR/IVDR 간소화 제안(2025-12-16)·Implementing Reg. 2026/977 NB 절차 표준화·EUDAMED 4모듈 의무화(2026-05-28)·MFDS 2026 업무보고 RWE 확대/음성 변경허가/AI 공통부품 선평가·3지역 변경 매트릭스·3제품 영향 맵핑·기존 KB 갱신 목록. EP 3 소비. missed_ep 14→11.
+- 2026-06-05 [QUARTERLY] 분기 심층패치 (BACKLOG [P5] 2건 처리) — 파일 2개 신규(01_규제지식베이스/2026_Q3_규제_업데이트_종합패치 + 미국_FDA/FDA_AI_ML_2026_PCCP_운영_TPLC_업데이트), 표준매트릭스(핵심표준_목록 §7 IEC 62304 Ed.2 동향)·INDEX·BA

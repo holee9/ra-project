@@ -1,7 +1,7 @@
 # 지식베이스 인덱스 (INDEX)
 
 > 자료 추가 시 본 인덱스를 갱신하여 빠른 검색·참조가 가능하도록 유지.
-> 최종 갱신: 2026-06-04 (자동보강 #88 — 2026 Q2 규제 업데이트 종합 패치)
+> 최종 갱신: 2026-06-05 (분기 심층패치 — Q3 규제 패치 + FDA AI/ML PCCP 운영 + IEC 62304 Ed.2 동향)
 
 ## 0. 기준 문서 (Top-level)
 - [README.md](README.md) – 프로젝트 개요
@@ -22,6 +22,7 @@
 - [경쟁제품_510k_Summary_분석DB](01_규제지식베이스/경쟁제품_510k_Summary_분석DB.md) – FDA OpenFDA API 기반 MQB(FPD Detector)/IZL(Mobile X-ray)/LLZ(DR SW) 경쟁사 510(k) 2024~2026 분석·Special vs Traditional 전략·번들 제출 패턴·자사 K251223 포지셔닝·3지역 비교·3제품 행동 지시 (#86)
 - [EUDAMED_모듈별_등록_실무가이드](01_규제지식베이스/EUDAMED_모듈별_등록_실무가이드.md) – Commission Decision (EU) 2025/2371 기반 6개 모듈 구조·4개 모듈 2026-05-28 의무화·ACT(SRN)/UDI-DEV/NB-CERT/MSU 등록 절차·Module 5(Vigilance ~Q2 2027)·3지역 비교(FDA GUDID/MFDS UDI포털/EUDAMED)·3제품 Phase별 체크리스트 (#87)
 - [2026_Q2_규제_업데이트_종합패치](01_규제지식베이스/2026_Q2_규제_업데이트_종합패치.md) – Phase 5 유지관리 #1: FDA QMSR 발효(2026-02-02)·CP 7382.850·HF 최종 가이던스(2026-05-29)·EU COM(2025)1023 간소화 제안·Implementing Reg. 2026/977·EUDAMED 의무화·MFDS RWE 확대·음성 변경허가·AI 공통부품 선평가·3지역 매트릭스·3제품 영향 맵핑 (#88)
+- [2026_Q3_규제_업데이트_종합패치](01_규제지식베이스/2026_Q3_규제_업데이트_종합패치.md) – 분기 심층패치: **EU MDR/IVDR 간소화 COM(2025)1023 미채택**(입법 진행, 채택 2026말~2027Q2 전망)·**EUDAMED 4모듈 2026-05-28 의무화 발효·legacy 2026-11-28 마감(D-176)**·FDA QMSR 운영·AI 수명주기 가이던스 초안 유지·MFDS 디지털의료제품법 가이드라인 정비(2025-05/10)·3지역 매트릭스·3제품 영향 맵핑·인증유지(PSUR/CER/Vigilance) 캘린더 (#quarterly)
 
 ### 1.1 국내 (MFDS / 식약처)
 - [MFDS_인허가_상세가이드](01_규제지식베이스/국내_MFDS/MFDS_인허가_상세가이드.md) – 국내 전체 가이드
@@ -43,6 +44,7 @@
   - [eSTAR_03_Performance_Testing_Bench_Test](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_03_Performance_Testing_Bench_Test.md) – eSTAR 작성 가이드 (3) Performance Testing / Bench Test (3개 제품 완전 맵핑)
   - [FDA_Threat_Model_STRIDE_가이드](01_규제지식베이스/미국_FDA/FDA_Threat_Model_STRIDE_가이드.md) – FDA Section 524B Threat Model 작성 가이드·STRIDE 6범주·DREAD 점수화·3제품 Cyber Device 판정·eSTAR 제출 패키지·샘플 분석표·3지역 비교
   - [PCCP_AI_Device_작성가이드](01_규제지식베이스/미국_FDA/PCCP_AI_Device_작성가이드.md) – FDA 2024-12-04 Final Guidance 기반 PCCP 3대 구성요소·변경 유형·경로별 고려사항·라벨링·3지역 비교(MFDS 사전변경관리계획/EU AI Act)·3제품 영향 맵핑·제출 체크리스트 (#45)
+  - [FDA_AI_ML_2026_PCCP_운영_TPLC_업데이트](01_규제지식베이스/미국_FDA/FDA_AI_ML_2026_PCCP_운영_TPLC_업데이트.md) – 분기 심층패치: PCCP 최종(2024-12) 운영·3경로 적용·3대 구성요소 운영해석·AI 수명주기 가이던스 초안(2025-01-06, 미확정) 상태·TPLC(투명성·편향·HF·사이버보안)·QMSR 정합·3지역 변경관리 비교·3제품 맵핑(GUI SW 핵심) (#quarterly)
   - [eSTAR_04_Cybersecurity_Section](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_04_Cybersecurity_Section.md) – eSTAR 작성 가이드 (4) Cybersecurity Section (Section 524B + 2025 Final Guidance 기반, 3개 제품 맵핑)
   - [eSTAR_05_Software_Section](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_05_Software_Section.md) – eSTAR 작성 가이드 (5) Software Section (IEC 62304 기반, Basic/Enhanced 10문서, 3개 제품 맵핑, 3지역 비교)
   - [eSTAR_06_Labeling_IFU_Form3881](01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_06_Labeling_IFU_Form3881.md) – eSTAR 작성 가이드 (6) Labeling — IFU·Form 3881·21 CFR 801 기반, 3개 제품 맵핑
@@ -70,7 +72,7 @@
 - NB 심사자료: `01_규제지식베이스/유럽_CE_MDR/NB_심사자료/`
 
 ### 1.4 국제표준 (IEC / ISO)
-- [핵심표준_목록](01_규제지식베이스/국제표준_IEC_ISO/핵심표준_목록.md) – 2026-04 기준 최신 판본 매트릭스
+- [핵심표준_목록](01_규제지식베이스/국제표준_IEC_ISO/핵심표준_목록.md) – 2026-06 기준 최신 판본 매트릭스 (+ §7 IEC 62304 Ed.2 개발중 동향 추적: health software 확대·81001-5-1/QMSR/AI 정합)
 - [IEC60601-1_Ed3.2_시험항목_매트릭스](01_규제지식베이스/국제표준_IEC_ISO/IEC60601-1_Ed3.2_시험항목_매트릭스.md) – Cl.4~17 전항목 시험표, 3지역 버전·인정현황 비교, 3제품 Gap분석, IECEE CB Scheme 전략 (#23)
   - [IEC60601-1-3_방사선방호_시험항목_매트릭스](01_규제지식베이스/국제표준_IEC_ISO/IEC60601-1-3_방사선방호_시험항목_매트릭스.md) – DSA 누설방사선·HVL·콜리메이터·Focal Spot 시험항목, 3지역 인정현황(MFDS/FDA 0.88mGy/h 차이), 3제품 영향 맵핑, 시험 체크리스트 (#25)
 - [IEC62304_SW수명주기_산출물_매핑](01_규제지식베이스/국제표준_IEC_ISO/IEC62304_SW수명주기_산출물_매핑.md) – IEC 62304:2006+A1:2015 Cl.5~9 전 조항 산출물, Safety Class A/B/C 판정·면제 조항, 3개 제품(Detector Class B·Handheld Class C·GUI SW Class C) 적용 계획, 3지역(MFDS/FDA/MDR) 요건 비교, FDA Basic/Enhanced 수준 판단 (#30)
@@ -123,6 +125,4 @@
 - [Week07_기술문서_작성_실습_STED](05_전문가교육/Week07_기술문서_작성_실습_STED.md) – GHTF/SG1/N011:2008 STED 기원·FDA eSTAR vs MDR Annex II vs MFDS 기술문서 3지역 구조 비교·섹션별 작성 요령(Device Description/SE/GSPR/동등비교/Performance Testing/Risk Management/Software/Labeling/Clinical Data)·3제품 기술문서 구성 계획·Common Core 전략·실습 3종·평가기준 (#73)
 - [Week08_사이버보안_AI_SBOM_ThreatModel_PCCP](05_전문가교육/Week08_사이버보안_AI_SBOM_ThreatModel_PCCP.md) – FD&C Act §524B Cyber Device·FDA 2025-06-27 Final Guidance Section VII·STRIDE Threat Model 6범주·SBOM SPDX/CycloneDX·PCCP 3대 구성요소·IEC 81001-5-1 vs 62304 매핑·3지역 비교 매트릭스·3제품 영향 맵핑·실습 4종·평가기준 (#74)
 - [Week09_임상평가](05_전문가교육/Week09_임상평가.md) – MFDS 2025-07 임상평가 신제도·FDA Solid State X-ray Imaging Device Guidance 임상이미지 평가 방법론·MDR Art.61+MDCG 2020-1/5/6/2023-7 동등성 3기준·CEP/CER 구조·PRISMA 문헌평가 방법론·PMCF 판단 기준·3제품 임상증거 전략 매트릭스·지적사항 대응·실습 3종·평가기준 (#77)
-- [Week10_QMS심사대응](05_전문가교육/Week10_QMS심사대응.md) – MFDS KGMP 현장심사 준비 체크리스트·FDA QMSR CP 7382.850(2026-02-02) Risk-Based Inspection·ARR 3개·FDA-483 응답 구조·MDR NB Annex IX/X/XI 심사 단계·NB Deficiency 유형 3가지·3지역 심사 비교 매트릭스·3제품 위험 요인 맵핑·연간 심사 대응 달력·실습 3종·평가기준 (#76)
-- [Week11_심사_QA_시뮬레이션](05_전문가교육/Week11_심사_QA_시뮬레이션.md) – MFDS 기술문서 심사 Q10 유형·FDA CDRH AI Request 패턴(SE 5단계·SW문서·선량클레임·483 CAPA 응답)·MDR NB Deficiency 3유형(문서부재·데이터불충분·해석차이)·X-ray 3제품 특화 Q&A·금기 답변 패턴 6종·시뮬레이션 3세트(FDA AI/MDR NB/MFDS 보완) (#79)
-- [Week12_종합실습_평가]
+- [Week10_QMS심사대응](05_전문가교육/Week10_QMS심사대응.md) – MFDS KGMP 현장심사 준비 체크리스트·FDA QMSR CP 7382.850(2026-02-
