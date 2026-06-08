@@ -3,14 +3,14 @@
 {
   "name": "Ra Kb Dashboard",
   "schemaVersion": 1,
-  "description": "RA 지식베이스 자동보강 진척 현황 대시보드. EP 기반 진척률·예상 완료일·스케줄 상태를 표시. 회차 완료 후 Claude에게 갱신 요청."
+  "description": "RA 지식베이스 유지관리 대시보드 (Phase 5). 주간 모니터링·분기 심층패치 운영현황, 규제변경 감지, 마감 캘린더(D-day), 표준 개정 watch, 후속추적, 회차 로그를 표시. 주간/분기 회차 완료 시 Claude가 자동 갱신."
 }
 </script>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RA KB 진척 대시보드</title>
+<title>RA KB 유지관리 대시보드</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
 <style>
   :root { color-scheme: light; }
@@ -28,7 +28,7 @@
   .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 20px; }
   .card { background: #fff; border-radius: 10px; border: 0.5px solid #e0e0dc; padding: 14px 16px; }
   .metric-label { font-size: 11px; color: #888; margin-bottom: 6px; }
-  .metric-value { font-size: 26px; font-weight: 600; line-height: 1; }
+  .metric-value { font-size: 24px; font-weight: 600; line-height: 1.1; }
   .metric-sub { font-size: 11px; color: #aaa; margin-top: 5px; }
   .v-green { color: #3B6D11; }
   .v-orange { color: #ba7517; }
@@ -36,144 +36,113 @@
   .v-complete { color: #27500a; }
   .section-label { font-size: 12px; font-weight: 600; color: #555; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.04em; }
   .bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 9px; }
-  .bar-name { font-size: 12px; color: #333; width: 160px; flex-shrink: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar-name { font-size: 12px; color: #333; width: 200px; flex-shrink: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .bar-track { flex: 1; background: #f0ede8; border-radius: 4px; height: 8px; overflow: hidden; }
   .bar-fill { height: 8px; border-radius: 4px; }
-  .bar-stat { font-size: 11px; color: #888; width: 82px; text-align: right; flex-shrink: 0; }
-  .policy-row { display: flex; justify-content: space-between; align-items: center; padding: 7px 0; border-bottom: 0.5px solid #f0ede8; font-size: 13px; }
+  .bar-stat { font-size: 11px; color: #888; width: 70px; text-align: right; flex-shrink: 0; }
+  .policy-row { display: flex; justify-content: space-between; align-items: center; padding: 7px 0; border-bottom: 0.5px solid #f0ede8; font-size: 13px; gap: 10px; }
   .policy-row:last-child { border-bottom: none; }
-  .policy-key { color: #555; }
-  .policy-val { font-weight: 500; color: #1a1a1a; }
+  .policy-key { color: #555; flex-shrink: 0; }
+  .policy-val { font-weight: 500; color: #1a1a1a; text-align: right; }
   .log-item { font-size: 12px; color: #444; padding: 5px 0; border-bottom: 0.5px solid #f0ede8; line-height: 1.6; }
   .log-item:last-child { border-bottom: none; }
   .log-issue { font-weight: 600; color: #185fa5; }
-  .log-normal { color: #3B6D11; font-size: 11px; font-weight: 500; }
-  .log-manual { color: #ba7517; font-size: 11px; font-weight: 500; }
+  .log-quarterly { color: #7a4f00; font-size: 11px; font-weight: 500; }
+  .log-weekly { color: #185fa5; font-size: 11px; font-weight: 500; }
   .ep-tag { display: inline-block; background: #f0ede8; color: #555; font-size: 10px; padding: 1px 5px; border-radius: 3px; font-weight: 500; }
+  .followup { font-size: 12px; color: #444; padding: 6px 0; border-bottom: 0.5px solid #f0ede8; line-height: 1.5; display: flex; gap: 8px; }
+  .followup:last-child { border-bottom: none; }
+  .fu-num { color: #185fa5; font-weight: 600; flex-shrink: 0; }
   .update-note { font-size: 11px; color: #aaa; text-align: center; margin-top: 16px; padding-top: 12px; border-top: 0.5px solid #e8e5e0; }
-  .divider { border: none; border-top: 0.5px solid #e8e5e0; margin: 4px 0; }
-  .complete-banner { background: #eaf3de; border: 1px solid #a8d488; border-radius: 8px; padding: 10px 16px; margin-bottom: 16px; font-size: 13px; color: #27500a; font-weight: 600; text-align: center; }
+  .divider { border: none; border-top: 0.5px solid #e8e5e0; margin: 8px 0; }
+  .banner { background: #eaf3de; border: 1px solid #a8d488; border-radius: 8px; padding: 10px 16px; margin-bottom: 16px; font-size: 13px; color: #27500a; font-weight: 600; text-align: center; }
 </style>
 </head>
 <body>
 
-<h1>RA KB 자동보강 진척 대시보드</h1>
+<h1>RA KB 유지관리 대시보드 <span style="font-weight:400;color:#888;font-size:13px;">· Phase 5</span></h1>
 <div class="meta">
-  <span>마지막 갱신: 2026-06-05 03:00</span>
-  <span class="sync-badge badge-green"><span class="sync-dot dot-green"></span>GitHub 동기화 완료</span>
-  <span class="sync-badge badge-gold">이슈 #89 완료 · CATCHUP missed_ep 9 잔류</span>
+  <span>마지막 갱신: 2026-06-08 (주간 모니터 #2)</span>
+  <span class="sync-badge badge-green"><span class="sync-dot dot-green"></span>GitHub 동기화 · 4f1fde2</span>
+  <span class="sync-badge badge-info">주간 모니터링 + 분기 심층패치</span>
 </div>
 
-<div class="complete-banner">🎯 P1~P5 전체 완료 — ep_completed 168 / 168 (100%) · 총 70회차 · 89개 이슈 · Phase 5 유지관리 진행 중</div>
+<div class="banner">🛡️ 유지관리 운영 중 — 빌드 완료(EP 168/168) 후 규제변경 상시 추적 · KB 141문서 · 자격증명 4종 정상 · 소스 6종 가동</div>
 
 <div class="grid4">
   <div class="card">
-    <div class="metric-label">전체 EP</div>
-    <div class="metric-value">168</div>
-    <div class="metric-sub">P1~P5 합계</div>
+    <div class="metric-label">주간 모니터링</div>
+    <div class="metric-value v-blue">월 07:05</div>
+    <div class="metric-sub">최근 6/8 · 다음 6/15</div>
   </div>
   <div class="card">
-    <div class="metric-label">완료 EP</div>
-    <div class="metric-value v-complete">168</div>
-    <div class="metric-sub">100% 달성 ✓</div>
+    <div class="metric-label">분기 심층패치</div>
+    <div class="metric-value v-orange">분기 1일</div>
+    <div class="metric-sub">최근 6/5 · 다음 7/1</div>
   </div>
   <div class="card">
-    <div class="metric-label">잔여 EP</div>
-    <div class="metric-value v-green">0</div>
-    <div class="metric-sub">Phase 5 유지관리 중</div>
+    <div class="metric-label">최근 주간 감지</div>
+    <div class="metric-value v-green">0건</div>
+    <div class="metric-sub">고 0 · 중 0 · 저 0</div>
   </div>
   <div class="card">
-    <div class="metric-label">7일 평균 속도</div>
-    <div class="metric-value v-blue">5.8</div>
-    <div class="metric-sub">EP / 일</div>
+    <div class="metric-label">KB 규모</div>
+    <div class="metric-value">141</div>
+    <div class="metric-sub">문서 · EP 168/168 유지</div>
   </div>
 </div>
 
 <div class="grid2">
 
   <div class="card">
-    <div class="section-label">우선순위별 EP 진척</div>
+    <div class="section-label">규제 마감 캘린더 (D-day, 기준 2026-06-08)</div>
     <div class="bar-row">
-      <span class="bar-name">[P1] 기초 골격</span>
+      <span class="bar-name">EUDAMED 4모듈 의무화</span>
       <div class="bar-track"><div class="bar-fill" style="width:100%; background:#3B6D11;"></div></div>
-      <span class="bar-stat">70 / 70 ✓</span>
+      <span class="bar-stat">5/28 완료</span>
     </div>
     <div class="bar-row">
-      <span class="bar-name">[P2] 중우선</span>
-      <div class="bar-track"><div class="bar-fill" style="width:100%; background:#1D9E75;"></div></div>
-      <span class="bar-stat">37 / 37 ✓</span>
+      <span class="bar-name">EUDAMED legacy 기기 등록</span>
+      <div class="bar-track"><div class="bar-fill" style="width:78%; background:#ba7517;"></div></div>
+      <span class="bar-stat">D-173</span>
     </div>
     <div class="bar-row">
-      <span class="bar-name">[P3] 실전 대응</span>
-      <div class="bar-track"><div class="bar-fill" style="width:100%; background:#378ADD;"></div></div>
-      <span class="bar-stat">42 / 42 ✓</span>
+      <span class="bar-name">MDR 경과 Class III·IIb이식형</span>
+      <div class="bar-track"><div class="bar-fill" style="width:38%; background:#378ADD;"></div></div>
+      <span class="bar-stat">D-571</span>
     </div>
     <div class="bar-row">
-      <span class="bar-name">[P4] 고도화</span>
-      <div class="bar-track"><div class="bar-fill" style="width:100%; background:#7F77DD;"></div></div>
-      <span class="bar-stat">16 / 16 ✓</span>
+      <span class="bar-name">MDR 경과 그 외 등급</span>
+      <div class="bar-track"><div class="bar-fill" style="width:22%; background:#7F77DD;"></div></div>
+      <span class="bar-stat">D-937</span>
     </div>
-    <div class="bar-row">
-      <span class="bar-name">[P5] 유지관리</span>
-      <div class="bar-track"><div class="bar-fill" style="width:100%; background:#C2883A;"></div></div>
-      <span class="bar-stat">3 / 3 ✓</span>
-    </div>
-
-    <div style="margin-top:16px;">
-      <div class="section-label">P3 세부 진행 현황</div>
-      <div class="bar-row">
-        <span class="bar-name">심사 Q&amp;A (9 EP)</span>
-        <div class="bar-track"><div class="bar-fill" style="width:100%; background:#378ADD;"></div></div>
-        <span class="bar-stat">9 / 9 ✓</span>
-      </div>
-      <div class="bar-row">
-        <span class="bar-name">Post-Market (9 EP)</span>
-        <div class="bar-track"><div class="bar-fill" style="width:100%; background:#378ADD;"></div></div>
-        <span class="bar-stat">9 / 9 ✓</span>
-      </div>
-      <div class="bar-row">
-        <span class="bar-name">전문가 교육 (24 EP)</span>
-        <div class="bar-track"><div class="bar-fill" style="width:100%; background:#378ADD;"></div></div>
-        <span class="bar-stat">24 / 24 ✓</span>
-      </div>
-    </div>
+    <hr class="divider">
+    <div class="section-label" style="margin-top:4px;">표준 개정 Watch</div>
+    <div class="policy-row"><span class="policy-key">IEC 62304 Ed.2</span><span class="policy-val v-orange">2026 발행 예상 · 추적중</span></div>
+    <div class="policy-row"><span class="policy-key">IEC 60601-2-28 AMD1</span><span class="policy-val">진행중(~2027)</span></div>
+    <div class="policy-row"><span class="policy-key">IEC 60601-1 4판</span><span class="policy-val" style="color:#888;">2029+ 예상</span></div>
+    <div class="policy-row"><span class="policy-key">ISO 13485</span><span class="policy-val" style="color:#888;">2025 리뷰·신판 미발행</span></div>
   </div>
 
   <div style="display:flex; flex-direction:column; gap:14px;">
 
     <div class="card" style="text-align:center;">
-      <div class="section-label" style="text-align:left;">전체 EP 완료율</div>
-      <div style="position:relative; height:150px;">
-        <canvas id="donutChart" role="img" aria-label="전체 EP 완료율 도넛 차트. 완료 168 EP, 잔여 0 EP.">완료 168 EP / 잔여 0 EP</canvas>
+      <div class="section-label" style="text-align:left;">모니터링 소스 가동률</div>
+      <div style="position:relative; height:140px;">
+        <canvas id="srcChart" role="img" aria-label="모니터링 소스 가동률 도넛. 6종 중 6종 정상.">소스 6/6 정상</canvas>
       </div>
-      <div style="display:flex; justify-content:center; gap:16px; margin-top:6px; font-size:12px; color:#666;">
-        <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#3B6D11;display:inline-block;"></span>완료 168</span>
-        <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:#e8e5e0;display:inline-block;"></span>잔여 0</span>
+      <div style="display:flex; justify-content:center; gap:14px; margin-top:6px; font-size:11px; color:#666; flex-wrap:wrap;">
+        <span>openFDA · Federal Register · EUR-Lex</span><br>
+        <span>law.go.kr(고시/법령) · data.go.kr</span>
       </div>
     </div>
 
     <div class="card">
-      <div class="section-label">완료 현황</div>
-      <div class="policy-row">
-        <span class="policy-key">완료일</span>
-        <span class="policy-val v-green">2026-06-04 ✓</span>
-      </div>
-      <div class="policy-row">
-        <span class="policy-key">7일 실속도</span>
-        <span class="policy-val v-green">5.8 EP/일</span>
-      </div>
-      <div class="policy-row">
-        <span class="policy-key">완료 이슈</span>
-        <span class="policy-val">#1 ~ #89 (89건)</span>
-      </div>
-      <div class="policy-row">
-        <span class="policy-key">총 실행 회차</span>
-        <span class="policy-val">70회 (정상 31 + CATCHUP 18 + 기타)</span>
-      </div>
-      <div class="policy-row">
-        <span class="policy-key">CATCHUP 잔여</span>
-        <span class="policy-val v-orange">missed_ep 9 EP 잔류</span>
-      </div>
+      <div class="section-label">소스별 마지막 점검 (last_seen)</div>
+      <div class="policy-row"><span class="policy-key">openFDA / Fed.Register</span><span class="policy-val v-green">2026-06-08</span></div>
+      <div class="policy-row"><span class="policy-key">law.go.kr 고시·법령</span><span class="policy-val v-green">2026-06-08</span></div>
+      <div class="policy-row"><span class="policy-key">data.go.kr 추적관리</span><span class="policy-val v-green">2026-06-08 · 640건</span></div>
+      <div class="policy-row"><span class="policy-key">EUR-Lex (MDR/IVDR)</span><span class="policy-val v-orange">RSS URL 확정 필요</span></div>
     </div>
 
   </div>
@@ -182,65 +151,45 @@
 <div class="grid2">
 
   <div class="card">
-    <div class="section-label">EP 예산 정책</div>
-    <div class="policy-row">
-      <span class="policy-key">1회차 (03:00)</span>
-      <span class="policy-val">3 EP <span class="sync-badge badge-info" style="font-size:10px;padding:1px 6px;">정상</span></span>
-    </div>
-    <div class="policy-row">
-      <span class="policy-key">2회차 (19:30)</span>
-      <span class="policy-val">3 EP <span class="sync-badge badge-info" style="font-size:10px;padding:1px 6px;">정상</span></span>
-    </div>
-    <div class="policy-row">
-      <span class="policy-key">CATCHUP 모드</span>
-      <span class="policy-val">4 EP <span class="sync-badge badge-gold" style="font-size:10px;padding:1px 6px;">진행 중 (잔여 9 EP)</span></span>
-    </div>
-    <div class="policy-row">
-      <span class="policy-key">다음 항목</span>
-      <span class="policy-val" style="font-size:11px;color:#3B6D11;">Q3 규제 업데이트 패치 (MDR 간소화) [EP:3]</span>
-    </div>
-    <hr class="divider" style="margin:8px 0;">
-    <div class="section-label" style="margin-top:4px;">EP 등급</div>
-    <div class="policy-row"><span class="policy-key">S — EP:1</span><span class="policy-val" style="font-size:12px;color:#666;">체크리스트·목록</span></div>
-    <div class="policy-row"><span class="policy-key">M — EP:2</span><span class="policy-val" style="font-size:12px;color:#666;">단일 지역·제품 가이드</span></div>
-    <div class="policy-row"><span class="policy-key">L — EP:3</span><span class="policy-val" style="font-size:12px;color:#666;">3지역 + 3제품 대형 문서</span></div>
+    <div class="section-label">후속 추적 (open follow-ups)</div>
+    <div class="followup"><span class="fu-num">①</span><span>MDR 간소화 <b>COM(2025)1023</b> 입법진행 추적 (주간)</span></div>
+    <div class="followup"><span class="fu-num">②</span><span>EUDAMED legacy 기기 등록 <b>2026-11-28</b> 마감 (D-173)</span></div>
+    <div class="followup"><span class="fu-num">③</span><span>FDA AI 수명주기 가이던스 확정 추적</span></div>
+    <div class="followup"><span class="fu-num">④</span><span>IEC 62304 <b>Ed.2</b> 발행 추적 → 분기패치 반영</span></div>
+    <div class="followup"><span class="fu-num">⑤</span><span>P5 잔여: MFDS 디지털의료제품법 하위 신규고시 보완 <span class="ep-tag">EP:2</span></span></div>
   </div>
 
   <div class="card">
     <div class="section-label">최근 실행 로그</div>
     <div class="log-item">
-      <span class="log-issue">#89</span> <span class="log-manual">[CATCHUP]</span> 2026-06-05 03:00<br>
-      QMSR 발효·HF 가이던스 반영 — KGMP비교 갱신 + IEC 62366 UEF 템플릿 갱신 (HF Submission Category 추가) <span class="ep-tag">EP:2</span>
+      <span class="log-issue" style="color:#185fa5;">weekly #2</span> <span class="log-weekly">[모니터]</span> 2026-06-08 07:05<br>
+      주간 모니터 — <b>신규 규제변경 없음</b>. 6소스 폴링, data.go.kr 추적 639→640 변화 감지(비관련). 고/중영향 0건. 커밋 4f1fde2.
     </div>
     <div class="log-item">
-      <span class="log-issue">#88</span> <span class="log-normal">[정상]</span> 2026-06-04 19:30<br>
-      2026 Q2 규제 업데이트 종합 패치 — FDA QMSR 발효·HF 가이던스·EU COM(2025)1023·EUDAMED 4모듈·MFDS RWE 확대 <span class="ep-tag">EP:3</span>
+      <span class="log-issue" style="color:#7a4f00;">quarterly #1</span> <span class="log-quarterly">[분기 심층]</span> 2026-06-05<br>
+      2026 Q3 규제패치 — <b>MDR 간소화 COM(2025)1023 미채택</b> 확인 · <b>EUDAMED 4모듈 의무화</b> 반영 · <b>FDA AI/ML PCCP</b> 운영 · IEC 62304 Ed.2 추적 개시. 커밋 67b08ab. <span class="ep-tag">EP:5</span>
     </div>
     <div class="log-item">
-      <span class="log-issue">#87</span> <span class="log-manual">[CATCHUP]</span> 2026-06-04 03:00<br>
-      EUDAMED 모듈별 등록 실무 가이드 (4모듈 의무화·ACT/UDI-DEV/NB-CERT·Module5 ~Q2 2027) <span class="ep-tag">EP:2</span>
+      <span class="log-issue" style="color:#185fa5;">weekly #1</span> <span class="log-weekly">[모니터]</span> 2026-06-05<br>
+      교체 직후 첫 모니터 — 6소스 baseline 설정(data.go.kr 639). 신규 0건.
     </div>
-    <div class="log-item">
-      <span class="log-issue">#86</span> <span class="log-manual">[CATCHUP]</span> 2026-06-04 03:00<br>
-      경쟁 제품 510(k) Summary 분석 DB (MQB/IZL/LLZ·2024~2026·자사 K251223) <span class="ep-tag">EP:2</span>
-    </div>
-    <div class="log-item">
-      <span class="log-issue">#85</span> <span class="log-normal">[정상]</span> 2026-06-03 19:30<br>
-      규제 변경 모니터링 자동화 (법령·가이던스 RSS·Python 스크립트) <span class="ep-tag">EP:2</span>
+    <hr class="divider">
+    <div style="font-size:11px;color:#888;line-height:1.6;">
+      <b>전환 이력:</b> 2026-06-05 빌드 스케줄러 2개(03:00·19:30) 비활성 → 유지관리 스케줄러 2개(주간·분기) 가동. 자격증명 4종 검증 통과 후 교체.
     </div>
   </div>
 
 </div>
 
-<p class="update-note">자동보강 회차는 자동 업데이트되지 않습니다. 진척 확인 후 Claude에게 "대시보드 갱신해줘" 요청하세요.</p>
+<p class="update-note">주간/분기 회차 완료 시 자동 갱신됩니다. 수동 갱신은 Claude에게 "대시보드 갱신해줘" 요청하세요.</p>
 
 <script>
-new Chart(document.getElementById('donutChart'), {
+new Chart(document.getElementById('srcChart'), {
   type: 'doughnut',
   data: {
-    labels: ['완료', '잔여'],
+    labels: ['정상', '점검필요'],
     datasets: [{
-      data: [168, 0],
+      data: [6, 0],
       backgroundColor: ['#3B6D11', '#e8e5e0'],
       borderWidth: 0,
       hoverOffset: 4
@@ -252,13 +201,7 @@ new Chart(document.getElementById('donutChart'), {
     cutout: '68%',
     plugins: {
       legend: { display: false },
-      tooltip: {
-        callbacks: {
-          label: function(c) {
-            return c.label + ': ' + c.parsed + ' EP';
-          }
-        }
-      }
+      tooltip: { callbacks: { label: function(c){ return c.label + ': ' + c.parsed + '종'; } } }
     }
   },
   plugins: [{
@@ -268,4 +211,18 @@ new Chart(document.getElementById('donutChart'), {
       const cx = (left + right) / 2, cy = (top + bottom) / 2;
       ctx.save();
       ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      ctx.fillStyle 
+      ctx.fillStyle = '#3B6D11';
+      ctx.font = '600 22px -apple-system, BlinkMacSystemFont, sans-serif';
+      ctx.fillText('6/6', cx, cy - 6);
+      ctx.fillStyle = '#888';
+      ctx.font = '400 11px -apple-system, BlinkMacSystemFont, sans-serif';
+      ctx.fillText('소스 정상', cx, cy + 14);
+      ctx.restore();
+    }
+  }]
+});
+</script>
+
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
