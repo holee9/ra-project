@@ -270,4 +270,37 @@ Fail 항목: 없음.
 | **표준 참조** | IEC 62366-1:2015+AMD1:2020 (KGMP 준용) | IEC 62366-1:2015+AMD1:2020 (Recognized Consensus Standard No. 41235) | IEC 62366-1 (state-of-art; MDCG 2021-5) |
 | **Summative 참가자 수** | 명시 기준 없음 (실질적 대표성 요구) | 최소 15명/그룹 권고 (HFE Guidance) | 명시 없음 (GSPR §5 대표성 요건) |
 | **제출 시점** | 기술문서 내 포함 | 510(k) 또는 PMA에 HFE Report 제출 | NB 심사 시 Technical Documentation에 포함 |
-| **외부 시험 기관 필요** | 필수 아님 (내부 수행 가능) | 필수 아님 (단, 독립성 권고) | 필수 아님 (단, 절차
+| **외부 시험 기관 필요** | 필수 아님 (내부 수행 가능) | 필수 아님 (단, 독립성 권고) | 필수 아님 (단, 절차·독립성 입증) |
+| **훈련 허용 여부** | 허용 (3순위 위험통제) | 허용 (단, 보조 수단; 설계·라벨 우선) | 허용 (AMD1:2020 반영, 보조 수단) |
+
+---
+
+## 10. 위험통제 우선순위 (IEC 62366-1 §5.6, AMD1:2020 반영)
+
+```
+1순위: 고유 안전 설계 (Inherently safe design)
+         예) 방사선 방향 물리적 잠금, 조준 인터락
+2순위: 안전 관련 정보 (Information for safety, labeling, IFU)
+         예) 경고음·LED 표시, 화면 경고 메시지
+3순위: 훈련 (Training) ← AMD1:2020 신규 추가
+         예) 출시 전 사용자 교육, e-Learning
+```
+
+---
+
+## 11. 문서 관리 및 버전 이력
+
+| 버전 | 날짜 | 변경 내용 | 작성자 |
+|---|---|---|---|
+| 1.0 | 2026-05-06 | 최초 작성 (자동보강 #19) | RA Auto Runner |
+
+---
+
+## 12. 참조 문서
+
+| 문서 | 연계 |
+|---|---|
+| ISO 14971:2019 Risk Management File | [Risk_Management_File_ISO14971_2019_템플릿.md](Risk_Management_File_ISO14971_2019_템플릿.md) |
+| IEC 62304 SW 문서세트 | [촬영실_GUI_SW_IEC62304_문서세트.md](../02_제품별_기술파일/03_촬영실_GUI_SW/촬영실_GUI_SW_IEC62304_문서세트.md) |
+| MDR Annex I GSPR 체크리스트 | [MDR_AnnexI_GSPR_Checklist.md](../01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_AnnexI_GSPR_Checklist.md) |
+| MDR Annex II Technical Documentation | [MDR_AnnexII_Technical_Documentation_Template.md](../01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_AnnexII_Technical_Documentation_Template.md) |
