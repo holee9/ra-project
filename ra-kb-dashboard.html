@@ -152,10 +152,10 @@
 
   <div class="card">
     <div class="section-label">KPI (마스터 헌장 §4)</div>
-    <div class="policy-row"><span class="policy-key">감지 적시성</span><span class="policy-val v-green">≤7일 · OK</span></div>
-    <div class="policy-row"><span class="policy-key">근거 정확도</span><span class="policy-val v-green">100%</span></div>
-    <div class="policy-row"><span class="policy-key">완전성(3×3)</span><span class="policy-val v-green">~95%</span></div>
-    <div class="policy-row"><span class="policy-key">검증 폐쇄율</span><span class="policy-val v-orange">기준 47건 → 분기 −20%p</span></div>
+    <div class="policy-row"><span class="policy-key">감지 적시성</span><span class="policy-val" style="color:#888;">목표 ≤7일 · 측정 전</span></div>
+    <div class="policy-row"><span class="policy-key">근거 정확도</span><span class="policy-val" style="color:#888;">목표 100% · 미측정(샘플감사 예정)</span></div>
+    <div class="policy-row"><span class="policy-key">완전성(3×3)</span><span class="policy-val" style="color:#888;">목표 ≥95% · 미측정</span></div>
+    <div class="policy-row"><span class="policy-key">검증 큐</span><span class="policy-val v-orange">47건 · 폐쇄 0 (착수)</span></div>
     <hr class="divider">
     <div class="section-label">후속 추적 (open follow-ups)</div>
     <div class="followup"><span class="fu-num">①</span><span>MDR 간소화 <b>COM(2025)1023</b> 입법진행 추적 (주간)</span></div>
@@ -206,5 +206,4 @@ new Chart(document.getElementById('srcChart'), {
     maintainAspectRatio: false,
     cutout: '68%',
     plugins: {
-      legend: { display: false },
-      tooltip: { callbacks: { label: function(c){ return c.label + ': ' + c.parsed + '종'; 
+      legend: { display
