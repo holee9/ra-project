@@ -1,4 +1,4 @@
-> 최종 갱신: 2026-06-04 (자동보강 #87)
+> 최종 갱신: 2026-06-09 (검증③ — EUDAMED 명칭체계 GMDN→EMDN 정정) / 2026-06-04 (자동보강 #87)
 > 근거: https://health.ec.europa.eu/medical-devices-eudamed/overview_en | https://health.ec.europa.eu/latest-updates/eudamed-four-first-modules-will-be-mandatory-use-28-may-2026-2025-11-27_en | https://health.ec.europa.eu/document/download/0e7327c7-0e06-4fbd-90d3-8ab7bb30fe9f_en?filename=eudamed-qa_en.pdf | https://webgate.ec.europa.eu/eudamed-help/en/files/UDI%20Devices%20-%20user%20guide.pdf | https://www.celegence.com/eudamed-mandatory-28-may-2026-medical-device-ivd-manufacturers/
 
 # EUDAMED 모듈별 등록 실무 가이드
@@ -104,7 +104,7 @@ Basic UDI-DI (레거시 식별자)
 | CE Certificate Number | NB 발행 인증서 번호 | Class IIa+ |
 | Notified Body ID | NB EUDAMED ID | 필수 |
 | UDI-DI(s) | 모델별 UDI | 필수 |
-| GMDN Code | 국제 제품 분류 코드 | 필수 |
+| EMDN Code | 유럽 의료기기 명칭(MDR Art.26, EUDAMED 필수) — GMDN 아님 | 필수 |
 | Clinical Investigation | 해당 시 CI 모듈 연계 | 조건부 |
 
 #### 3-2-C. 등록 시점 의무 (2026-05-28 이후)
@@ -193,7 +193,7 @@ Step 5: UDI/DEV 모듈 — 기기 등록
   └── Basic UDI-DI 등록
   └── UDI-DI 등록 (모델별)
   └── CE Certificate Number 연계
-  └── GMDN Code 지정
+  └── EMDN Code 지정 (EUDAMED 필수; GMDN은 글로벌·FDA GUDID용 별개)
 
 Step 6: EU 시장 출시 (Placing on Market)
 
@@ -242,7 +242,7 @@ Step 9: Serious Incident → Module 5 출시 전: NCA 직접 보고
 | 적합성평가 경로 | MDR Annex IX (QMS+TD) 또는 Annex XI (Type Exam) |
 | EUDAMED 필수 작업 | ① SRN 취득 ② Basic UDI-DI 발급(GS1) ③ CE Certificate 취득 ④ UDI/DEV 등록 |
 | 긴급도 | **★ 즉시 착수** — 신규 EU 시장 진출 계획 시 2026-05-28 이전 등록 완료 권장 |
-| GMDN Code | 43489 (Digital Radiographic X-ray Detector) [검증 필요] |
+| 명칭 코드 | **EUDAMED 등록 = EMDN 필수**(MDR Art.26): Cat. Z(전자의료기기·진단 X-ray)에서 7-레벨 코드를 공식 EMDN(EC, 무료)으로 확정 [EMDN 확정 과제]. 참고: GMDN(글로벌·FDA GUDID용) 43489 후보 — GMDN Agency 확인 필요 |
 
 ### 6-B. Handheld X-ray Source
 
@@ -252,7 +252,7 @@ Step 9: Serious Incident → Module 5 출시 전: NCA 직접 보고
 | 적합성평가 경로 | MDR Annex X (Type Exam) 또는 Annex IX (대규모 제조사) |
 | EUDAMED 필수 작업 | ① SRN ② Basic UDI-DI ③ CE Certificate (Class IIb NB) ④ UDI/DEV |
 | 특이사항 | Class IIb → NB 심사 범위 확대, 기술문서 전체 검토 |
-| GMDN Code | 60784 (Portable X-ray System, General Purpose) [검증 필요] |
+| 명칭 코드 | **EUDAMED 등록 = EMDN 필수**: Cat. Z(진단 X-ray 장비)에서 확정 [EMDN 확정 과제]. 참고: GMDN 60784 후보 — GMDN Agency 확인 필요 |
 
 ### 6-C. 촬영실 GUI SW
 
@@ -262,7 +262,7 @@ Step 9: Serious Incident → Module 5 출시 전: NCA 직접 보고
 | 적합성평가 경로 | MDR Annex IX |
 | EUDAMED 특이사항 | SW는 Physical 기기와 별도로 Basic UDI-DI 필요. SW 버전 업데이트 시 UDI-DI 변경 여부 판단 필요. |
 | IEC 62304 | Safety Class B 또는 C — EUDAMED 등록 전 결정 필요 |
-| GMDN Code | [검증 필요] |
+| 명칭 코드 | **EUDAMED 등록 = EMDN 필수**: SW는 Cat. Z 소프트웨어 접미사 "82" 계열에서 확정(독립형 SaMD 별도 분류 판단) [EMDN 확정 과제]. 참고: GMDN 별도 확인 |
 
 ---
 
@@ -312,11 +312,6 @@ Step 9: Serious Incident → Module 5 출시 전: NCA 직접 보고
 
 ### 해석 (Interpretation)
 - EUDAMED 의무화로 EU 시장 접근의 전제조건이 추가됨. SRN 미취득 = EU 시장 출시 불가.
-- NB들은 2027-05-27까지 기존 인증서를 EUDAMED에 업로드해야 하므로, 신규 NB 심사 일정과 EUDAMED 등록 일정을 통합 관리 필요.
-- Module 5 부재 기간 중에도 MDR Art. 87 기반 각 NCA 직접 보고 의무 지속.
-
-### 행동 지시 (Action)
-- **즉시**: EC-REP 선정 및 SRN 취득 프로세스 착수.
-- **단기**: GS1 계약 → Basic UDI-DI 발급. EUDAMED Playground에서 등록 사전 연습.
-- **중기**: CE Certificate 취득 완료 후 UDI/DEV 등록 → EU 첫 출시 전 완료.
-- **지속**: Module 5 출시 공시 모니터링 (규제변경_모니터링_자동화_RSS.md EUR-Lex RSS 활용).
+- NB들은 2027-05-27까지 기존 인증서를 EUDAMED에 업로드해야 하므로, 신규 NB 심사 일정과 EUD
+---
+작성: EU MDR 전문가(#87) · 검토(QA③, 2026-06-09): EUDAMED 명칭체계 검증 — EUDAMED UDI/Device 등록은 **EMDN 필수**(EC Public Health·MDR Art.26), GMDN은 글로벌(FDA GUDID)용 별개. 245·255·265행 GMDN→EMDN 정정(Cat. Z 전자의료기기, SW 접미사 82). 정확 EMDN leaf 코드는 공식 EMDN으로 확정할 분류 과제로 분리(#104 예정). 출처: EC EMD
