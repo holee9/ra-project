@@ -62,12 +62,12 @@
 
 <h1>RA KB 유지관리 대시보드 <span style="font-weight:400;color:#888;font-size:13px;">· Phase 5</span></h1>
 <div class="meta">
-  <span>마지막 갱신: 2026-06-08 (주간 모니터 #2)</span>
+  <span>마지막 갱신: 2026-06-09 (2차 거버넌스 도입)</span>
   <span class="sync-badge badge-green"><span class="sync-dot dot-green"></span>GitHub 동기화 · 4f1fde2</span>
   <span class="sync-badge badge-info">주간 모니터링 + 분기 심층패치</span>
 </div>
 
-<div class="banner">🛡️ 유지관리 운영 중 — 빌드 완료(EP 168/168) 후 규제변경 상시 추적 · KB 141문서 · 자격증명 4종 정상 · 소스 6종 가동</div>
+<div class="banner">🛡️ 2차 거버넌스 가동 — 마스터 헌장(Chief RA Strategist)+7페르소나·QA게이트·KPI 도입 · KB 141문서 · 소스 6종 · 이슈 #91~103 이력화</div>
 
 <div class="grid4">
   <div class="card">
@@ -151,6 +151,12 @@
 <div class="grid2">
 
   <div class="card">
+    <div class="section-label">KPI (마스터 헌장 §4)</div>
+    <div class="policy-row"><span class="policy-key">감지 적시성</span><span class="policy-val v-green">≤7일 · OK</span></div>
+    <div class="policy-row"><span class="policy-key">근거 정확도</span><span class="policy-val v-green">100%</span></div>
+    <div class="policy-row"><span class="policy-key">완전성(3×3)</span><span class="policy-val v-green">~95%</span></div>
+    <div class="policy-row"><span class="policy-key">검증 폐쇄율</span><span class="policy-val v-orange">기준 47건 → 분기 −20%p</span></div>
+    <hr class="divider">
     <div class="section-label">후속 추적 (open follow-ups)</div>
     <div class="followup"><span class="fu-num">①</span><span>MDR 간소화 <b>COM(2025)1023</b> 입법진행 추적 (주간)</span></div>
     <div class="followup"><span class="fu-num">②</span><span>EUDAMED legacy 기기 등록 <b>2026-11-28</b> 마감 (D-173)</span></div>
@@ -201,28 +207,4 @@ new Chart(document.getElementById('srcChart'), {
     cutout: '68%',
     plugins: {
       legend: { display: false },
-      tooltip: { callbacks: { label: function(c){ return c.label + ': ' + c.parsed + '종'; } } }
-    }
-  },
-  plugins: [{
-    id: 'centerText',
-    afterDraw(chart) {
-      const { ctx, chartArea: { top, bottom, left, right } } = chart;
-      const cx = (left + right) / 2, cy = (top + bottom) / 2;
-      ctx.save();
-      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      ctx.fillStyle = '#3B6D11';
-      ctx.font = '600 22px -apple-system, BlinkMacSystemFont, sans-serif';
-      ctx.fillText('6/6', cx, cy - 6);
-      ctx.fillStyle = '#888';
-      ctx.font = '400 11px -apple-system, BlinkMacSystemFont, sans-serif';
-      ctx.fillText('소스 정상', cx, cy + 14);
-      ctx.restore();
-    }
-  }]
-});
-</script>
-
-</body>
-</html>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+      tooltip: { callbacks: { label: function(c){ return c.label + ': ' + c.parsed + '종'; 

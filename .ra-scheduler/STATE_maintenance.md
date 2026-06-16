@@ -22,8 +22,12 @@ law_law_since: 2026-06-15
 datagokr_trace_since: 2026-06-15
 datagokr_trace_count: 640
 
-## 후속 추적
-open_followups: ① MDR 간소화 COM(2025)1023 입법진행 추적(주간) ② EUDAMED legacy 등록 2026-11-28 마감 ③ FDA AI 수명주기 가이던스 확정 추적 ④ IEC 62304 Ed.2 발행 추적 ⑤ P5 잔여: MFDS 하위 신규고시 보완[EP:2]
-commit_failed: false
-dashboard_update_failed: false
-cutover_done: 2026-06-05 18:xx — 자격증명 4종 검증통과, 신규 주간/분기 스케줄러 가동, 구 빌드 
+## KPI (마스터 헌장 §4, #100)
+kpi_감지_적시성: 목표 ≤7일 / 최근 OK
+kpi_근거_정확도: 목표 100% / 현 100%
+kpi_완전성_3x3매트릭스: 목표 ≥95% / 현 ~95%
+kpi_검증폐쇄율: 목표 분기 +20%p / 기준 47건(2026-06-09)
+kpi_공백해소: 협력기관 실데이터화(#103) / 진행현안 사용자입력 대기
+
+## 거버넌스 문서 (회차 로드 대상)
+governance_docs: MASTER_CHARTER.md, QA_GATE.md, VERIFI
