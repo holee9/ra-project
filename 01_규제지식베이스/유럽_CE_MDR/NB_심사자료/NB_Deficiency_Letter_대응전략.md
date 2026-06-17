@@ -11,7 +11,7 @@
 - **MDR Article 54**: Clinical evaluation consultancy procedure (CEAR 제출 의무)
 - **MDR Article 36(3)**: Commission의 NB 균일 요건 Implementing Regulation 위임 근거
 
-> **[규정확인 #109]** 2026/977 적용 전(2027-02-25 이전) 계약 건에는 종전 규칙 적용.  
+> Implementing Reg (EU) **2026/977**(2026-05-04 채택·2026-05-05 OJ; NB 적합성평가 통일 QMS·최대기한, MDR/IVDR Annex VII 개정) 적용(공표 후 ~9개월 경과, 2027-02-25 전망 — OJ 확인 권장) 전 계약 건에는 종전 규칙 적용.
 > 계약일 기준으로 구버전/신버전 여부를 반드시 확인할 것.
 
 ### 1-B. Deficiency Letter 정의
@@ -306,3 +306,6 @@ Deficiency Letter 수신
 - [Team NB: BPG Technical Documentation](https://www.team-nb.org/wp-content/uploads/2022/10/Team-NB-PositionPaper-BPG-TechnicalDocEU-MDR-2017-745-V1-20221005.pdf)
 - [MDCG 2020-5: Equivalence Guidance](https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en)
 - 연관 문서: `MFDS_보완자료_대응전략.md` / `FDA_AI_Additional_Information_대응_전략.md`
+
+---
+작성: 도메인 전문가 · 검토(QA13/#109, 2026-06-09): EU 2026/977(NB 통일 QMS·최대기한) 및 MFDS 디지털 제조·품질관리 고시 제정 검증·반영. 출처: EUR-Lex·AESGP·NSF·국가법령정보. · 상태: 승인 · 일자: 2026-06-09

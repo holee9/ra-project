@@ -72,7 +72,7 @@
 
 | 항목 | 상태 | 확인 주기 |
 |---|---|---|
-| 디지털 GMP 고시 시행 | 2025년 내 예정 [고시발행 추적 #109] | 분기별 확인 |
+| 디지털의료기기 제조·품질관리 행정규칙 | **제정 확인**(국가법령정보, 2026-06 기준 존재; 정확 고시번호 law.go.kr 참조) | 분기별 확인 |
 | 디지털의료제품법 시행규칙 개정 (총리령 제2088호) | 2026-01-23 개정 완료 | — |
 | 추가 가이드라인 제정 | 지속 예고 중 | 월별 mfds.go.kr 확인 |
 | MFDS 6종 가이드라인 후속 개정 | 2025년 이후 수시 | 분기별 확인 |
@@ -86,3 +86,6 @@
 - MFDS 디지털의료기기 정보: https://emedi.mfds.go.kr/msismext/emd/bif/digitInfoIntrcnView.do
 - 디지털의료기기소프트웨어 허가심사 가이드라인 (2025-05): https://www.kbiohealth.kr/consulting/fileDownload?titleId=Ko5hLZmhMY&fileId=1&fileDownType=C&paramMenuId=MENU002030200000000
 - 가이드라인 6종 안내: https://dhnet.kodhia.or.kr/core/?cid=10&uid=5488
+
+---
+작성: 도메인 전문가 · 검토(QA13/#109, 2026-06-09): EU 2026/977(NB 통일 QMS·최대기한) 및 MFDS 디지털 제조·품질관리 고시 제정 검증·반영. 출처: EUR-Lex·AESGP·NSF·국가법령정보. · 상태: 승인 · 일자: 2026-06-09
