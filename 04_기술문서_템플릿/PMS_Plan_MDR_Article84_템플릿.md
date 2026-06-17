@@ -1,4 +1,4 @@
-> 최종 갱신: 2026-05-22 (자동보강 #62)
+> 최종 갱신: 2026-05-22 (자동보강 #62)  ⟶ 2026-06-09 (검증⑨ — 디지털의료제품법 시행일 정정)
 > 근거: https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng (MDR 2017/745 Annex III §1.1, Article 83-86) | https://health.ec.europa.eu/document/download/a9ad86b7-1b8e-4bae-beb4-48b2b3ed2f05_en?filename=mdcg_2025-10_en.pdf (MDCG 2025-10, 2025-12-19) | https://health.ec.europa.eu/system/files/2023-01/mdcg_2022-21_en.pdf (MDCG 2022-21) | https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-822 (21 CFR Part 822)
 
 # Post-Market Surveillance Plan — MDR Article 84 / Annex III §1.1 실용 템플릿
@@ -42,7 +42,7 @@
 
 ## 3. PMS Plan 실용 템플릿 (MDCG 2025-10 기반)
 
-> **사용 방법:** `[대괄호]` 항목은 자사 정보로 교체. `[검증 필요]` 태그 항목은 추가 확인 후 기재.
+`[추가확인]` 표시 항목은 자사 확인 후 기재.
 
 ---
 
@@ -237,7 +237,7 @@
 | 핵심 수집원 | SW 버그 리포트, 사이버보안 취약점 공개 DB (CVE, NIST NVD) |
 | PMCF 방법 | 사용성 평가 (IEC 62366), 실사용 에러 데이터 수집 |
 | 주요 표준 모니터링 | IEC 62304 개정, MDCG 2019-16 Rev.1 사이버보안, MDCG 2021-6 SaMD |
-| MFDS 특이사항 | 디지털의료제품법(2024.09.26 시행) 적용 여부 검토 [검증 필요] |
+| MFDS 특이사항 | 디지털의료제품법(**2025-01-24 시행**, 식약처) 적용 여부 검토 — GUI SW가 디지털의료기기 해당 시 적용 |
 
 ---
 
@@ -275,3 +275,6 @@
 | 21 CFR Part 822 (FDA PMS) | https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-822 |
 | 의료기기법 제26조·28조 (MFDS) | https://law.go.kr/법령/의료기기법 |
 | 연관 KB 문서 | [MDR_AnnexIII_PMS_TD_Template](../01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_AnnexIII_PMS_TD_Template.md) (issue #12) |
+
+---
+작성: 도메인 전문가 · 검토(QA9, 2026-06-09): 디지털의료제품법 시행일 2024.09.26(오류)→2025-01-24 정정(국가법령정보). · 상태: 승인(오류 정정) · 일자: 2026-06-09

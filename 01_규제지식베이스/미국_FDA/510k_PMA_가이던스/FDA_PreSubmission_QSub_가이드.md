@@ -1,4 +1,4 @@
-> 최종 갱신: 2026-05-01 (자동보강 #7)
+> 최종 갱신: 2026-05-01 (자동보강 #7)  ⟶ 2026-06-09 (검증⑨ — MFDS X-ray 소관 오류 정정)
 > 근거: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/requests-feedback-and-meetings-medical-device-submissions-q-submission-program | https://www.federalregister.gov/documents/2025/05/29/2025-09618/requests-for-feedback-and-meetings-for-medical-device-submissions-the-q-submission-program-guidance | https://www.fda.gov/regulatory-information/search-fda-guidance-documents/electronic-submission-template-medical-device-q-submissions | https://medicaldeviceacademy.com/fda-pre-submission/
 
 # FDA Pre-Submission (Q-Sub) 작성 가이드 및 샘플 질문
@@ -173,9 +173,9 @@ FDA 리뷰 착수 → 내용 충분성 검토
 | 법적 구속력 | 없음 (non-binding) | 없음 (참고 의견) | 없음 (NB opinion) |
 | 응답 목표 | 70일 (서면) / 100일 (회의) | 명시 없음 (통상 수 주) | NB별 상이 (30~90일) |
 | 비용 | 무료 (PDUFA/MDUFA 포함) | 무료 | NB 과금 (별도 견적) |
-| 온라인 제출 | CDRH Portal (PreSTAR) | 민원24 / 온라인 신청 [검증 필요] | NB 시스템별 상이 |
+| 온라인 제출 | CDRH Portal (PreSTAR) | MFDS 사전검토·전자민원(emedi) [채널 확인] | NB 시스템별 상이 |
 | 제출 빈도 제한 | 없음 (단, 과도한 중복 질문 지양 권고) | 없음 | NB별 상이 |
-| X-ray 특이사항 | CDRH 방사선 부서(OSB) 담당 | 의료기기안전국 체외진단기기과 [검증 필요] | NB 방사선 전문 심사관 배정 |
+| X-ray 특이사항 | CDRH 방사선 부서(OSB) 담당 | MFDS 의료기기심사부(방사선 의료기기 소관 — 체외진단 아님) | NB 방사선 전문 심사관 배정 |
 
 **자사 행동 지시 (3개 지역)**:
 - **FDA**: 510(k) 제출 6~12개월 전 Pre-Sub 1회 필수 고려 (시험 전략 확정 목적)
@@ -207,3 +207,6 @@ FDA 리뷰 착수 → 내용 충분성 검토
 | PreSTAR eSTAR for Q-Sub (Draft) | https://www.fda.gov/regulatory-information/search-fda-guidance-documents/electronic-submission-template-medical-device-q-submissions | 2025-05-29 |
 | MDUFA V Performance Goals (FY2023–2027) | https://www.fda.gov/media/158308/download | 2022 |
 | Medical Device Academy: Pre-Sub Format | https://medicaldeviceacademy.com/fda-pre-submission/ | 2025-10 갱신 |
+
+---
+작성: 도메인 전문가 · 검토(QA9, 2026-06-09): X-ray의 MFDS 소관을 '체외진단기기과'(오류)→의료기기심사부(방사선 의료기기)로 정정. 제출 채널은 MFDS 사전검토/전자민원. · 상태: 승인(오류 정정) · 일자: 2026-06-09

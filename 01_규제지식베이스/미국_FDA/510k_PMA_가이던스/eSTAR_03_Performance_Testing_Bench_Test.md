@@ -1,4 +1,4 @@
-> 최종 갱신: 2026-04-24 (자동보강 #3)
+> 최종 갱신: 2026-04-24 (자동보강 #3)  ⟶ 2026-06-09 (검증⑨ — 분류항목 firm 참조화)
 > 근거: https://www.fda.gov/medical-devices/how-study-and-market-your-device/estar-program · https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-892/subpart-B/section-892.1680 · https://www.fda.gov/regulatory-information/search-fda-guidance-documents/performance-standard-diagnostic-x-ray-systems-and-their-major-components-21cfr-102030-102031-102032 · https://pmc.ncbi.nlm.nih.gov/articles/PMC2464291/ · https://webstore.iec.ch/en/publication/69988 · https://www.fda.gov/medical-devices/premarket-notification-510k/how-find-and-effectively-use-predicate-devices
 
 # FDA eSTAR 섹션별 작성 가이드 (3) Performance Testing / Bench Test
@@ -148,7 +148,7 @@ eSTAR Section G (Performance Testing):
 
 ### 3.2 제품 2: Handheld X-ray Source (휴대용 X-ray 발생장치)
 
-#### 3.2.1 적용 규정·분류 확인 [검증 필요]
+#### 3.2.1 적용 규정·분류 확인 [제품분류 — 등급분류 문서 참조·firm 확정]
 - **Mobile/Portable Radiographic System**: 21 CFR 892.1650 (Class II) + 21 CFR 1020.30
 - **Cabinet X-ray 해당 여부**: 장치가 "enclosed cabinet" 형태이면 21 CFR 1020.40 추가 적용
 - Handheld 휴대형 X-ray의 경우 21 CFR 1020.30 "portable X-ray" 적용이 일반적
@@ -225,7 +225,7 @@ eSTAR Section G (Performance Testing):
 ├── Thermal_Performance_Report.pdf
 ├── Safety_Interlocks_Verification_Report.pdf
 ├── Scatter_Radiation_Assessment.pdf
-└── Regulatory_Classification_Analysis.pdf     [검증 필요]
+└── Regulatory_Classification_Analysis.pdf     [firm 작성]
     └ 21 CFR 1020.30 vs 1020.40 적용 판단
 ```
 
@@ -340,3 +340,6 @@ eSTAR Section G (Performance Testing — Software):
 
 - **MFDS**: 동일 IEC 시험 결과 대부분 공용 가능; "기술문서 성능 시험 자료"에 영문 원본 + 한글 요약 첨부
 - **MDR**: Annex I GSPR §10·§17 대응; IEC 62220-1, IEC 60601-2-54 시험 결과 직접 활용; CE 마크 전 NB에서 추가 요구사항 확인 필수
+
+---
+작성: 도메인 전문가 · 검토(QA9, 2026-06-09): 적용규정·분류는 등급분류 문서 참조·firm 확정 산출물. · 상태: 조건부 · 일자: 2026-06-09
