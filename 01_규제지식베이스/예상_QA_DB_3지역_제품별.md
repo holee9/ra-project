@@ -299,7 +299,7 @@
 **Q-MDR-02** 🔴  
 **Q**: The GSPR checklist is incomplete. Section §10 (radiation) and §17 (electronic programmable systems) are not sufficiently addressed. Provide harmonized standard references for each GSPR item.  
 **A**: GSPR 체크리스트 보완 — §10 (방사선 방호): ① IEC 60601-1-3:2008+A1+A2 인용 (누설방사선, HVL), ② EN 60601-1-3 적용 선언, ③ 선량 최소화(ALARA) 설계 근거. §17 (전자 프로그래밍 시스템, IEC 62304): ① IEC 62304:2006+A1:2015 적용, ② Safety Class A/B/C 판정 근거, ③ SW 수명주기 문서 완비 확인. 각 GSPR 항목마다 "적용 여부 + 조화 표준 번호 + 증명 방법 + 문서 위치" 4칸 형식.  
-**근거**: MDR 2017/745 Annex I §10, §17; EN IEC 62304:2006+A11:2015; EN 60601-1-3:2008+A1+A2  
+**근거**: MDR 2017/745 Annex I §10, §17; EN IEC 62304:2006/A1:2015; EN 60601-1-3:2008+A1+A2  
 **관련KB**: `01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_AnnexI_GSPR_Checklist.md`
 
 ---
@@ -500,3 +500,6 @@
 ---
 
 *본 문서는 자동보강 회차마다 실제 심사 Q&A 이력 반영 및 최신 가이던스 개정 시 갱신됨.*
+
+---
+작성: 국제표준 전문가 · 검토(QA14, 2026-06-09): IEC 62304 버전 표기 정정 — Ed.1.1=2006/A1:2015 확정, Ed.2는 미발행(DIS·2026 예상). 무태그 고영향 스폿검증. · 상태: 승인 · 일자: 2026-06-09
