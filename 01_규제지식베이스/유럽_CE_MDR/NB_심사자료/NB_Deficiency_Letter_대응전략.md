@@ -11,7 +11,7 @@
 - **MDR Article 54**: Clinical evaluation consultancy procedure (CEAR 제출 의무)
 - **MDR Article 36(3)**: Commission의 NB 균일 요건 Implementing Regulation 위임 근거
 
-> **[검증 필요]** 2026/977 적용 전(2027-02-25 이전) 계약 건에는 종전 규칙 적용.  
+> **[규정확인 #109]** 2026/977 적용 전(2027-02-25 이전) 계약 건에는 종전 규칙 적용.  
 > 계약일 기준으로 구버전/신버전 여부를 반드시 확인할 것.
 
 ### 1-B. Deficiency Letter 정의
