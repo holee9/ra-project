@@ -1,5 +1,5 @@
 > 최종 갱신: 2026-06-09 (제로베이스 정비 #94 — 헤더 소급)
-> 근거: 초기 골격 문서. 2차 정비 시 최신성(QMSR 발효·EUDAMED 의무화 등) 재검증 예정 [검증 필요]
+> 근거: 초기 골격 문서. 2026-06-09 현행성 재검증 — 핵심 사실(QMSR 2026-02-02 발효·FD&C 524B 사이버보안·디지털의료제품법 2025-01-24) 반영 확인.
 
 # FDA 인허가 상세 가이드 (X-ray System 전용)
 
@@ -166,3 +166,6 @@
 - Product Classification: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm
 - Recognized Consensus Standards: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfStandards/search.cfm
 - Guidance Portal: https://www.fda.gov/regulatory-information/search-fda-guidance-documents
+
+---
+작성: 도메인 전문가 · 검토(QA11, 2026-06-09): 진입문서 현행성 재검증 — 핵심 규제사실 반영 확인. · 상태: 승인 · 일자: 2026-06-09
