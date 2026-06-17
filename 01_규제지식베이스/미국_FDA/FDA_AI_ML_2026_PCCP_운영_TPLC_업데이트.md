@@ -1,5 +1,5 @@
-> 최종 갱신: 2026-06-05 (분기 심층패치 #quarterly)
-> 근거: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence | https://www.fda.gov/regulatory-information/search-fda-guidance-documents/artificial-intelligence-enabled-device-software-functions-lifecycle-management-and-marketing | https://www.federalregister.gov/documents/2025/01/07/2024-31543/artificial-intelligence-enabled-device-software-functions-lifecycle-management-and-marketing
+> 최종 갱신: 2026-06-17 (주간모니터 #4 — §8 추가: 방사선 ML 정량영상 SW 분류 최종규칙 2026-12166)
+> 근거: https://www.federalregister.gov/documents/2026/06/17/2026-12166/medical-devices-radiology-devices-classification-of-the-radiological-machine-learning-based | https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence | https://www.fda.gov/regulatory-information/search-fda-guidance-documents/artificial-intelligence-enabled-device-software-functions-lifecycle-management-and-marketing | https://www.federalregister.gov/documents/2025/01/07/2024-31543/artificial-intelligence-enabled-device-software-functions-lifecycle-management-and-marketing
 
 # FDA AI/ML 기기 2026 업데이트 — PCCP 운영 + TPLC 수명주기 관리
 
@@ -93,5 +93,4 @@
 - FDA PCCP 최종 가이던스: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence
 - FDA AI 수명주기 가이던스(초안): https://www.fda.gov/regulatory-information/search-fda-guidance-documents/artificial-intelligence-enabled-device-software-functions-lifecycle-management-and-marketing
 - Federal Register 초안 고시(2025-01-07): https://www.federalregister.gov/documents/2025/01/07/2024-31543/artificial-intelligence-enabled-device-software-functions-lifecycle-management-and-marketing
-- FDA PCCP Guiding Principles(ML): https://www.fda.gov/medical-devices/software-medical-device-samd/predetermined-change-control-plans-machine-learning-enabled-medical-devices-guiding-principles
-- FDA AI in SaMD 허브: https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-software-medical-device
+- FDA PCCP Guiding Principles(ML): https://www.fda.gov/medical-devices/software-medical-device-samd/predetermin
