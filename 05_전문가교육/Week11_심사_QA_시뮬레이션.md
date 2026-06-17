@@ -211,7 +211,7 @@ Option C (완전 대안):
 **모범 답변:**
 ```
 §17.2 (Information Security):
-- 적용 표준: IEC 81001-5-1:2021 (조화표준 발효 확인 필요 [검증 필요])
+- 적용 표준: IEC 81001-5-1:2021 — MDR 조화표준 미등재(2026 기준), state-of-the-art로 적용; OJEU 조화목록 확인 [조화목록 확인]
 - 준수 증빙: IEC 81001-5-1 보안 활동 매핑 보고서 [문서번호]
 
 §18.8 (X-ray 이온화방사선 방호):
@@ -353,7 +353,10 @@ Option C (완전 대안):
 - [3지역_공통_빈번지적사항_Top20](../01_규제지식베이스/3지역_공통_빈번지적사항_Top20.md)
 - [FDA_AI_Additional_Information_대응_전략](../01_규제지식베이스/미국_FDA/FDA_AI_Additional_Information_대응_전략.md)
 - [MFDS_보완자료_대응_전략](../01_규제지식베이스/국내_MFDS/MFDS_보완자료_대응_전략.md)
-- [NB_Deficiency_Letter_대응_전략](../01_규제지식베이스/유럽_CE_MDR/NB_심사자료/) — [검증 필요: 해당 파일 경로 확인]
+- [NB Deficiency Letter 대응 전략](../01_규제지식베이스/유럽_CE_MDR/NB_심사자료/NB_Deficiency_Letter_대응전략.md) — NB 심사 보완 대응
 - [Clinical_Evaluation_MDR_동등성_충분성_기준](../01_규제지식베이스/유럽_CE_MDR/MDCG_가이던스/Clinical_Evaluation_MDR_동등성_충분성_기준.md)
 - [eSTAR_02_Substantial_Equivalence](../01_규제지식베이스/미국_FDA/510k_PMA_가이던스/eSTAR_02_Substantial_Equivalence.md)
 - [Week10_QMS_심사_대응](Week10_QMS_심사_대응.md)
+
+---
+작성: 도메인 전문가 · 검토(QA10, 2026-06-09): IEC 81001-5-1 조화여부 과제화·NB Deficiency 링크 경로 정정. · 상태: 조건부 · 일자: 2026-06-09
