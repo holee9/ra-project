@@ -27,7 +27,7 @@
 - [x] `eSTAR_03_Performance_Testing_Bench_Test.md` **검증** `done (검증⑨)` — 분류항목 firm 참조화(조건부)
 - [x] `FDA_PreSubmission_QSub_가이드.md` **검증 완료** `done (검증⑨)` — MFDS X-ray 소관 오류정정(체외진단기기과→의료기기심사부)
 - [x] `PMS_Plan_MDR_Article84_템플릿.md` **검증 완료** `done (검증⑨)` — 디지털의료제품법 시행일 정정(2024.09.26→2025-01-24)
-- [ ] `Week11_심사_QA_시뮬레이션.md` (2건)
+- [x] `Week11_심사_QA_시뮬레이션.md` **검증** `done (검증⑩)` — IEC81001-5-1 조화 과제화·NB Deficiency 링크 정정. **P2 완료**
 
 ### P3 — 진입문서 헤더 표기
 - [ ] 상세가이드 3종(MFDS/FDA/MDR)·규제_프레임워크_요약·사이버보안_통합가이드 — 최신성 재검증 후 헤더 검증태그 제거
