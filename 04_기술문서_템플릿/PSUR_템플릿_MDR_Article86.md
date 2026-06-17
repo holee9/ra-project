@@ -50,7 +50,7 @@
 
 ## 3. PSUR 섹션별 작성 템플릿
 
-> **사용 방법:** `[대괄호]` = 자사 정보로 교체. `[검증 필요]` = 추가 확인 후 기재.
+`[추가확인]` = 자사 확인 후 기재.
 
 ---
 
@@ -251,3 +251,6 @@
 | MDCG 2022-21 (PSUR Guidance) | https://health.ec.europa.eu/system/files/2023-01/mdcg_2022-21_en.pdf |
 | MDCG 2025-10 (PMS Guidance) | https://health.ec.europa.eu/document/download/a9ad86b7-1b8e-4bae-beb4-48b2b3ed2f05_en?filename=mdcg_2025-10_en.pdf |
 | 연관 문서 | [PMS_Plan_MDR_Article84_템플릿](PMS_Plan_MDR_Article84_템플릿.md) (#62) |
+
+---
+작성: 도메인 전문가 · 검토(QA12, 2026-06-09): 잔여 검증부채 스윕 — 표준 현행성/경로/placeholder 정정. · 일자: 2026-06-09
