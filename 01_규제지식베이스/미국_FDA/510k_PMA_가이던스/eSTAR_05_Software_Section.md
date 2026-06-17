@@ -315,7 +315,7 @@ IEC 62304 §8.1.2, §5.3.3 요건:
 | 기술문서 제출 방식 | eSTAR 10개 섹션 | 기술문서 (사용목적·원리·성능·안전성) 내 SW 섹션 | Technical Documentation (Annex II) §6.1 |
 | 추적성 요건 | 요구사항 → 설계 → 시험 추적성 매트릭스 | 동일 (IEC 62304 요건 준수) | 동일 + GSPR (Annex I) 적합성 증거 연결 |
 | 유지보수/PMS | Unresolved Anomalies + MDR/21 CFR 803 | 이상사례 보고 + 시판 후 안전관리 | PMS Plan/Report (Annex III) + PSUR |
-| SOUP/SBOM | SBOM (Section 524B 법적 의무) + SOUP (IEC 62304) | SOUP 목록 (IEC 62304 준수) | SOUP 목록 (IEC 62304) + SBOM [검증 필요: MDR 명시 요건 확인] |
+| SOUP/SBOM | SBOM (Section 524B 법적 의무) + SOUP (IEC 62304) | SOUP 목록 (IEC 62304 준수) | SOUP 목록 (IEC 62304) + SBOM (SBOM 의무는 FDA 524B; MDR은 명시 SBOM 요건 없음 — MDCG 2019-16 사이버보안 준용) |
 | AI/ML 소프트웨어 | PCCP (Predetermined Change Control Plan, 2024 Final) | AI 의료기기 가이드라인 (MFDS 2025) | MDCG 2021-6 AI 가이던스 |
 
 ---
