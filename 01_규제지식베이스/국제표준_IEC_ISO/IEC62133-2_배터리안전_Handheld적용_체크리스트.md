@@ -1,4 +1,4 @@
-> 최종 갱신: 2026-05-09 (자동보강 #27)
+> 최종 갱신: 2026-06-09 (검증⑧ — 적용조건·기준 정확화) / 2026-05-09 (자동보강 #27)
 > 근거: https://webstore.iec.ch/en/publication/32662 | https://standards.iteh.ai/catalog/standards/clc/601f7d90-e4d2-4a28-8093-338bf87c1606/en-62133-2-2017-a1-2021 | https://www.large-battery.com/blog/medical-batteries-iec-62133-un38-3-standards-compliance/ | https://www.astute-labs.com/blog/battery-operated-medical-devices-iec-62133-iec-60601-1-safety/
 
 # IEC 62133-2:2017 배터리 안전 — Handheld X-ray Source 적용 체크리스트
@@ -41,7 +41,7 @@
 | T.2 | 고온 충전 (Charging at elevated temperature) | 55°C에서 충전 | 화재·폭발·누액 없음 |
 | T.3 | 고온 충전 (Cell, 45°C) | 45°C 환경 정격 충전기로 충전 | 화재·폭발·누액 없음 |
 | T.4 | 강제 방전 (Forced discharge) | 멀티셀 팩 — 완전 방전 후 역전압 강제 인가 | 화재·폭발·누액 없음 |
-| T.5 | 외부 단락 (External short circuit) | 실온·55°C — 외부 단락 (저항 < 100 mΩ) | 화재·폭발 없음, 셀 온도 ≤ 170°C [검증 필요] |
+| T.5 | 외부 단락 (External short circuit) | 실온·55°C — 외부 단락 (저항 < 100 mΩ) | 합격: 화재·폭발 없음 (IEC 62133-2). 세부 온도 한계 등은 표준 원문 확인 [표준원문 확인] |
 | T.6 | 과충전 (Overcharge) | 셀: 10C 2V 또는 정격의 2배; 팩: 보호회로 포함 | 화재·폭발 없음 |
 | T.7 | 방전·충전 역전 (Forced discharge, multi-cell) | 역극성 강제 충전 | 화재·폭발 없음 |
 
@@ -62,7 +62,7 @@
 |---|---|---|---|
 | T.14 | 온도 사이클 (Temperature cycling) | -40°C ↔ +75°C, 10사이클 | 화재·폭발·누액 없음 |
 | T.15 | 고온 보존 (Retention at high temp) | 70°C, 7시간 보존 후 방전 | 화재·폭발·누액 없음 |
-| T.16 | 온도 충격 (Temperature shock) | [검증 필요] — 일부 국가 추가 요건 | 화재·폭발·누액 없음 |
+| T.16 | 온도 충격 (Temperature shock) | 표준/국가별 추가 요건 확인 [국가요건 확인] | 화재·폭발·누액 없음 |
 
 > **AMD1:2021 추가:** Protection Circuit Module(PCM) 포함 팩 시험 시, PCM 동작 상태에서의 과충전·단락 시험 절차 명확화.
 
@@ -72,7 +72,7 @@
 
 | 항목 | 현황 | 필요 조치 |
 |---|---|---|
-| 배터리 팩 종류 | [설계 확정 필요] Li-ion / Li-polymer | 셀 사양 확정 → 시험 대상 확정 |
+| 배터리 팩 종류 | [설계 확정] Li-ion / Li-polymer (firm) | 셀 사양 확정 → 시험 대상 확정 |
 | PCM 포함 여부 | 의료기기 특성상 PCM 필수 권장 | AMD1:2021 기준 PCM 포함 팩 시험 |
 | 운송 요건 | UN38.3 시험성적서 필요 (항공 운송 시) | 배터리 제조사 UN38.3 성적서 확보 |
 | IEC 60601-1 연계 | 완성 기기 수준: 배터리 포함 시스템 안전 | 60601-1 §8 전기적 안전 + 배터리 충전 회로 검토 |
@@ -110,3 +110,6 @@
 - *[IEC 62133-2:2017 IEC Webstore](https://webstore.iec.ch/en/publication/32662)*
 - *[EN 62133-2:2017/A1:2021](https://standards.iteh.ai/catalog/standards/clc/601f7d90-e4d2-4a28-8093-338bf87c1606/en-62133-2-2017-a1-2021)*
 - *[Medical Batteries IEC 62133 & UN38.3](https://www.large-battery.com/blog/medical-batteries-iec-62133-un38-3-standards-compliance/)*
+
+---
+작성: 국제표준 전문가 · 검토(QA8, 2026-06-09): IEC 62133-2 적용은 Handheld X-ray Source가 충전식 리튬 배터리 내장 시에 한함(firm 설계 확인). T.5 합격기준=화재·폭발 없음, 세부 수치·국가요건·배터리 종류는 표준원문/firm 데이터 의존으로 정확화. · 상태: 조건부(배터리 설계·표준원문 대기) · 일자: 2026-06-09

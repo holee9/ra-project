@@ -1,4 +1,4 @@
-> 최종 갱신: 2026-05-03 (자동보강 #12)
+> 최종 갱신: 2026-06-09 (검증⑧ — 나노소재·AI 항목 firm 과제화) / 2026-05-03 (자동보강 #12)
 > 근거: https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng (EU MDR 2017/745, Annex I, OJ L 117, 5.5.2017) | https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en (MDCG 가이던스 목록) | https://health.ec.europa.eu/document/download/daa1fc59-9d2c-4e82-878e-d6fdf12ecd1a_en?filename=mdcg_2024-10_en.pdf (MDCG 2024-10 — Clinical Evidence & GSPR)
 
 # MDR Annex I — General Safety and Performance Requirements (GSPR) 전항 맵핑 체크리스트
@@ -95,7 +95,7 @@
 | 10.2 | 재료와 조직·세포·체액 적합성 | ● (접촉 시) | N/A | N/A | TEST | ISO 10993 시리즈 |
 | 10.3 | 오염물질·잔류물 허용 한도 이내 | ● | ● | N/A | TEST | 해당 표준 |
 | 10.4 | 의도하지 않은 물질 침투 방지 | ● | ● | N/A | SPEC | 인클로저 설계 검증 |
-| 10.5 | 나노소재 — 추가 위험 평가 | [검증 필요] | [검증 필요] | N/A | RMF | 나노소재 사용 여부 확인 필요 |
+| 10.5 | 나노소재 — 추가 위험 평가 | N/A(통상) | N/A(통상) | N/A | RMF | 자사 X-ray 제품 나노소재 미사용 가정 — firm 재료목록 확인 [제품재료 확인] |
 
 ### §11 — 감염·미생물 오염
 
@@ -121,7 +121,7 @@
 
 | # | GSPR 요건 | X-ray Detector | Handheld Source | GUI SW | 입증 방법 |
 |---|---|---|---|---|---|
-| 14 | 나노소재 포함 시 위험 특성화 | [검증 필요] | [검증 필요] | N/A | 재료 목록 검토 필요 |
+| 14 | 나노소재 포함 시 위험 특성화 | N/A(통상) | N/A(통상) | N/A | firm 재료목록 검토 [제품재료 확인] |
 
 ### §15 — 멸균 제품 (해당 없음)
 
@@ -171,7 +171,7 @@
 | 18.3 | Safety class 결정 및 문서화 | ● | ● | ● | SPEC | IEC 62304 §4.3 (Class A/B/C) |
 | 18.4 | 최신 상태 개발 원칙 (state of the art) | ● | ● | ● | SPEC | SW 개발 표준·프로세스 문서 |
 | 18.5 | 사이버보안 — 무단 접근 방지 | ● | ● | ● | SPEC + TEST | FDA 2023 Cybersecurity Final Guidance, MDCG 2019-16 Rev.1 |
-| 18.6 | AI/ML 기반 SW: PCCP 포함 | [검증 필요] | N/A | [검증 필요] | SPEC | FDA PCCP Guidance 2024-12-03 Final |
+| 18.6 | AI/ML 기반 SW: PCCP 포함 | 적용 시 | N/A | 적용 시 | SPEC | GUI SW에 AI/ML 적용 시 PCCP(FDA 2024-12-03 Final) 포함 — 적용 여부 firm 확인 [제품기능 확인] |
 
 ### §19 — 능동형(Active) 기기
 
@@ -296,3 +296,6 @@
 | MDR 인허가 상세가이드 | `../MDR_인허가_상세가이드.md` |
 | eSTAR Cybersecurity 섹션 (FDA) | `../../미국_FDA/510k_PMA_가이던스/eSTAR_04_Cybersecurity_Section.md` |
 | MFDS 기술문서 섹션별 작성가이드 | `../../국내_MFDS/MFDS_기술문서_섹션별_작성가이드.md` |
+
+---
+작성: EU MDR 전문가 · 검토(QA8, 2026-06-09): GSPR 나노소재(10.5·14)·AI/ML PCCP(18.6) 항목은 제품 재료·기능 의존 → firm 확인 과제로 정확화(X-ray 통상 나노소재 미해당). PCCP는 FDA 2024-12-03 Final 확인됨. · 상태: 조건부(firm 제품데이터 대기) · 일자: 2026-06-09
