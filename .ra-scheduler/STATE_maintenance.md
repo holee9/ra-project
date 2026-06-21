@@ -4,7 +4,7 @@
 > 제정: 2026-06-05 (빌드 EP 168/168 완료 후 전환)
 
 ## 회차 상태
-last_weekly_run: 2026-06-17 (주간 모니터 #4 — FDA 21 CFR 892.2055 ML정량영상SW PCCP 신규분류 감지·KB갱신)
+last_weekly_run: 2026-06-22 (주간 모니터 #5 — 6소스 폴링 정상, 신규 규제변경 없음)
 last_quarterly_run: 2026-06-17 (분기 심층패치 #2 — EUDAMED legacy D-164 사전점검 + MFDS 디지털의료제품법 2026-01-24 시행조항·임상가이드 9종 개정 반영, 2건, P5 잔여 close, commit 559ccdf)
 phase: maintenance
 ep_total: 168
@@ -12,14 +12,14 @@ ep_completed: 168
 ep_completion_pct: 100.0
 
 ## 소스별 last_seen (주간 모니터 신규성 판정 기준)
-openfda_recall_since: 2026-06-17
-federal_register_since: 2026-06-17
-eurlex_since: 2026-06-17
+openfda_recall_since: 2026-06-22
+federal_register_since: 2026-06-22
+eurlex_since: 2026-06-22
 eurlex_method: Cellar SPARQL (amends 32017R0745 + 32017R0746, 무등록)
 eurlex_known_amendments: 32025R2457,32025R1920,32024R1860,32024R0568,32023R2197,32023R0607,32023R0503,32023R0502,32022R0112,32020R0561
-law_admrul_since: 2026-06-17
-law_law_since: 2026-06-17
-datagokr_trace_since: 2026-06-17
+law_admrul_since: 2026-06-22
+law_law_since: 2026-06-22
+datagokr_trace_since: 2026-06-22
 datagokr_trace_count: 641
 
 ## KPI (마스터 헌장 §4, #100)
