@@ -113,11 +113,11 @@ Regula pgvector 재ingestion → 이후 답변 가능
 - 한자 사용 금지. 고유명사·파일명 제외.
 - 포장된 분석 보고 금지. 실측·실증 기반으로만 보고.
 
-### 6.2 자동 실행 원칙 (RUN_SOP.md 참조)
-- 매 회차 시작 시 STATE.md 최우선 확인.
-- last_run 기준 26시간 초과 시 CATCHUP 모드 자동 진입.
-- CATCHUP 진행 상황은 README.md 자동보강 로그에 `[CATCHUP N회→N-1회]` 형식으로 기록.
-- 회당 BACKLOG 항목 처리 후 STATE.md, README.md, BACKLOG.md 반드시 갱신.
+### 6.2 자동 실행 원칙 (RUN_SOP_maintenance.md 참조)
+- 매 회차 시작 시 STATE_maintenance.md 최우선 확인.
+- 주간 모니터: 6개 소스 규제 변경 폴링 → 고·중 영향 발생 시 긴급 패치.
+- 분기 심층패치: 3지역 규제 종합 업데이트 (5 EP 기준).
+- 회차 종료 시 STATE_maintenance.md(last_weekly_run 또는 last_quarterly_run) 반드시 갱신.
 
 ### 6.3 수동 요청 처리 원칙
 - 지시자 요청 수신 시 `03_진행현안/과제_관리대장.md` 확인 후 착수.
@@ -189,5 +189,4 @@ Regula pgvector 재ingestion → 이후 답변 가능
 ### Chief RA Strategist 판단 원칙 (우선순위 순)
 1. 규제 리스크 임박도 — 마감/발효 임박 항목 최우선 (EUDAMED 2026-11-28, MDR 경과 2027/2028)
 2. 자사 3제품 직접 영향도 — 영향 큰 변경 우선
-3. 지식 공백·정합성 — 모순·중복·[검증 필요] 해소
-4. 선제적 기
+3. 지식 공백·정합성 — 모순·중복·[
