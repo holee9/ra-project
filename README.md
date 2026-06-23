@@ -67,10 +67,11 @@
 
 ## 자동보강 스케줄
 
-- 실행 시각: 03:00 / 19:30 (매일 2회)
-- 실행 지침: [`.ra-scheduler/RUN_SOP.md`](.ra-scheduler/RUN_SOP.md)
+- 실행 시각: 주간 모니터(매주 월 07:00) / 분기 심층패치(분기 1회)
+- 실행 지침: [`.ra-scheduler/RUN_SOP_maintenance.md`](.ra-scheduler/RUN_SOP_maintenance.md) — Phase 5 유지관리 SOP
 - 작업 큐: [`.ra-scheduler/BACKLOG.md`](.ra-scheduler/BACKLOG.md) — EP 태그 포함
-- 상태: [`.ra-scheduler/STATE.md`](.ra-scheduler/STATE.md) — EP 실적·속도 추적
+- 상태: [`.ra-scheduler/STATE_maintenance.md`](.ra-scheduler/STATE_maintenance.md) — 소스별 last_seen·KPI·후속 추적
+- 마스터 헌장: [`.ra-scheduler/MASTER_CHARTER.md`](.ra-scheduler/MASTER_CHARTER.md) — Chief RA Strategist 페르소나·QA 게이트·KPI
 - 회차별 이슈: GitHub Issues 라벨 `ra-auto`
 
 ### 회차별 EP 예산
