@@ -1,12 +1,2 @@
-# 국내 MFDS - GMP 심사자료
-
-## 수록 대상
-- 의료기기 제조·품질관리 기준 (KGMP) 관련 고시
-- GMP 심사 신청서·심사 체크리스트
-- 기술문서 심사 대응 자료
-- 적합성 인정서 (수입품목용)
-
-## 핵심 문서
-- 「의료기기 제조 및 품질관리 기준」 (고시)
-- 「의료기기 GMP 심사·평가 등에 관한 규정」
-- KGMP 심사 신청서 양식 및 제출서류 체크리스트
+> 최종 갱신: 2026-07-13 (주간모니터 #8 — KGMP 적합성인정 제도 개편, 2026-07-01 시행 반영)
+> 근거: https://www.law.go.kr/DRF/lawService.do?OC=hnabyz2023&target=law&MST=287877&type=HTML (의료기기법 시행규칙, 총리령 제2127호) | https://www.law.go.kr/DRF/lawService.do?OC=hnabyz2023&target=law&MST=287221&type=HTML (의료기기법 시행령, 대통령령 제36445호) | https://www.law.go.kr/DRF/lawServic

@@ -1,7 +1,27 @@
-> 최종 갱신: 2026-06-09 (#99 검증① — MDSAP 한국 현황 정정) / 2026-06-05 (자동보강 #89)
-> 근거: https://www.federalregister.gov/documents/2024/02/02/2024-01709/medical-devices-quality-system-regulation-amendments | https://www.fda.gov/medical-devices/quality-management-system-regulation-qmsr/quality-management-system-regulation-frequently-asked-questions | https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-820 | https://www.federalregister.gov/documents/2026/05/29/2026-10734/content-of-human-factors-information-in-medical-device-marketing-submissions-guidance-for-industry | https://www.law.go.kr/admRulLsInfoP.do?chrClsCd=&admRulSeq=2100000251840 | https://www.mfds.go.kr/brd/m_211/view.do?seq=14869 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R0745
+> 최종 갱신: 2026-07-13 (주간모니터 #8 — KGMP 적합성인정 제도 개편, 2026-07-01 시행) / 2026-06-09 (#99 검증① — MDSAP 한국 현황 정정) / 2026-06-05 (자동보강 #89)
+> 근거: https://www.law.go.kr/DRF/lawService.do?OC=hnabyz2023&target=law&MST=287877&type=HTML (의료기기법 시행규칙, 총리령 제2127호) | https://www.law.go.kr/DRF/lawService.do?OC=hnabyz2023&target=law&MST=287221&type=HTML (의료기기법 시행령, 대통령령 제36445호) | https://www.law.go.kr/DRF/lawService.do?OC=hnabyz2023&target=admrul&ID=2100000281580&type=HTML (고시 제2026-46호) | https://www.law.go.kr/DRF/lawService.do?OC=hnabyz2023&target=admrul&ID=2100000281582&type=HTML (고시 제2026-47호, 신설) | https://www.federalregister.gov/documents/2024/02/02/2024-01709/medical-devices-quality-system-regulation-amendments | https://www.fda.gov/medical-devices/quality-management-system-regulation-qmsr/quality-management-system-regulation-frequently-asked-questions | https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-820 | https://www.federalregister.gov/documents/2026/05/29/2026-10734/content-of-human-factors-information-in-medical-device-marketing-submissions-guidance-for-industry | https://www.mfds.go.kr/brd/m_211/view.do?seq=14869 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R0745
 
 # KGMP vs QMSR vs ISO 13485 — 차이 분석 및 3개 지역 동시 적합 통합 전략
+
+---
+
+## 0. [주간모니터 #8, 2026-07-13] KGMP 적합성인정 제도 개편 — 신규 반영
+
+### Fact
+- 「의료기기법」일부개정(법률 제21263호, 2025-12-30 공포)으로 GMP 적합성인정 심사·심사원 임명·교육훈련기관 지정의 법적 근거 신설.
+- 「의료기기법 시행령」일부개정(대통령령 제36445호, 공포 2026-06-23·시행 2026-07-01): 적합성인정 취소·시정명령 권한을 지방식품의약품안전청장에게 위임.
+- 「의료기기법 시행규칙」일부개정(총리령 제2127호, 공포·시행 2026-07-01): 제48조(적합성인정 신청·변경·갱신, 유효기간 만료 180일 전 신청)·제48조의2(심사원 자격·교육훈련)·제48조의3(품질관리심사기관 지정·갱신)·제48조의4(적합성인정 취소 사유 — 기록 오류·누락·시정예방조치 미이행 등) 신설.
+- 「의료기기 제조 및 품질관리 기준」(식약처 고시 제2026-46호, 2026-07-01 일부개정): 심사기관 지정·관리 조항을 아래 신설 고시로 이관 — 기업(제조업자) 준수사항인 GMP 심사기준만 존치.
+- 「의료기기 제조 및 품질관리 관련 기관 지정 등에 관한 규정」(식약처 고시 제2026-47호, 2026-07-01 제정, 신규): 품질관리심사기관·심사원·교육훈련기관·품질책임자 교육실시기관의 지정·관리 세부사항 규정.
+
+### Interpretation
+- 아래 §1~§2의 "근거: 의료기기법 제23조, 식약처 고시 제2024-88호"는 2026-07-01부로 **법 제28조(적합성인정) 체계 + 고시 제2026-46호(GMP 심사기준) + 고시 제2026-47호(기관지정, 신설)의 2-고시 체계**로 개편되었다. 자사 3제품(Detector·Handheld Source·GUI SW) 모두 KGMP 적합성인정 대상으로 직접 영향.
+- 적합성인정 취소 사유가 명문화(기록 오류·누락, 시정예방조치 미이행 등)되어 QMS 기록관리 엄격도가 실질적으로 상향됨.
+- [검증 필요] 신설 고시(제2026-47호)의 지정 품질관리심사기관 목록 실제 갱신 여부 — 분기 회차 재확인 대상.
+
+### Action
+- KGMP 적합성인정 신규/갱신 신청 시 신설 절차·서식(별지 제38호의4·39·40호) 적용, 유효기간 만료 180일 전 갱신신청 일정 관리.
+- 아래 §1 표의 "근거·발효일" 셀은 개정 반영 갱신(하단 참고), 상세 조문 전개는 분기 심층패치에서 수행.
 
 ---
 
@@ -9,8 +29,8 @@
 
 | 항목 | KGMP (한국) | QMSR (미국) | ISO 13485 기반 MDR (EU) |
 |---|---|---|---|
-| 근거 | 의료기기법 제23조, 식약처 고시 제2024-88호 | 21 CFR Part 820 (QMSR Final Rule, 2024-02-02 공포) | MDR (EU) 2017/745 Annex IX Chapter I |
-| 발효일 | 2024-12-27 (최신 개정) | **2026-02-02 발효 확정 · 현재 전면 시행 중** | 적용 중 (MDR 2021-05-26 완전 시행) |
+| 근거 | 의료기기법 제28조(적합성인정, 개정 법률 제21263호) + 시행규칙 §48~48-4 + 식약처 고시 제2026-46호(GMP 심사기준)·제2026-47호(기관지정, 신설) | 21 CFR Part 820 (QMSR Final Rule, 2024-02-02 공포) | MDR (EU) 2017/745 Annex IX Chapter I |
+| 발효일 | **2026-07-01 제도개편 시행** (법 개정 2025-12-30 공포 기반) | **2026-02-02 발효 확정 · 현재 전면 시행 중** | 적용 중 (MDR 2021-05-26 완전 시행) |
 | 핵심 표준 | ISO 13485:2016 기반 구조, 한국어 절차서 | ISO 13485:2016 incorporation by reference | EN ISO 13485:2016+A11:2021 조화 (ZA/ZB/ZC) |
 | 감독기관 | 식품의약품안전처 (MFDS) + 지방청 현장 실사 | FDA (ORA) — 신규 Inspection Program 7382.850 | Notified Body (NB) + 회원국 당국 |
 | 실사 방식 | MFDS 직접 현장심사 (서류 정합성 강조) | 신규 MDMI Guide (내부감사·경영검토 실사 가능) | NB QMS 심사 (Annex IX) + 불시 감사 |
@@ -229,31 +249,4 @@ QMSR 시행(2026-02-02) 이후 FDA는 내부감사 보고서를 열람할 수 �
 
 - **발행**: 2026-05-29 (Federal Register 공고) — 2022-12-09 Draft를 최종화
 - **적용 시점**: 2026-08-01 이후 수신 제출부터 신규 요건 적용 권고. 그 이전 제출은 FDA가 기존 정보 검토 방식 유지.
-- **핵심 내용**: Risk-Based Framework — 제출 시 포함할 HF 정보를 기기 위험 수준에 따라 등급화
-  - **HF Submission Category 1**: 고위험(Complex UI, Critical Task 다수) — 완전한 HFE Report (Formative + Summative) 제출
-  - **HF Submission Category 2**: 중위험 — HFE Summary + Summative Evaluation 결과
-  - **HF Submission Category 3**: 저위험(UI 변경 없음, 선행 시장 데이터 充분) — HF 정보 최소화 또는 면제 논거 제공
-- **자사 3개 제품 영향**:
-  - **X-ray Detector**: GUI가 제한적이나 Critical Task(노출 파라미터·촬영 트리거) 존재 → Category 1 또는 2 검토
-  - **Handheld X-ray Source**: 방사선 노출 직접 제어 → 고위험 UI → Category 1 적용 강력 권고
-  - **촬영실 GUI SW**: 복잡한 UI, 환자 식별·프로토콜 선택 Critical Task → Category 1 적용
-- **IEC 62366 연계**: 본 가이던스는 "Applying Human Factors and Usability Engineering to Medical Devices" (2016) 보완용. IEC 62366-1:2015+AMD1:2020 프로세스 준수 시 FDA 요건 충족 기반 확보.
-- **QMSR 연계**: Design Controls (ISO 13485 §7.3 = QMSR §820 Subpart C) 내 HFE 활동이 FDA 실사 대상. Summative Evaluation 기록은 DHF 필수 구성 요소.
-
----
-
-## 8. 참조 소스
-
-| 소스 | 내용 | URL |
-|---|---|---|
-| FDA Federal Register | QMSR Final Rule 2024-02-02 공포 | https://www.federalregister.gov/documents/2024/02/02/2024-01709/medical-devices-quality-system-regulation-amendments |
-| FDA QMSR FAQ | QMSR 발효(2026-02-02) 확정, QSIT 폐지, 검사 기록 열람 정책 | https://www.fda.gov/medical-devices/quality-management-system-regulation-qmsr/quality-management-system-regulation-frequently-asked-questions |
-| FDA HF Final Guidance FR | HF 최종 가이던스 Federal Register 공고 2026-05-29 | https://www.federalregister.gov/documents/2026/05/29/2026-10734/content-of-human-factors-information-in-medical-device-marketing-submissions-guidance-for-industry |
-| FDA eCFR | 21 CFR Part 820 현행 규정 | https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-820 |
-| FDA QMSR FAQ | QMSR 주요 Q&A | https://www.fda.gov/medical-devices/quality-management-system-regulation-qmsr/quality-management-system-regulation-frequently-asked-questions |
-| 국가법령정보센터 | 의료기기 제조 및 품질관리 기준 (고시 제2024-88호) | https://www.law.go.kr/admRulLsInfoP.do?chrClsCd=&admRulSeq=2100000251840 |
-| MFDS | 고시 제2024-88호 원문 | https://www.mfds.go.kr/brd/m_211/view.do?seq=14869 |
-| EUR-Lex
----
-작성: 국제표준 전문가(자동보강 #89) · 검토(QA, 2026-06-09): MDSAP 한국 현황을 권위 출처(FDA MDSAP FAQ·Freyr·Rimsys·TÜV SÜD)로 교차검증 — MFDS는 정식 참여국이 
-작성: 국제표준 전문가(#89) · 검토(QA②, 2026-06-09): EU AI Act↔PCCP(187행)를 권위 출처(EUR-Lex Reg.2024/1689·DLA Piper·DQS·IntuitionLabs)로 검증 — AI 의료기기=고위험·MDR 적합성평가 통합·고위험 의무 2027-08-02·PCCP 유사기제=AI Act Art.43(4) 사전확정 변경. 187행 정정. · 상태: 승인 (본 문서 내 검증대상 태그 전건 폐쇄) · 일자: 2026-06
+- **핵심 내용**: Risk-Based Fram
