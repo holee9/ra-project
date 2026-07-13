@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<script type="application/json" id="cowork-artifact-meta">
+<!DOCTYPE html><script type="application/json" id="cowork-artifact-meta">
 {
   "name": "Ra Kb Dashboard",
   "schemaVersion": 1,
-  "description": "RA 지식베이스 유지관리 대시보드 (Phase 5). 주간 모니터링·분기 심층패치 운영현황, 규제변경 감지, 마감 캘린더(D-day), 표준 개정 watch, 후속추적, 회차 로그를 표시. 주간/분기 회차 완료 시 Claude가 자동 갱신."
+  "description": "RA 지식베이스 자동보강 진척 현황 대시보드. EP 기반 진척률·예상 완료일·스케줄 상태를 표시. 회차 완료 후 Claude에게 갱신 요청."
 }
 </script>
 <html lang="ko">
@@ -62,8 +61,8 @@
 
 <h1>RA KB 유지관리 대시보드 <span style="font-weight:400;color:#888;font-size:13px;">· Phase 5</span></h1>
 <div class="meta">
-  <span>마지막 갱신: 2026-06-17 (분기 심층패치 #2 — EUDAMED legacy D-164 사전점검 + MFDS 디지털의료제품법 2026-01-24 시행조항 반영)</span>
-  <span class="sync-badge badge-green"><span class="sync-dot dot-green"></span>GitHub 동기화 · 6d02868</span>
+  <span>마지막 갱신: 2026-07-13 (주간 모니터 #8 — KGMP 적합성인정 제도개편 고영향 감지)</span>
+  <span class="sync-badge badge-green"><span class="sync-dot dot-green"></span>GitHub 동기화 · 7183378</span>
   <span class="sync-badge badge-info">주간 모니터링 + 분기 심층패치</span>
 </div>
 
@@ -73,21 +72,21 @@
   <div class="card">
     <div class="metric-label">주간 모니터링</div>
     <div class="metric-value v-blue">월 07:05</div>
-    <div class="metric-sub">최근 6/17 · 다음 6/22</div>
+    <div class="metric-sub">최근 7/13(#8) · 다음 7/20</div>
   </div>
   <div class="card">
     <div class="metric-label">분기 심층패치</div>
     <div class="metric-value v-orange">분기 1일</div>
-    <div class="metric-sub">최근 6/17(#2) · 다음 7/1</div>
+    <div class="metric-sub">최근 6/17(#2) · 7/1분 미실행 확인필요</div>
   </div>
   <div class="card">
     <div class="metric-label">최근 주간 감지</div>
-    <div class="metric-value v-orange">고 1</div>
-    <div class="metric-sub">FDA 892.2055 ML정량영상SW PCCP</div>
+    <div class="metric-value v-green">고 1</div>
+    <div class="metric-sub">#8 KGMP 적합성인정 제도개편</div>
   </div>
   <div class="card">
     <div class="metric-label">KB 규모</div>
-    <div class="metric-value">141</div>
+    <div class="metric-value">142</div>
     <div class="metric-sub">문서 · EP 168/168 유지</div>
   </div>
 </div>
@@ -95,7 +94,7 @@
 <div class="grid2">
 
   <div class="card">
-    <div class="section-label">규제 마감 캘린더 (D-day, 기준 2026-06-17)</div>
+    <div class="section-label">규제 마감 캘린더 (D-day, 기준 2026-07-13)</div>
     <div class="bar-row">
       <span class="bar-name">EUDAMED 4모듈 의무화</span>
       <div class="bar-track"><div class="bar-fill" style="width:100%; background:#3B6D11;"></div></div>
@@ -103,8 +102,8 @@
     </div>
     <div class="bar-row">
       <span class="bar-name">EUDAMED legacy 기기 등록</span>
-      <div class="bar-track"><div class="bar-fill" style="width:82%; background:#ba7517;"></div></div>
-      <span class="bar-stat">D-164</span>
+      <div class="bar-track"><div class="bar-fill" style="width:80%; background:#ba7517;"></div></div>
+      <span class="bar-stat">D-138</span>
     </div>
     <div class="bar-row">
       <span class="bar-name">MFDS 디지털 표시기재·자율인증</span>
@@ -112,14 +111,19 @@
       <span class="bar-stat">1/24 발효</span>
     </div>
     <div class="bar-row">
+      <span class="bar-name">KGMP 적합성인정 제도개편</span>
+      <div class="bar-track"><div class="bar-fill" style="width:100%; background:#3B6D11;"></div></div>
+      <span class="bar-stat">7/1 시행</span>
+    </div>
+    <div class="bar-row">
       <span class="bar-name">MDR 경과 Class III·IIb이식형</span>
-      <div class="bar-track"><div class="bar-fill" style="width:40%; background:#378ADD;"></div></div>
-      <span class="bar-stat">D-562</span>
+      <div class="bar-track"><div class="bar-fill" style="width:36%; background:#378ADD;"></div></div>
+      <span class="bar-stat">D-545</span>
     </div>
     <div class="bar-row">
       <span class="bar-name">MDR 경과 그 외 등급</span>
-      <div class="bar-track"><div class="bar-fill" style="width:24%; background:#7F77DD;"></div></div>
-      <span class="bar-stat">D-928</span>
+      <div class="bar-track"><div class="bar-fill" style="width:21%; background:#7F77DD;"></div></div>
+      <span class="bar-stat">D-911</span>
     </div>
     <hr class="divider">
     <div class="section-label" style="margin-top:4px;">표준 개정 Watch</div>
@@ -144,10 +148,10 @@
 
     <div class="card">
       <div class="section-label">소스별 마지막 점검 (last_seen)</div>
-      <div class="policy-row"><span class="policy-key">openFDA / Fed.Register</span><span class="policy-val v-green">2026-06-17</span></div>
-      <div class="policy-row"><span class="policy-key">law.go.kr 고시·법령</span><span class="policy-val v-green">2026-06-17</span></div>
-      <div class="policy-row"><span class="policy-key">data.go.kr 추적관리</span><span class="policy-val v-green">2026-06-17 · 641건</span></div>
-      <div class="policy-row"><span class="policy-key">EUR-Lex (MDR/IVDR)</span><span class="policy-val v-green">SPARQL · 개정 10건 추적</span></div>
+      <div class="policy-row"><span class="policy-key">openFDA / Fed.Register</span><span class="policy-val v-green">2026-07-13</span></div>
+      <div class="policy-row"><span class="policy-key">law.go.kr 고시·법령</span><span class="policy-val v-green">2026-07-13 · 고영향 4건(인증복구)</span></div>
+      <div class="policy-row"><span class="policy-key">data.go.kr 추적관리</span><span class="policy-val v-green">2026-07-13 · 640건</span></div>
+      <div class="policy-row"><span class="policy-key">EUR-Lex (MDR/IVDR)</span><span class="policy-val v-green">SPARQL · known 12건, 신규없음</span></div>
     </div>
 
   </div>
@@ -165,15 +169,23 @@
     <div class="policy-row"><span class="policy-key">firm/연구 과제</span><span class="policy-val" style="color:#888;">#104~#109</span></div>
     <hr class="divider">
     <div class="section-label">후속 추적 (open follow-ups)</div>
-    <div class="followup"><span class="fu-num">①</span><span>MDR 간소화 <b>COM(2025)1023</b> 입법진행 추적 (주간)</span></div>
-    <div class="followup"><span class="fu-num">②</span><span>EUDAMED legacy 기기 등록 <b>2026-11-28</b> 마감 (D-164) — 분기#2 사전점검 완료</span></div>
-    <div class="followup"><span class="fu-num">③</span><span>FDA AI 수명주기 가이던스 확정 추적</span></div>
-    <div class="followup"><span class="fu-num">④</span><span>IEC 62304 <b>Ed.2</b> 발행 추적 → 분기패치 반영</span></div>
-    <div class="followup"><span class="fu-num">⑤</span><span>MFDS 2026-01-24 발효 <b>전자적표시기재·자율성능인증제</b> 운영 6개월 후 점검</span></div>
+    <div class="followup"><span class="fu-num">①</span><span><b>KGMP 적합성인정 제도개편</b> — 시행령·시행규칙·고시2종(2026-07-01 시행) weekly#8 감지, 이슈#114, 신설고시 지정기관 목록·§48~48-4 전문반영은 분기패치 예정</span></div>
+    <div class="followup"><span class="fu-num">②</span><span><b>EUR-Lex 신규 개정</b> 32026R1359/1451 (MDR 2026-03-20) — weekly#7 감지, 이슈#112, 분기패치 예정</span></div>
+    <div class="followup"><span class="fu-num">③</span><span>MDR 간소화 <b>COM(2025)1023</b> 입법진행 추적 (주간)</span></div>
+    <div class="followup"><span class="fu-num">④</span><span>EUDAMED legacy 기기 등록 <b>2026-11-28</b> 마감 (D-138) — 분기#2 사전점검 완료</span></div>
+    <div class="followup"><span class="fu-num">⑤</span><span>IEC 62304 <b>Ed.2</b> 발행 추적 → 분기패치 반영</span></div>
   </div>
 
   <div class="card">
     <div class="section-label">최근 실행 로그</div>
+    <div class="log-item">
+      <span class="log-issue" style="color:#185fa5;">weekly #8</span> <span class="log-weekly">[모니터]</span> 2026-07-13 07:00<br>
+      주간 모니터 — <b>신규 1건 고영향 감지</b>. law.go.kr API 인증오류 복구 후 최초 성공 폴링: <b>KGMP 적합성인정 제도개편</b>(2026-07-01 시행) — 의료기기법 개정(법률 제21263호,2025-12-30) 근거, 시행령(대통령령 제36445호)·시행규칙(총리령 제2127호, §48~48-4 신설)·고시 제2026-46호 일부개정·고시 제2026-47호 신설. 자사 P1/P2/P3 전부 직접영향. KB 갱신(GMP_심사자료/README, KGMP비교전략). GitHub 이슈 <b>#114</b>. 기타: openFDA recall 0(무매치)·enforcement 65건 비관련·FR FDA 19건(MDUFA공청회 1건 저영향)·EUR-Lex known대비 신규 CELEX 0·data.go.kr 640건 비X-ray. 커밋 <b>7183378</b>.
+    </div>
+    <div class="log-item">
+      <span class="log-issue" style="color:#185fa5;">weekly #7</span> <span class="log-weekly">[모니터]</span> 2026-07-06 07:00<br>
+      주간 모니터 — <b>신규 2건 고영향 감지</b>. EUR-Lex MDR 개정 <b>32026R1359, 32026R1451</b> (2026-03-20 발효, 기발효) → MDR 2017/745 개정. 자사 P1(Detector)/P2(Handheld)/P3(GUI SW) 모두 직접영향(MDR TD/GSPR). GitHub 이슈 <b>#112</b> 생성(라벨 ra-maint,monitor,high-impact,P1,P2,P3,EU-MDR). 기타: openFDA 0건·FR FDA 14건 비관련·law.go.kr API인증오류[로그]·data.go.kr 639건 비X-ray. 커밋 <b>e7aa8ac</b>.
+    </div>
     <div class="log-item">
       <span class="log-issue" style="color:#7a4f00;">quarterly #2</span> <span class="log-quarterly">[분기 심층]</span> 2026-06-17<br>
       EUDAMED legacy 등록 마감 <b>D-164 사전점검</b>(Reg.(EU) 2024/1860·12개월 조항·legacy 데이터셋·Vigilance Trigger 예외) + MFDS <b>디지털의료제품법 2026-01-24 시행조항</b>(전자적 표시기재·자율성능인증제) · <b>2025-10-31 임상가이드 9종 개정</b> 반영. P5 잔여 close. 커밋 559ccdf. <span class="ep-tag">EP:4</span>
@@ -182,10 +194,34 @@
       <span class="log-issue" style="color:#185fa5;">weekly #4</span> <span class="log-weekly">[모니터]</span> 2026-06-17 07:00<br>
       주간 모니터 — <b>고영향 1건</b>. FDA <b>21 CFR 892.2055</b> ML정량영상SW PCCP 신규분류(Final Order, 91 FR 36522, Doc# FDA-2026-N-6535, 발효 6/17). KB §8 신규섹션 추가 · 이슈 #111 · 커밋 6d02868.
     </div>
-    <div class="log-item">
-      <span class="log-issue" style="color:#185fa5;">weekly #3</span> <span class="log-weekly">[모니터]</span> 2026-06-15 07:00<br>
-      주간 모니터 — 신규 규제변경 없음. 6소스 폴링, data.go.kr 640건 변동없음.
-    </div>
-    <div class="log-item">
-      <span class="log-issue" style="color:#185fa5;">weekly #2</span> <span class="log-weekly">[모니터]</span> 2026-06-08 07:05<br>
-      주간 모니터 — 신규 규제변경 없음. 6소스 폴링, data.
+  </div>
+</div>
+
+<div class="update-note">대시보드는 매 주간 모니터링(월 07:00) 및 분기 심층패치 후 자동 갱신됩니다.</div>
+
+<script>
+const srcData = {
+  labels: ['openFDA', 'Fed.Reg', 'EUR-Lex', 'law.go.kr', 'data.go.kr', 'Aggregator'],
+  datasets: [{
+    data: [100, 100, 100, 100, 100, 100],
+    backgroundColor: ['#3B6D11', '#3B6D11', '#3B6D11', '#3B6D11', '#3B6D11', '#3B6D11'],
+    borderColor: '#fff',
+    borderWidth: 2
+  }]
+};
+const srcCtx = document.getElementById('srcChart').getContext('2d');
+new Chart(srcCtx, {
+  type: 'doughnut',
+  data: srcData,
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'bottom', labels: { font: { size: 11 }, padding: 6 } },
+      tooltip: { callbacks: { label: ctx => ((ctx.parsed / 6 * 100).toFixed(0)) + '% OK' } }
+    }
+  }
+});
+</script>
+</body>
+</html>
