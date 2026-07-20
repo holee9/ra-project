@@ -4,8 +4,8 @@
 > 제정: 2026-06-05 (빌드 EP 168/168 완료 후 전환)
 
 ## 회차 상태
-last_weekly_run: 2026-07-13 (주간 모니터 #8 — 6소스 폴링 정상[law.go.kr 인증오류 복구], openFDA recall 0건(무매치)·enforcement 65건 비X-ray·Federal Register FDA 19건(MDUFA 공청회 요청 1건 저영향)·EUR-Lex known대비 신규 CELEX 0건·law.go.kr KGMP 적합성인정 제도개편 4건 고영향(시행령·시행규칙·고시2종, 2026-07-01 시행)·data.go.kr 640건 비X-ray / 신규 고영향 1건→이슈#114·KB 즉시갱신(경량))
-last_weekly_run_prev: 2026-07-06 (주간 모니터 #7 — 6소스 폴링 정상, openFDA recall/enforcement 0건·Federal Register FDA 14건 비X-ray관련·EUR-Lex 신규 CELEX 2건(32026R1359/1451 MDR 고영향)·law.go.kr API인증오류[로그만]·data.go.kr 639건 비X-ray / 신규 고영향 2건→이슈#112·분기처리예정)
+last_weekly_run: 2026-07-20 (주간 모니터 #9 — 6소스 폴링 정상, openFDA recall 0건(무매치)·enforcement 154건 전부 비X-ray[카테터·수술기구·모니터·인퓨전펌프 등]·Federal Register FDA 31건 중 07-14~07-20 신규분 전부 비관련[식품·화장품·약품·OTC], ASCA 정보수집요청(07-17) 저영향 로그만·EUR-Lex known대비 신규 CELEX 0건(32026R1359/1451은 #112 기처리 유지)·law.go.kr 행정규칙·현행법령 상위 항목 모두 #114 기처리분과 동일(중복, 재플래그 안함)·data.go.kr 640→642건[+2, X-ray 키워드 매치 0건] / 신규 고·중영향 0건, KB갱신·이슈·커밋 없음)
+last_weekly_run_prev: 2026-07-13 (주간 모니터 #8 — 6소스 폴링 정상[law.go.kr 인증오류 복구], openFDA recall 0건(무매치)·enforcement 65건 비X-ray·Federal Register FDA 19건(MDUFA 공청회 요청 1건 저영향)·EUR-Lex known대비 신규 CELEX 0건·law.go.kr KGMP 적합성인정 제도개편 4건 고영향(시행령·시행규칙·고시2종, 2026-07-01 시행)·data.go.kr 640건 비X-ray / 신규 고영향 1건→이슈#114·KB 즉시갱신(경량))
 last_quarterly_run: 2026-06-17 (분기 심층패치 #2 — EUDAMED legacy D-164 사전점검 + MFDS 디지털의료제품법 2026-01-24 시행조항·임상가이드 9종 개정 반영, 2건, P5 잔여 close, commit 559ccdf)
 phase: maintenance
 ep_total: 168
@@ -13,15 +13,15 @@ ep_completed: 168
 ep_completion_pct: 100.0
 
 ## 소스별 last_seen (주간 모니터 신규성 판정 기준)
-openfda_recall_since: 2026-06-29 (데이터셋 last_updated 2026-06-17 — 신규 X-ray recall 없음)
-federal_register_since: 2026-06-29 (FDA 38건 중 X-ray/Detector/SaMD 관련 없음)
-eurlex_since: 2026-07-06 (신규 CELEX 2 — 32026R1359, 32026R1451 MDR 개정, known 목록 갱신)
+openfda_recall_since: 2026-07-20 (recall 0건(무매치, report_date 20260629~20260720)·enforcement 154건 전수 스캔[키워드 x-ray/radiograph/detector/flat-panel/fluorosc] — 신규 X-ray 관련 없음)
+federal_register_since: 2026-07-20 (FDA 31건 중 07-14~07-20 신규분 전부 비관련. ASCA 정보수집요청 갱신공고[Accreditation Scheme for Conformity Assessment, 2026-07-17, Doc# 2026-14441]는 IEC 60601 시험기관 인정과 간접연관·저영향 로그만, 절차성 ICR이라 KB갱신 불요)
+eurlex_since: 2026-07-20 (known 목록 대비 신규 CELEX 0건 — MDR 상위 32026R1359/1451, IVDR 상위 32024R1860 그대로)
 eurlex_method: Cellar SPARQL (amends 32017R0745 + 32017R0746, 무등록)
 eurlex_known_amendments: 32026R1451,32026R1359,32025R2457,32025R1920,32024R1860,32024R0568,32023R2197,32023R0607,32023R0503,32023R0502,32022R0112,32020R0561
-law_admrul_since: 2026-07-13 (신규 고영향 2건 — 고시 제2026-46호 KGMP기준 일부개정, 고시 제2026-47호 기관지정 신설, 모두 2026-07-01 시행. 나머지 74건 자사무관[체외진단/지역병원 내부규정 등])
-law_law_since: 2026-07-13 (신규 고영향 2건 — 의료기기법 시행령 대통령령 제36445호, 시행규칙 총리령 제2127호, 모두 2026-07-01 시행)
-datagokr_trace_since: 2026-07-13
-datagokr_trace_count: 640
+law_admrul_since: 2026-07-20 (상위 2건 — 고시 제2026-46호·제2026-47호는 #114에서 이미 처리된 동일 항목[생성일자만 20260715로 갱신, 발령·시행일 20260701 불변], 신규 아님. 3건째 체외진단 고시(2026-45)는 IVD로 자사 3제품(방사선 의료기기) 무관. 나머지 자사무관)
+law_law_since: 2026-07-20 (상위 2건 — 시행령 대통령령 제36445호·시행규칙 총리령 제2127호는 #114에서 이미 처리된 동일 항목, 신규 아님)
+datagokr_trace_since: 2026-07-20
+datagokr_trace_count: 642 (전주 640 → +2, ITEM_NAME 전수 키워드 스캔[엑스선/X선/방사선/촬영/Detector/디텍터] 매치 0건 — 비X-ray)
 
 ## KPI (마스터 헌장 §4, #100)
 kpi_감지_적시성: 목표 ≤7일 / 측정 전(기준선 미설정)
