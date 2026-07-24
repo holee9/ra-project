@@ -1,4 +1,4 @@
-> 최종 갱신: 2026-05-22 (자동보강 #63)
+> 최종 갱신: 2026-07-24 (v1.1, #133 정정: Art.86(1) 하위항 라벨 (a)(b)(c) 재매핑 · Art.86(2) Class IIb 갱신주기 매년 정정 — EUR-Lex CELEX:32017R0745 Art.86 대조). 이전: 2026-05-22 (자동보강 #63)
 > 근거: https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng (MDR 2017/745 Article 86) | https://health.ec.europa.eu/system/files/2023-01/mdcg_2022-21_en.pdf (MDCG 2022-21 PSUR Guidance) | https://health.ec.europa.eu/document/download/a9ad86b7-1b8e-4bae-beb4-48b2b3ed2f05_en?filename=mdcg_2025-10_en.pdf (MDCG 2025-10)
 
 # Periodic Safety Update Report (PSUR) — MDR Article 86 실용 템플릿
@@ -18,11 +18,11 @@
 
 | 등급 | 갱신 주기 | NB 요청 시 |
 |---|---|---|
-| **Class III** | **매년** | 동일 (연 1회) |
-| **Class IIa / IIb** | **2년마다** | NB 요청 시 연 1회 가능 |
+| **Class IIb / III** | **매년** | 동일 (연 1회) |
+| **Class IIa** | **2년마다** | NB 요청 시 연 1회 가능 |
 | **Class I** | 해당 없음 → PMSR(Article 85) | — |
 
-> **MDCG 2022-21 §3:** 첫 번째 PSUR의 데이터 수집 기간은 CE Mark 발급일부터. 12개월(Class III) 또는 24개월(IIa/IIb) 만료 후 제출.
+> **MDCG 2022-21 §3:** 첫 번째 PSUR의 데이터 수집 기간은 CE Mark 발급일부터. 12개월(Class IIb·III) 또는 24개월(Class IIa) 만료 후 제출.
 
 ---
 
@@ -33,7 +33,7 @@
 | **근거** | MDR Art.86 | 21 CFR 814.84 (PMA Annual Report) | 의료기기법 §26 (재심사 정기보고) |
 | **적용 대상** | Class IIa·IIb·III 전체 | PMA 승인 기기만 | 재심사 대상 기기 (신개발 등) |
 | **명칭** | PSUR | PMA Annual Report | 재심사 결과 보고서 |
-| **주기** | 연 1회(Class III) / 2년(IIa/IIb) | 연 1회 (PMA 발효 후 매년) | 재심사 기간 종료 후 1회 제출 |
+| **주기** | 연 1회(Class IIb·III) / 2년(Class IIa) | 연 1회 (PMA 발효 후 매년) | 재심사 기간 종료 후 1회 제출 |
 | **핵심 내용** | 주요발견·benefit-risk·PMCF·판매량 | 변경사항·부작용·임상데이터 | 유효성·안전성·사용현황 |
 | **제출처** | EUDAMED (NB 통해 CA) | FDA CDRH (eMDR) | MFDS (식약처 의료기기심사부) |
 | **510(k) 기기** | — | **해당 없음** (연간 보고 의무 없음) | — |
@@ -42,7 +42,7 @@
 
 | 제품 | MDR 등급 | PSUR 주기 | FDA 보고 의무 | MFDS |
 |---|---|---|---|---|
-| **X-ray Detector** | Class IIa/IIb | 2년/매년 | 510(k) → 없음 / PMA → 연 1회 | 재심사 해당 시 |
+| **X-ray Detector** | Class IIa/IIb | IIa 2년 / IIb 매년 | 510(k) → 없음 / PMA → 연 1회 | 재심사 해당 시 |
 | **Handheld X-ray Source** | Class IIb | 매년 | 510(k) → 없음 | 재심사 해당 시 |
 | **촬영실 GUI SW (SaMD)** | Class IIa | 2년 | 510(k) → 없음 | 재심사 해당 시 |
 
@@ -112,7 +112,7 @@
 
 ---
 
-### Section 3. PMS 데이터 수집 결과 요약 (Art.86(1)(a))
+### Section 3. PMS 데이터 수집 결과 요약 (Art.86(1) 본문 — PMS 데이터 분석 결과)
 
 > PMS Plan에서 정의한 수집원(S1~S10)별 데이터 수집 결과 기재.
 
@@ -128,7 +128,7 @@
 
 ---
 
-### Section 4. 심각한 부작용 및 안전 신호 (Art.86(1)(a))
+### Section 4. 심각한 부작용 및 안전 신호 (Art.86(1) 본문 — PMS 데이터 분석 · Art.88 trend)
 
 **4.1 보고 기간 내 Serious Incidents**
 
@@ -146,7 +146,7 @@
 
 ---
 
-### Section 5. 주요 발견사항 요약 (Art.86(1)(a))
+### Section 5. 주요 발견사항 요약 (Art.86(1) 본문 — 분석의 결과 및 결론)
 
 > MDCG 2022-21 §5.1: 수집된 PMS 데이터의 분석 결론을 기재.
 
@@ -161,7 +161,7 @@
 
 ---
 
-### Section 6. Benefit-Risk Balance 결론 (Art.86(1)(b))
+### Section 6. Benefit-Risk Balance 결론 (Art.86(1)(a))
 
 > 이전 PSUR / CER 대비 benefit-risk balance 변화 여부 평가.
 
@@ -176,7 +176,7 @@
 
 ---
 
-### Section 7. PMCF 결과 연계 (Art.86(1)(d))
+### Section 7. PMCF 결과 연계 (Art.86(1)(b))
 
 | 항목 | 내용 |
 |---|---|
@@ -188,7 +188,7 @@
 
 ---
 
-### Section 8. 취해진 조치 및 다음 단계 (Art.86(1)(e))
+### Section 8. 취해진 조치 및 다음 단계 (Art.86(1) 본문 — 예방·시정조치 근거·기술)
 
 **8.1 보고 기간 내 취해진 조치**
 
@@ -227,9 +227,9 @@
 - [ ] 판매량·환자 노출 추정치 포함 (Art.86(1)(c))
 - [ ] PMS Plan의 수집원별 데이터 수집 결과 기재
 - [ ] Serious Incidents 전체 목록 및 관련 조치 포함
-- [ ] Benefit-risk balance 결론 명시 (Art.86(1)(b))
-- [ ] PMCF 결과 또는 진행 상태 연계 (Art.86(1)(d))
-- [ ] 취해진 조치 및 예정 조치 기재 (Art.86(1)(e))
+- [ ] Benefit-risk balance 결론 명시 (Art.86(1)(a))
+- [ ] PMCF 결과 또는 진행 상태 연계 (Art.86(1)(b))
+- [ ] 취해진 조치 및 예정 조치 기재 (Art.86(1) 본문 — 예방·시정조치)
 - [ ] EUDAMED PSUR Web Form 제출 완료
 - [ ] NB에 PSUR 사본 제공 (Art.86(2))
 - [ ] PRRC 검토·서명 완료 (Art.15)
