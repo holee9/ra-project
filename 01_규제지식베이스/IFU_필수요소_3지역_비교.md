@@ -1,5 +1,5 @@
-> 최종 갱신: 2026-05-18 (자동보강 #50)
-> 근거: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-801 | https://eur-lex.europa.eu/eli/reg/2017/745/2025-01-10/eng | https://www.medical-device-regulation.eu/2019/07/25/annex-i-general-safety-and-performance-requirements-3/ | https://www.law.go.kr/admRulLsInfoP.do?admRulSeq=2100000250440
+> 최종 갱신: 2026-08-24 (주간모니터 #14 — ISO 20417 Ed.2 FDA 인정 전환 반영) / 2026-05-18 (자동보강 #50)
+> 근거: https://www.federalregister.gov/documents/2026/08/24/2026-17229/food-and-drug-administration-modernization-act-of-1997-modifications-to-the-list-of-recognized | https://www.iso.org/standard/20417 | https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-801 | https://eur-lex.europa.eu/eli/reg/2017/745/2025-01-10/eng | https://www.medical-device-regulation.eu/2019/07/25/annex-i-general-safety-and-performance-requirements-3/ | https://www.law.go.kr/admRulLsInfoP.do?admRulSeq=2100000250440
 
 # IFU(사용설명서) 필수 요소 3개 지역 비교표
 
@@ -275,3 +275,30 @@
 - [UDI_구조_3지역_비교](../01_규제지식베이스/UDI_구조_3지역_비교.md)
 - [MDR_AnnexI_GSPR_Checklist](../01_규제지식베이스/유럽_CE_MDR/MDR_2017_745/MDR_AnnexI_GSPR_Checklist.md)
 - [MFDS_사이버보안_가이드라인_2025_대응](../01_규제지식베이스/국내_MFDS/법령_고시_가이드라인/MFDS_사이버보안_가이드라인_2025_대응.md)
+
+---
+
+## 10. ISO 20417 판본 전환 (2026-08-24 주간모니터 감지) ★신규★
+
+**사실 (Fact)**
+
+- **ISO 20417:2026(Ed.2)** 가 2026-03-17 발행되어 **ISO 20417:2021은 Withdrawn**. 기술적 개정(인용규격 갱신, 일부 참고 부속서 삭제, "applicable policy" 개념 도입), 51쪽, ISO/TC 210.
+- FDA는 **Recognition List 066**(91 FR 54715, applicable **2026-08-24**)에서 인정번호 **5-135(2021판)를 철회하고 5-149(2026판)로 대체**했다.
+
+**해석 (Interpretation)**
+
+- ISO 20417은 라벨·포장표시·IFU의 **수평(horizontal) 표준**으로 자사 3제품(P1·P2·P3) 전부의 IFU 기재 요건에 공통 적용된다.
+- FDA 510(k)에서 ISO 20417 DoC를 제출할 경우 **2026-08-24 이후 제출분은 2026판 기준**이어야 한다. 2021판 인용 시 인정 철회 판본이므로 보완(AI) 사유가 될 수 있다.
+- 본 비교표 §3~§8의 항목별 요건은 **MFDS 고시·21 CFR 801·MDR Annex I §23이 1차 근거**이므로, ISO 20417 판본 전환이 곧바로 기재항목 변경을 의미하지는 않는다. 다만 자사 IFU 템플릿이 ISO 20417을 인용하고 있다면 판본 표기를 갱신해야 한다.
+- EN ISO 20417:2026의 **EU 조화표준(OJ) 등재 여부는 미확인** — `[검증 필요]`(분기 심층패치에서 확인).
+
+**행동 (Action)**
+
+1. IFU·라벨 템플릿의 ISO 20417 인용 판본을 **:2026** 으로 갱신(원문 입수 후 신설 요건 반영).
+2. 2026판 신설 요건(정보 계층 구조·applicable policy)에 대한 Gap 분석 → 분기 심층패치 과제.
+3. 본 문서 §2 "법령 기준일" 행은 ISO 20417 판본과 무관하게 유지(1차 근거 불변).
+
+**근거**: https://www.federalregister.gov/documents/2026/08/24/2026-17229/food-and-drug-administration-modernization-act-of-1997-modifications-to-the-list-of-recognized | https://www.iso.org/standard/20417
+
+---
+작성: 국제표준 전문가 · 검토(QA): FR 전문·ISO 카탈로그 발행이력 대조, 인정번호 5-135→5-149 전환 및 적용일 2026-08-24 확인. EU 조화표준 지위 `[검증 필요]` 유지 조건. · 상태: 조건부 · 일자: 2026-08-24
