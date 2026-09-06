@@ -54,8 +54,8 @@
 
 <h1>RA KB 유지관리 대시보드 <span style="font-weight:400;color:#888;font-size:13px;">· Phase 5</span></h1>
 <div class="meta">
-  <span>마지막 갱신: 2026-08-24 (주간 모니터 #14 — 고영향 2건 감지 → 이슈 #118 · #119, 거버넌스 #120)</span>
-  <span class="sync-badge badge-green"><span class="sync-dot dot-green"></span>GitHub 동기화 · d9f0566</span>
+  <span>마지막 갱신: 2026-09-07 (주간 모니터 #16 — 신규 1건 중영향 #121 · 7소스 전부 정상 3주 연속)</span>
+  <span class="sync-badge badge-green"><span class="sync-dot dot-green"></span>GitHub 동기화 · d9f0566 (무변경 회차, 신규 커밋 없음)</span>
   <span class="sync-badge badge-info">주간 모니터링 + 분기 심층패치</span>
 </div>
 
@@ -65,17 +65,17 @@
   <div class="card">
     <div class="metric-label">주간 모니터링</div>
     <div class="metric-value v-blue">월 07:05</div>
-    <div class="metric-sub">최근 8/24(#14) · 다음 8/31</div>
+    <div class="metric-sub">최근 9/7(#16) · 다음 9/14</div>
   </div>
   <div class="card">
     <div class="metric-label">분기 심층패치</div>
     <div class="metric-value v-orange">분기 1일</div>
-    <div class="metric-sub">최근 6/17(#2) · 7/1분 미실행 확인필요</div>
+    <div class="metric-sub">최근 6/17(#2) · 다음 10/1(#3)</div>
   </div>
   <div class="card">
     <div class="metric-label">최근 주간 감지</div>
-    <div class="metric-value v-green">고 2 · 저 3</div>
-    <div class="metric-sub">#14 FDA RL066(#118) · MFDS 고시 2026-54(#119)</div>
+    <div class="metric-value v-orange">고 0 · 중 1 · 저 2</div>
+    <div class="metric-sub">#16 MFDS 고시 2026-63 시판후조사 면제 신설 → #121</div>
   </div>
   <div class="card">
     <div class="metric-label">KB 규모</div>
@@ -87,7 +87,7 @@
 <div class="grid2">
 
   <div class="card">
-    <div class="section-label">규제 마감 캘린더 (D-day, 기준 2026-08-24)</div>
+    <div class="section-label">규제 마감 캘린더 (D-day, 기준 2026-09-07)</div>
     <div class="bar-row">
       <span class="bar-name">EUDAMED 4모듈 의무화</span>
       <div class="bar-track"><div class="bar-fill" style="width:100%; background:#3B6D11;"></div></div>
@@ -96,7 +96,7 @@
     <div class="bar-row">
       <span class="bar-name">EUDAMED legacy 기기 등록</span>
       <div class="bar-track"><div class="bar-fill" style="width:86%; background:#ba7517;"></div></div>
-      <span class="bar-stat">D-96</span>
+      <span class="bar-stat">D-82</span>
     </div>
     <div class="bar-row">
       <span class="bar-name">FDA 인정표준 RL066 적용</span>
@@ -110,23 +110,23 @@
     </div>
     <div class="bar-row">
       <span class="bar-name">FDA DBT 재분류 의견마감(#116)</span>
-      <div class="bar-track"><div class="bar-fill" style="width:75%; background:#ba7517;"></div></div>
-      <span class="bar-stat">D-46</span>
+      <div class="bar-track"><div class="bar-fill" style="width:79%; background:#ba7517;"></div></div>
+      <span class="bar-stat">D-32</span>
     </div>
     <div class="bar-row">
       <span class="bar-name">FDA 부속품 Class I 의견마감(#117)</span>
-      <div class="bar-track"><div class="bar-fill" style="width:72%; background:#ba7517;"></div></div>
-      <span class="bar-stat">D-53</span>
+      <div class="bar-track"><div class="bar-fill" style="width:76%; background:#ba7517;"></div></div>
+      <span class="bar-stat">D-39</span>
     </div>
     <div class="bar-row">
       <span class="bar-name">MDR 경과 Class III·IIb이식형</span>
       <div class="bar-track"><div class="bar-fill" style="width:38%; background:#378ADD;"></div></div>
-      <span class="bar-stat">D-494</span>
+      <span class="bar-stat">D-487</span>
     </div>
     <div class="bar-row">
       <span class="bar-name">MDR 경과 그 외 등급</span>
       <div class="bar-track"><div class="bar-fill" style="width:22%; background:#7F77DD;"></div></div>
-      <span class="bar-stat">D-860</span>
+      <span class="bar-stat">D-853</span>
     </div>
     <hr class="divider">
     <div class="section-label" style="margin-top:4px;">표준 개정 Watch</div>
@@ -140,7 +140,7 @@
   <div style="display:flex; flex-direction:column; gap:14px;">
 
     <div class="card" style="text-align:center;">
-      <div class="section-label" style="text-align:left;">모니터링 소스 가동률 (#14)</div>
+      <div class="section-label" style="text-align:left;">모니터링 소스 가동률 (#15)</div>
       <div style="position:relative; height:140px;">
         <canvas id="srcChart" role="img" aria-label="모니터링 소스 가동률 도넛. 6종 중 6종 정상.">소스 6/6 정상</canvas>
       </div>
@@ -151,11 +151,11 @@
 
     <div class="card">
       <div class="section-label">소스별 마지막 점검 (last_seen)</div>
-      <div class="policy-row"><span class="policy-key">Federal Register</span><span class="policy-val v-green">2026-08-24 · 인정표준 RL066 1건(#118)</span></div>
-      <div class="policy-row"><span class="policy-key">openFDA recall/enforce</span><span class="policy-val v-green">2026-08-24 · 0건(404 무매치)</span></div>
-      <div class="policy-row"><span class="policy-key">law.go.kr 고시</span><span class="policy-val v-green">2026-08-24 · 장애 해소 · 신규 2건(#119)</span></div>
-      <div class="policy-row"><span class="policy-key">law.go.kr 법령</span><span class="policy-val v-green">2026-08-24 · 신규 없음</span></div>
-      <div class="policy-row"><span class="policy-key">data.go.kr 추적관리</span><span class="policy-val v-green">2026-08-24 · 642건(+1, 자사무관)</span></div>
+      <div class="policy-row"><span class="policy-key">Federal Register</span><span class="policy-val v-green">2026-09-07 · 14건 중 신규 고/중영향 0건</span></div>
+      <div class="policy-row"><span class="policy-key">openFDA recall/enforce</span><span class="policy-val v-green">2026-09-07 · 0건(404 무매치)</span></div>
+      <div class="policy-row"><span class="policy-key">law.go.kr 고시</span><span class="policy-val v-orange">2026-09-07 · 정상 3주 연속 · <b>신규 1건</b>(고시 2026-63)</span></div>
+      <div class="policy-row"><span class="policy-key">law.go.kr 법령</span><span class="policy-val v-green">2026-09-07 · 신규 없음</span></div>
+      <div class="policy-row"><span class="policy-key">data.go.kr 추적관리</span><span class="policy-val v-green">2026-09-07 · 641건(-3, 자사무관)</span></div>
       <div class="policy-row"><span class="policy-key">EUR-Lex (MDR/IVDR)</span><span class="policy-val v-green">SPARQL · known 12건, 신규없음</span></div>
     </div>
 
@@ -166,14 +166,15 @@
 
   <div class="card">
     <div class="section-label">KPI (마스터 헌장 §4)</div>
-    <div class="policy-row"><span class="policy-key">감지 적시성</span><span class="policy-val">목표 ≤7일 · <span class="v-green">FDA RL066 0일 ✅</span> / <span class="v-red">MFDS 고시 28일 ❌</span></span></div>
-    <div class="policy-row"><span class="policy-key">소스 가용성</span><span class="policy-val v-green">6/6 (law.go.kr 3주 장애 해소)</span></div>
+    <div class="policy-row"><span class="policy-key">감지 적시성</span><span class="policy-val">목표 ≤7일 · <span class="v-green">#16 MFDS 고시 2026-63 = 7일 ✅</span> / 직전 #14 FDA 0일·MFDS 28일</span></div>
+    <div class="policy-row"><span class="policy-key">소스 가용성</span><span class="policy-val v-green">7/7 (3주 연속 전소스 정상)</span></div>
     <div class="policy-row"><span class="policy-key">검증 정확성</span><span class="policy-val v-green">33문서 정정 완료 (검증①~⑬)</span></div>
     <div class="policy-row"><span class="policy-key">완전성(3×3)</span><span class="policy-val" style="color:#888;">목표 ≥95% · 미측정</span></div>
     <div class="policy-row"><span class="policy-key">문서 무결성(UTF-8)</span><span class="policy-val v-green">전수 점검 · 손상 2건 복구(#120)</span></div>
     <div class="policy-row"><span class="policy-key">종합 진척율</span><span class="policy-val v-blue">약 73%</span></div>
     <hr class="divider">
     <div class="section-label">후속 추적 (open follow-ups)</div>
+    <div class="followup"><span class="fu-num">★</span><span><b>MFDS 시판 후 조사 규정 면제 근거 신설</b> (고시 제2026-63호, 2026-08-31 시행) — weekly#16, 이슈<b>#121</b>(중영향·for-quarterly). 신설 제9조 전문 대조·자사 3제품 대상 해당여부 판정·KB 신설 검토는 분기패치</span></div>
     <div class="followup"><span class="fu-num">★</span><span><b>FDA 인정표준 RL066 — ISO 20417 Ed.2 전환</b> (91 FR 54715, 2026-08-24 적용) — weekly#14, 이슈<b>#118</b>(고영향). 2026판 신설요건 Gap분석 + EN ISO 20417:2026 EU OJ 등재여부 확인은 분기패치</span></div>
     <div class="followup"><span class="fu-num">★</span><span><b>MFDS 디지털의료제품 허가·심사 규정 일부개정</b> (고시 제2026-54호, 2026-07-27 시행) — weekly#14, 이슈<b>#119</b>(고영향·P3). 개정 제25조 전문·시행규칙 상향조문 확인은 분기패치</span></div>
     <div class="followup"><span class="fu-num">★</span><span><b>저장소 문서 truncation</b> — 이슈<b>#120</b>(governance). SOP §4에 커밋 후 무결성 검증 스텝 추가 필요</span></div>
@@ -187,6 +188,14 @@
 
   <div class="card">
     <div class="section-label">최근 실행 로그</div>
+    <div class="log-item">
+      <span class="log-issue">weekly #16</span> <span class="log-weekly">[모니터]</span> 2026-09-07 07:00<br>
+      주간 모니터 — <b>중영향 1건 감지</b>. law.go.kr 행정규칙: MFDS 「의료기기 시판 후 조사에 관한 규정」 <b>일부개정</b>(고시 <b>제2026-63호</b>, 발령·시행 <b>2026-08-31</b>) — 시행규칙 §18②2호 위임에 따라 <b>제9조(면제 등) 신설</b>: "국외 사용경험이 있는 의료기기" 정의 + 면제 입증자료 2종 명문화. 시판 후 조사 의무대상은 의료기기법 §8①(신개발·희소·지정)에 한정되어 자사 3제품 해당 개연성은 낮으나, <b>국외 선행허가 기반 면제 경로가 특정</b>됨 → 착수준비 산출물(국외 허가·판매현황·부작용 수집자료) 선제 축적 필요. <b>#114 시행규칙(2026-07-01) 개정의 하위고시 정비 계열</b> → 이슈 <b>#121</b>(for-quarterly). 저영향 2건: FR 2026-17933 치과용 복합레진·광중합기 510(k) 가이던스(자사무관) · data.go.kr 644→641건(X-ray 매치 0). openFDA 0건 · EUR-Lex 신규 CELEX 0건 · 현행법령 신규 0건. <b>고 0 · 중 1 · 저 2</b>. 커밋 <b>ebcce35</b>.
+    </div>
+    <div class="log-item">
+      <span class="log-issue">weekly #15</span> <span class="log-weekly">[모니터]</span> 2026-08-31 07:00<br>
+      주간 모니터 — <b>신규 규제변경 없음</b>. 7소스 전부 정상(2주 연속). openFDA recall/enforcement 0건(404 무매치) · Federal Register FDA 18건 중 08-24분은 기처리(#118), 신규 CDRH 2건은 <b>PRA 정보수집 연장 통지</b>(FR 2026-17675 「제거·수정 보고」 21 CFR 806 의견마감 10-30 / FR 2026-17377 「CDRH 규제위반 신고」 의견마감 10-26)로 <b>실체적 요건변경 없음</b> → 저영향 · EUR-Lex known(12) 대비 신규 CELEX 0건 · law.go.kr 고시·법령 신규 0건 · data.go.kr 644건(+2, X-ray 키워드 매치 0). <b>고 0 · 중 0 · 저 3</b>. KB갱신·신규이슈·커밋 없음(SOP §2-D).
+    </div>
     <div class="log-item">
       <span class="log-issue">weekly #14</span> <span class="log-weekly">[모니터]</span> 2026-08-24 07:00<br>
       주간 모니터 — <b>고영향 2건 감지</b>. ① Federal Register: FDA <b>인정 컨센서스 표준 Recognition List 066</b>(91 FR 54715, FR Doc 2026-17229, <b>2026-08-24 적용</b>) — <b>ISO 20417:2021 인정철회 → ISO 20417:2026 Ed.2 대체</b>(5-135→5-149). Radiology·ES/EMC 카테고리 자사관련 변경 없음, CVSS v3.1 전환기간 연장. 3제품 라벨·IFU DoC 영향 → 이슈 <b>#118</b>, KB 2문서 갱신. ② law.go.kr(<b>3주 장애 해소</b>): MFDS 「디지털의료제품 허가·인증·신고·심사 및 평가 등에 관한 규정」 <b>일부개정</b>(고시 제2026-54호, 2026-07-27 시행) — 임상평가 자료 면제·대체 요건 전 분야 확대, 우수관리체계 특례 확대. P3 직접영향 → 이슈 <b>#119</b>, KB 1문서 갱신. 부수: 문서 truncation 2건 복구 → 이슈 <b>#120</b>(governance). 저영향 로그: 고시 2026-58(IVD)·IEC 63465·data.go.kr +1(안경렌즈). 커밋 <b>285da1e</b> / <b>d9f0566</b>.
