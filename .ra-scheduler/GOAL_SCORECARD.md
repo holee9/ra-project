@@ -43,4 +43,23 @@
 
 ```
 # 측정 명령(요약)
-grep -rl '\[검증 필요\]' 0[1-6]_* --include=
+# 측정 명령 (실행 가능본)
+
+# ① 검증부채 잔량 — 광의(대괄호·볼드 혼용 모두 포함)
+grep -rlE '\[검증 필요\]|\*\*검증 필요\*\*|확정 필요' 0[1-7]_* --include='*.md' | wc -l
+
+# ② 검토(QA) 라인 보유 문서 수 — 거버넌스 축
+grep -rl '^작성:.*검토(QA' 0[1-7]_* --include='*.md' | wc -l
+
+# ③ 전체 문서 수 (분모)
+git ls-files '*.md' | wc -l
+
+# ④ 문서 무결성 (원격 기준, RUN_SOP_maintenance §6)
+#    UTF-8 디코딩 실패·U+FFFD 포함 파일만 손상으로 판정한다.
+git ls-tree -r --name-only origin/main -- '*.md' | while IFS= read -r f; do
+  git show "origin/main:$f" | python3 -c "import sys;d=sys.stdin.buffer.read()
+try:
+    t=d.decode('utf-8'); print('FFFD' if chr(0xFFFD) in t else 'OK')
+except Exception: print('DECODEFAIL')" | grep -qv OK && echo "손상: $f"
+done
+```

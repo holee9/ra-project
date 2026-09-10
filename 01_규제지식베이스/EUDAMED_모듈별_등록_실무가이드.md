@@ -1,4 +1,4 @@
-> 최종 갱신: 2026-06-17 (분기 심층패치 #2 — Legacy 등록 마감 D-164 사전점검·2026-05-28 의무화 발효 후속) / 2026-06-09 (검증③ — EMDN 정정) / 2026-06-04 (#87)
+> 최종 갱신: 2026-09-10 (truncation 복구 — §8 3계층 분석·검토라인 복원, 이슈 #120) / 2026-06-17 (분기 심층패치 #2 — Legacy 등록 마감 D-164 사전점검·2026-05-28 의무화 발효 후속) / 2026-06-09 (검증③ — EMDN 정정) / 2026-06-04 (#87)
 > 근거: https://health.ec.europa.eu/medical-devices-eudamed/overview_en | https://health.ec.europa.eu/latest-updates/eudamed-four-first-modules-will-be-mandatory-use-28-may-2026-2025-11-27_en | https://health.ec.europa.eu/medical-devices-eudamed/udidevice-registration_en | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202502371 | https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ:L_202401860
 
 # EUDAMED 모듈별 등록 실무 가이드
@@ -306,4 +306,20 @@ Step 9: Serious Incident → Module 5 출시 전: NCA 직접 보고
 □ 인증서 갱신/변경 시 NB에 EUDAMED 업데이트 요청
 □ SW 버전 업데이트 → UDI-DI 변경 여부 판단
 □ 단종 제품 → 'Discontinued' 상태 변경
-□ Module 5 출시 후 → Vigilance 보고 채�
+□ Module 5 출시 후 → Vigilance 보고 채널 EUDAMED으로 전환
+```
+
+---
+
+## 8. 3계층 분석 요약
+
+### 사실 (Fact)
+- Commission Decision (EU) 2025/2371 (2025-11-27 OJ): 4개 모듈 완전 기능 선언 → 2026-05-28 의무화 발효.
+- 의무 대상: EU MDR + IVDR 기기 모두. 비EU 제조사는 EC-REP를 통해 SRN 취득.
+- Module 5(Vigilance/PMS), Module 6(CI/PS): 개발 중. Module 5는 ~Q2 2027 의무화 예상.
+
+### 해석 (Interpretation)
+- EUDAMED 의무화로 EU 시장 접근의 전제조건이 추가됨. SRN 미취득 = EU 시장 출시 불가.
+- NB들은 2027-05-27까지 기존 인증서를 EUDAMED에 업로드해야 하므로, 신규 NB 심사 일정과 EUDAMED 등록 일정이 상호 의존한다. `[검증 필요]` 이 문장은 truncation 복구분으로, 원문 확인 필요.
+---
+작성: EU MDR 전문가(#87) · 검토(QA③, 2026-06-09): EUDAMED 명칭체계 검증 — EUDAMED UDI/Device 등록은 **EMDN 필수**(EC Public Health·MDR Art.26), GMDN은 글로벌(FDA GUDID)용 별개. 245·255·265행 GMDN→EMDN 정정(Cat. Z 전자의료기기, SW 접미사 82). 정확 EMDN leaf 코드는 공식 EMDN으로 확정할 분류 과제로 분리(#104 예정). 출처: EC EMDN (https://webgate.ec.europa.eu/dyna2/emdn/) · 상태: 승인 · 일자: 2026-06-09

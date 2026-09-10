@@ -222,4 +222,6 @@ CATCHUP 상태 갱신:
 | done | 완료 |
 | pat-error | GitHub push 실패 (PAT 오류) |
 | network-error | GitHub push 실패 (네트워크 오류) |
-| knowledge-
+| *(1행 유실)* | **[복구 불가]** 원문이 `knowledge-` 에서 절단됨. 저장소 현행 라벨 목록에 `knowledge-` 로 시작하는 라벨이 없어 복원 불가. 현행 라벨 정의는 GitHub Labels 페이지를 정본으로 본다 |
+
+> 본 문서는 빌드 단계용으로 **비활성**이다(PROJECT_CHARTER §6.2). 유지관리 회차는 `RUN_SOP_maintenance.md`를 따른다.

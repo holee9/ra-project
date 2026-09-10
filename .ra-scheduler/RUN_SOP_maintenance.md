@@ -133,4 +133,37 @@ BASE=(glob.glob('/sessions/*/mnt/RA project') or [None])[0]
 `STATE_maintenance.md` 갱신 후 `ra-kb-dashboard.html`을 Read→Write로 갱신하고 `mcp__cowork__update_artifact`(id `ra-kb-dashboard`) 호출. **빌드용 EP 도넛/속도/예상완료 지표는 사용 금지**(폐기됨). 아래 유지관리 구성을 유지·갱신한다:
 
 1. **grid4 운영현황**: 주간 모니터(최근/다음 실행일), 분기 패치(최근/다음), 최근 주간 감지 건수(고/중/저), KB 규모(문서 수).
-2. *
+2. **규제 마감 캘린더 (D-day)**: 기준일 명시. EUDAMED legacy 등록(2026-11-28)·MDR 경과조치(2027/2028)·의견수렴 마감 등 임박순 정렬, 회차마다 D-day 재계산.
+3. **표준 개정 Watch**: IEC 62304 Ed.2·ISO 20417 Ed.2·IEC 60601 시리즈 등 추적 대상 표준의 현재 상태.
+4. **모니터링 소스 가동률**: 7소스 중 정상 응답 수와 회차 번호. 실패 소스는 사유 표기.
+5. **소스별 마지막 점검 (last_seen)**: STATE_maintenance의 `*_since` 값을 그대로 반영.
+6. **KPI (마스터 헌장 §4)**: 감지 적시성·근거 정확도·완전성·검증 폐쇄율·공백 해소 5축. 미측정 항목은 "미측정"으로 표기하고 임의 수치를 넣지 않는다.
+7. **후속 추적 (open follow-ups)**: STATE_maintenance `open_followups` 항목과 번호를 일치시킨다.
+8. **최근 실행 로그**: 최근 회차 요약 (최대 5회).
+
+> 갱신 후 `mcp__cowork__update_artifact`(id `ra-kb-dashboard`) 호출. 호출 실패 시 로컬 파일만 갱신하고 STATE에 `dashboard_failed: true` 기록.
+
+---
+
+## 6. 회차 마감 무결성 검증 (필수, #120)
+
+커밋 후 **반드시** 원격 blob을 재조회해 손상 여부를 확인한다. 손상이 반복 확인된 조항이므로 생략 금지.
+
+1. 커밋한 각 파일에 대해 `GET /repos/holee9/ra-project/contents/<path>?ref=main` 로 원격 내용을 받는다.
+2. **바이트 수**가 로컬 작성분과 일치하는지 확인.
+3. **UTF-8 디코딩**이 성공하고 치환문자(U+FFFD)가 없는지 확인.
+4. 말미가 문장·표·코드블록 중간에서 끊기지 않았는지 확인.
+5. 하나라도 실패하면 즉시 재커밋하고, STATE에 `truncation_detected: <path>` 를 기록한다.
+
+> 자동 판정은 ②③에만 의존한다. "말미에 마침표가 없다" 류의 휴리스틱은 정상 문서를 대량 오검출하므로 사용하지 않는다.
+
+---
+
+## 7. 자격증명 취급 (헌장 §0.4-7)
+
+- 단일 출처는 `.ra-scheduler/.env.scheduler` 뿐이다. **remote URL·스크립트·프롬프트·문서 본문 어디에도 자격증명을 기재하지 않는다.**
+- 문서에 API 근거 URL을 남길 때 `OC=`·`serviceKey=`·`api_key=` 파라미터 값은 `<OC>`·`<KEY>` 로 마스킹한다.
+- 회차 마감 점검:
+  ```bash
+  git config --get remote.origin.url | grep -q '@' && echo "WARN: remote URL에 자격증명 유입"
+  ```
