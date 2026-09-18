@@ -1,4 +1,4 @@
-> 최종 갱신: 2026-06-17 (주간모니터 #4 — §8 추가: 방사선 ML 정량영상 SW 분류 최종규칙 2026-12166)
+> 최종 갱신: 2026-09-18 (주간모니터 #17 — §9 추가: 방사선 CAD 510(k) 면제 청원 **거부** 확정, 91 FR 58817) / 2026-06-17 (#4 — §8 방사선 ML 정량영상 SW 분류)
 > 근거: https://www.federalregister.gov/documents/2026/06/17/2026-12166/medical-devices-radiology-devices-classification-of-the-radiological-machine-learning-based | https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence | https://www.fda.gov/regulatory-information/search-fda-guidance-documents/artificial-intelligence-enabled-device-software-functions-lifecycle-management-and-marketing | https://www.federalregister.gov/documents/2025/01/07/2024-31543/artificial-intelligence-enabled-device-software-functions-lifecycle-management-and-marketing
 
 # FDA AI/ML 기기 2026 업데이트 — PCCP 운영 + TPLC 수명주기 관리
@@ -130,6 +130,47 @@
 2. 학습데이터 코호트 정의서에 **인구학·교란요인·영상장비특성별 하위집단** 명시(§8-B(1)(ii)·(iii) 직접 요구).
 3. 라벨링 SOP에 **버전이력·PCCP 변경통지** 절차 추가(§8-B(4)(vii)). 기존 IFU 템플릿(`04_템플릿/IFU_*`)에 PCCP 섹션 보강.
 4. QMSR 설계관리 절차서에 §892.2055 특수통제 추적성 매트릭스 추가(§820.30 입력·출력 매핑).
+
+---
+
+## 9. 방사선 CAD 510(k) 면제 청원 **거부** 확정 (Final order, 2026-09-17 발효)
+
+> ⚠ **제목 오독 주의.** 관보 제목이 "Exemption From Premarket Notification: Radiology Computer-Aided Detection…"이라 면제가 시행된 것으로 읽히나, 실제 내용은 **면제 청원을 거부한 최종 명령**이다. 반대로 해석하면 규제 판단이 정면으로 뒤집힌다.
+
+### Fact (사실)
+- **문서**: Final order, 91 FR 58817–58819, FR Doc **2026-19074**, 게재·발효 **2026-09-17**. Docket **FDA-2025-P-5560**.
+- **청원인**: Harrison.ai (대리 Rubrum Advising, LLC), 2025-10-22 접수. 공고 2025-12-29(90 FR 60730), 의견기간 2026-02-27 종료. FDA는 **2026-04-01 서한으로 거부**, 본 명령으로 확정.
+- **대상 4개 분류규정 — 전부 면제 거부**:
+
+| CFR | 명칭 | Product code | 구분 |
+|---|---|---|---|
+| 21 CFR 892.2060 | Radiological computer-assisted diagnostic software for lesions suspicious of cancer | POK | CADx |
+| 21 CFR 892.2070 | Medical image analyzer | MYN | CADe |
+| 21 CFR 892.2080 | Radiological computer aided triage and notification software | QAS, QFM | CADt |
+| 21 CFR 892.2090 | Radiological computer-assisted detection and diagnosis software | QBS, QDQ | CADe/x |
+
+- 관보 원문: 이들 기기는 계속 510(k) 대상이며, 제조사는 시판 전 510(k) clearance를 받아야 한다.
+- **근거 법조항**: FD&C Act **510(m)(2)** — class II 면제 절차(관보 공고 + 60일 의견기간, 180일 내 미응답 시 승인 간주, 공고 후 120일 내 최종 명령). 510(m)(1) 5년 주기 면제후보 목록. 21st Century Cures Act §3054. 면제 판단 4요소는 63 FR 3142(1998-01-21) 및 1998-02-19 가이던스.
+- **의견제출 마감 없음** (이미 종료).
+- 청원이 제안했다가 거부된 조건: 기존 clearance 보유·robust post-market plan·transparency·training 이행 등.
+- 일반 원칙: 면제 기기라도 각 파트의 "Limitations of exemptions"(예 **21 CFR 892.9**) 한도를 넘으면 510(k)가 다시 필요하다.
+
+### Interpretation (해석)
+- 본 명령은 **영상 판독 소프트웨어 4종에 한정**된다. 흉부 X-ray·일반 촬영 장비(radiography) 자체에 대한 언급은 관보에 **없다**.
+- 다만 자사가 X-ray 장비에 CAD 소프트웨어를 번들하거나 자체 CAD 기능을 탑재하면, **그 소프트웨어 부분은 여전히 510(k) 대상**이다.
+- FDA는 "innovative and least burdensome approaches" 지속 검토 의지를 명시했으므로 정책 재추진 가능성은 남아 있다.
+
+### Action (행동)
+- **P3 촬영실 GUI SW**: CAD(검출·진단·분류통보) 기능 탑재 계획이 있으면 510(k) 면제를 전제로 한 일정·원가 가정을 **금지**한다. §8(21 CFR 892.2055 ML 정량영상 SW)과 함께 분류 판정을 선행할 것.
+- P1 Detector·P2 Handheld: 직접 영향 없음(하드웨어). 번들 SW 탑재 시에만 해당.
+- 발효 완료·의견기간 없음 → **대응 액션 아이템 없음, 모니터링만**.
+
+### 출처
+- 관보 전문: https://www.federalregister.gov/documents/full_text/text/2026/09/17/2026-19074.txt
+- 게재면: 91 FR 58817–58819 (2026-09-17)
+
+---
+작성: FDA 전문가 페르소나(주간모니터 #17) · 검토(QA): 관보 전문(91 FR 58817, FR Doc 2026-19074) 직접 확인 — **제목이 시사하는 "면제 시행"과 내용(면제 거부)이 반대임을 원문 대조로 확정**. 4개 CFR·product code·발효일·근거 법조항 raw text 대조 완료. 단축 URL은 404였고 GPO 전문 페이지로 확보. 흉부 X-ray/radiography 포함 여부는 문서에 명시 없음으로 기록. · 상태: 승인 · 일자: 2026-09-18
 
 ---
 작성: FDA 전문가 페르소나 · 검토(QA): Federal Register 1차출처(91 FR 36522, 2026-12166) 직접 확인, 발효일·CFR번호·특수통제 7요소 raw text 대조 완료, DOSSIER_MAP 매핑 정합 · 상태: 승인 (조건부: 호환장비 라벨링 SOP 갱신은 사람확인 대기) · 일자: 2026-06-17
