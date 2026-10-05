@@ -16,6 +16,9 @@
 - QIH (Radiological Computer-Assisted Diagnostic SW for Lesions)
 - QDQ (Radiological Computer-Assisted Triage and Notification SW)
 
+## 분류 변경 추적
+- [FDA_2026_분류변경_DBT재분류_FDARA부속품.md](FDA_2026_분류변경_DBT재분류_FDARA부속품.md) — DBT(OTE) Class III→II 제안(21 CFR 892.1717), FDARA 부속품 Class I 제안목록(892 비해당) (2026-10-01)
+
 ## 참고
 - 제품 사양에 따라 코드가 달라질 수 있으므로 FDA Product Classification Database에서 최종 확인.
 - Predicate Device 선정 시 동일 Product Code 내 유사 기기 우선 검토.
