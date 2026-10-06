@@ -27,6 +27,9 @@ desktop.ini
 99_원본자료_업로드저장소/**/*.zip
 !99_원본자료_업로드저장소/README.md
 
+# Scheduler temp
+.ra-scheduler/_issue_tmp/
+
 # Credentials / Secret
 .env
 .env.*
