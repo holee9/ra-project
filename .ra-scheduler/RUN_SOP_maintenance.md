@@ -142,6 +142,12 @@ SELECT DISTINCT ?celex ?date WHERE {
 
 경로 우선순위: WebFetch → 실패 시 bash `urllib`/`curl`. 전부 실패 시 로컬만 쓰고 STATE에 `commit_failed: true` 기록.
 
+### 4-0. 기본 푸시 경로 = Windows 측 자동 동기 (2026-10-06 신설, 지시자 지시: OS 패치 의존 금지)
+- 회차는 **로컬 파일 갱신까지만** 책임진다. 커밋·푸시는 Windows 작업 스케줄러 `RA-KB-GitSync-Daily`(매일 10:00)·`RA-KB-GitSync-Logon`이 `.ra-scheduler/sync_auto.bat`(PC의 Windows git 사용)로 수행한다. Claude 작업환경(bash/Plan9) 상태와 무관하다.
+- 회차 시작 시 `.ra-scheduler/sync_auto.log` 말미를 Read로 확인: `PUSH_OK`면 정상, `PUSH_FAIL`·`STOP`이면 **회차 종료 보고 첫 줄에 `[푸시 실패]` + 로그 사유**를 표기한다.
+- **Windows 업데이트·OS 설정 변경을 해결책으로 요구하지 않는다.**
+- 2회 연속 실패 시 STATE 기록만으로 끝내지 말고 반드시 지시자 보고에 올린다(4주 방치 재발 방지).
+
 ### 4-A. 원격→로컬 동기 (커밋 후, 동적 경로)
 ```python
 import glob, os, urllib.request, base64, json, hashlib
