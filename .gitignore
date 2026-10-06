@@ -29,6 +29,9 @@ desktop.ini
 
 # Scheduler temp
 .ra-scheduler/_issue_tmp/
+.ra-scheduler/_issue_queue/sent/
+.ra-scheduler/_issue_queue/resp.json
+.ra-scheduler/_issue_queue/code.txt
 
 # Credentials / Secret
 .env

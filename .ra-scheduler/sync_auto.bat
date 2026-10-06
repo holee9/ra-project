@@ -21,3 +21,4 @@ if errorlevel 1 (
 )
 git rev-list --left-right --count HEAD...origin/main >> %LOG% 2>&1
 echo PUSH_OK >> %LOG%
+call "%~dp0sync_issues.bat"
