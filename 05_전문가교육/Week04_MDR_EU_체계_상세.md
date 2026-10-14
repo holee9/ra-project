@@ -222,7 +222,7 @@ Class III
 | 항목 | 내용 |
 |------|------|
 | PMS Plan | 수집 방법·주기·임계값·PMCF 계획 |
-| PSUR | Class IIa/IIb: 최소 2년 주기 보고 |
+| PSUR | Class IIa: 최소 2년, Class IIb·III: 최소 연 1회 보고 (Art. 86) |
 | PMCF Plan/Report | Annex XIV Part B 기준 |
 | PMS Report | Class I: 필요 시 (정기 보고 불필요) |
 
