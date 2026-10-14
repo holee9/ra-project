@@ -161,8 +161,8 @@
 | 항목 | MFDS (Korea) | FDA 510(k) | EU MDR (NB) |
 |---|---|---|---|
 | 보완 명칭 | 보완자료 요청 | Additional Information (AI) Request | Deficiency Letter / Objection |
-| 법적 근거 | 의료기기법 §12, 심사규정 | 21 CFR 807.87(m) | MDR Art.52, NB계약 |
-| 보완 기간 | **60일** (1차·2차) | **180일** (자동 부여) | NB 계약 의존 (통상 30~60일) |
+| 법적 근거 | 의료기기법 제6조 제2항, 심사규정 | 21 CFR 807.87(m) | MDR Art.52, NB계약 |
+| 보완 기간 | **1차 60일 / 2차 10일** (미제출 시 취하 간주) | **180일** (자동 부여) | NB 계약 의존 (통상 30~60일) |
 | Clock 영향 | 처리기간 제외 (stop) | Review clock stop | NB 심사 clock stop |
 | 미제출 시 | 취하 간주 → 재신청 필요 | Notice of Withdrawal (취하) | 심사 종료, 재신청 필요 |
 | 연장 가능 여부 | 1회 서면 요청 | 별도 요청 불필요 (180일 자동) | NB와 협의 |
