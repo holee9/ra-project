@@ -174,7 +174,7 @@ Respectfully submitted,
 | 비교 항목 | FDA (510(k) AI Request) | MFDS (보완 요청) | EU MDR (NB Deficiency Letter) |
 |---|---|---|---|
 | **명칭** | Additional Information (AI) Request | 보완 자료 요청 | Deficiency Letter / Non-Conformity List |
-| **법적 근거** | 21 CFR 807.87(m) | 의료기기법 제12조, 시행규칙 | MDR Art. 52·Annex IX~XI |
+| **법적 근거** | 21 CFR 807.87(m) | 의료기기법 제6조 제2항, 시행규칙 | MDR Art. 52·Annex IX~XI |
 | **발행 시점** | 심사 ~60 FDA Days | 심사 중 (주로 1~2차 심사 사이클) | 기술문서 심사 중 (NB 자체 일정) |
 | **응답 기한** | **180 calendar days** (자동 부여) | 보완 요청서 수령 후 통상 **60일** (연장 가능) | NB 규정에 따라 상이 (통상 30~90일) |
 | **응답 미제출 시** | 자동 Withdrawal (21 CFR 807.87(m)) | 허가 신청 취하 또는 반려 | 인증 거부 (Certificate 미발행) |

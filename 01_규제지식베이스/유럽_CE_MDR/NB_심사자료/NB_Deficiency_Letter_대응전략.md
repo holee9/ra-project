@@ -187,7 +187,7 @@ to verify zero CAPA effectiveness failures.
 | 항목 | EU NB (MDR) | MFDS (국내) | FDA (미국) |
 |---|---|---|---|
 | 공식 용어 | Deficiency Letter | 보완 요청 | Additional Information (AI) Request |
-| 근거 법령 | MDR Annex VII + 2026/977 | 의료기기법 §12 + 허가·신고·심사 규정 | 21 CFR 807 + FDA Review Policy |
+| 근거 법령 | MDR Annex VII + 2026/977 | 의료기기법 제6조 제2항 + 허가·신고·심사 규정 | 21 CFR 807 + FDA Review Policy |
 | 답변 기한 | NB와 합의 (법정 상한 없음) | 1차 60일, 2차 60일 | 180일 (타임라인 기산일부터) |
 | 최대 중단 횟수 | 4회 (product verification 기준) | 2차까지 (실질 2회) | 제한 없음 (Interactive Review 가능) |
 | Clock-stop | 예 (NB 요청 당일 stop, 제출 익일 resume) | 예 (보완 기간 제외) | 예 (AI 발송일부터 stop) |

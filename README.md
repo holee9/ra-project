@@ -147,7 +147,7 @@
 - 2026-05-19 (#54) [EP:2] MFDS 임상시험 계획 승인 절차 — 파일 1개, 의료기기법 §10·IND 신청 요건·임상시험계획서 구성·IRB·3지역 비교(MFDS/FDA IDE/MDR CIP). commit c6563c72
 - 2026-05-20 (#55,#56) [EP:3] MDCG 2020-5/6/7/8 임상평가 & PMCF 가이던스 요약 + FDA RTA 회피 체크리스트 — 파일 2개, PMCF Plan/Report 섹션별 요건·동등성 기준·RTA A~K 전항목·3제품 맵핑. commit 1e1d29f/f631749
 - 2026-05-20 (#57) [EP:2] FDA AI (Additional Information) 대응 전략·샘플 답변 — 파일 1개, AI Request vs RTA vs Interactive Review·180일 타임라인·SIR Meeting·샘플 응답 템플릿·7종 결함 유형별 전략·3지역 비교. commit e2a0aebe
-- 2026-05-21 (#58) [EP:2] MFDS 보완자료 대응 전략·샘플 — 파일 1개, 의료기기법 §12 근거·보완 기간(60일)·4대 유형별 전략·샘플 답변(기술문서/임상/라벨링)·3지역 비교·Anti-Patterns. commit 5075a05
+- 2026-05-21 (#58) [EP:2] MFDS 보완자료 대응 전략·샘플 — 파일 1개, 의료기기법 제6조 제2항 근거·보완 기간(60일)·4대 유형별 전략·샘플 답변(기술문서/임상/라벨링)·3지역 비교·Anti-Patterns. commit 5075a05
 - 2026-05-21 (#60) [EP:2] NB Deficiency Letter 대응 전략·샘플 — 파일 1개, 2026/977 clock-stop(최대 4회/90일)·4대 결함 유형·샘플 답변(CER 동등성·CAPA Major NC)·3지역 비교·Structured Dialogue. commit db85403
 - 2026-05-22 (#61) [EP:2] 3개 지역 공통 빈번 지적사항 Top 20 — 파일 1개, FDA RTA 33%·AI 67%·NSE 15% 통계·MDR Team NB BPG V3(2025-04) 기반·지적사항별 Fact/해석/Action 3계층·3제품 위험 맵핑·예방 체크리스트. commit b6fd9bb
 - 2026-05-22 (#62) [EP:2] PMS Plan 템플릿 (MDR Article 84 / Annex III §1.1) — 파일 1개(+INDEX 갱신), MDCG 2025-10 기반 실용 템플릿·3지역 비교(MDR/FDA 21 CFR 822/MFDS)·S1~S10 수집원·데이터 활용 계획·3제품 특화 고려사항·Vigilance 연계·작성 체크리스트. commit d61dd75e

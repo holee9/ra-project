@@ -382,8 +382,8 @@
 | 적응증 추가 | 변경허가 | 새 510(k) | 새 CE 심사 |
 | 사이버보안 패치 | 보고 또는 신고 | 아니오 (기능적 동일 시) | 경미한 경우 아님 |
 
-판단 근거: MFDS 의료기기법 §12; FDA Software Change Policy Guidance (2017-10-25); MDCG 2020-3 (Guidance on Significant Changes).  
-**근거**: MFDS 의료기기법 §12; FDA Guidance on Software Change (2017); MDCG 2020-3  
+판단 근거: MFDS 의료기기법 제6조 제2항; FDA Software Change Policy Guidance (2017-10-25); MDCG 2020-3 (Guidance on Significant Changes).  
+**근거**: MFDS 의료기기법 제6조 제2항; FDA Guidance on Software Change (2017); MDCG 2020-3  
 **관련KB**: `05_전문가교육/Week11_심사_QA_시뮬레이션.md`
 
 ---
