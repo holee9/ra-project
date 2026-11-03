@@ -185,6 +185,8 @@ A축(교차 일관성)으로만 걸린다. 단일 출처 오류는 통과할 수
   - 신규: `new_<YYYYMMDD>_<요지>.json` = `{"title","body","labels":[...]}`
   - close: `close_<이슈번호>.json` = `{"body":"완료 코멘트(반영 커밋 sha 포함)"}` → 코멘트 + `done` 라벨 + close
   - `sync_auto.bat` 푸시 직후 `sync_issues.bat`가 처리, 성공분은 `sent/`로 이동. 결과는 `sync_auto.log`의 `ISSUE_NEW/ISSUE_CLOSE <code>` 행으로 다음 회차가 확인(201/200 외는 보고).
+- **분기(diverged) 자기복구** (2026-11-03 신설): `sync_auto.bat`은 `origin/main`이 HEAD의 조상이 아니면 즉시 STOP 하지 않고 `sync_recover.bat`을 호출한다. `behind` + `clean` 조건이면 fast-forward 후 진행(`RECOVERED`), 그 외는 종전처럼 `STOP`. 2026-10-14~11-03 20일 연속 STOP 방치의 재발 방지 조치다.
+- **적재 게이트 자동화** (2026-11-03 신설, SOP §2-E 집행): `sync_auto.bat`은 커밋 대상이 있을 때 `verify_facts.py --offline`을 먼저 실행하고, exit≠0 이면 `GATE_FAIL`을 로그에 남기고 `git reset -q` 후 **커밋하지 않고 종료**한다. python 미탐지 시도 `GATE_SKIP`으로 커밋을 차단한다(게이트 미실행 상태의 자동 적재 금지). 통과 시 `GATE_PASS`.
 - **Windows 업데이트·OS 설정 변경을 해결책으로 요구하지 않는다.**
 - 2회 연속 실패 시 STATE 기록만으로 끝내지 말고 반드시 지시자 보고에 올린다(4주 방치 재발 방지).
 
