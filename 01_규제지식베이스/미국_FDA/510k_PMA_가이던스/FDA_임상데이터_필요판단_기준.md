@@ -20,7 +20,7 @@
         └─ PMA (임상데이터 필수)
 ```
 
-> 자사 3개 X-ray 제품: X-ray Detector(21 CFR 892.1750 Class II) · Handheld X-ray Source(21 CFR 892.1680 Class II) · GUI SW(21 CFR 892.2050 Class II) → 모두 510(k) 경로. PMA·De Novo는 예외적 상황에서만 해당.
+> 자사 3개 X-ray 제품: X-ray Detector(21 CFR 892.1680 Class II, product code MQB) · Handheld X-ray Source(21 CFR 892.1720 Class II, product code IZL) · GUI SW(21 CFR 892.2050 Class II) → 모두 510(k) 경로. PMA·De Novo는 예외적 상황에서만 해당.
 
 ---
 
@@ -65,7 +65,7 @@ FDA 가이던스(Draft: "Recommendations for the Use of Clinical Data in 510(k) 
 ### 3-C. X-ray 제품별 510(k) 임상데이터 필요 여부
 
 #### X-ray Detector (Flat Panel)
-- **규제 분류**: 21 CFR 892.1750 (Preamplified detector for medical use), Class II
+- **규제 분류**: 21 CFR 892.1680 (Solid State X-Ray Imager (Flat Panel/Digital Imager)), product code **MQB**, Class II
 - **FDA 전용 가이던스**: "Guidance for the Submission of 510(k)s for Solid State X-ray Imaging Devices"
 - **임상데이터 통상 불필요**: DQE, MTF, NPS, patient entrance dose, lag·ghost 등 성능 파라미터를 **벤치 시험**(IEC 62220-1-1)으로 입증
 - **임상데이터 필요 조건**: 신규 indication(예: 유방촬영 추가), AI 진단 보조 기능 탑재, 기존 predicate 대비 방사선량 유의미한 증가 등
@@ -77,7 +77,7 @@ FDA 가이던스(Draft: "Recommendations for the Use of Clinical Data in 510(k) 
 - **임상데이터 필요 조건**: 기존 wall-mounted 방식 대비 Handheld 특유의 조작 오류 가능성 → Human Factors 데이터(UEF) + 임상 관찰 연구가 요청될 수 있음
 
 #### 촬영실 GUI SW (Medical Imaging Software / SaMD)
-- **규제 분류**: 21 CFR 892.2050 (Picture archiving and communications system), Class II; SaMD인 경우 별도 분류 확인 필요
+- **규제 분류**: 21 CFR 892.2050 (Medical image management and processing system), Class II; SaMD인 경우 별도 분류 확인 필요
 - **임상데이터 필요 가능성 높음**: 다음 기능 탑재 시 임상 성능 데이터 요구
   - AI/ML 기반 진단 보조 (병변 검출, 분류)
   - 방사선사·의사의 임상 결정에 영향을 주는 기능
@@ -170,7 +170,7 @@ PMA 제출 시 Form FDA-3674 + ClinicalTrials.gov 등록 증빙 필수 (2007-12-
 
 자사 3개 제품은 **Class II → PMA 대상 아님**. 단, 다음 시나리오에서는 PMA 전환 가능:
 - Handheld Source의 사용 적응증이 interventional / fluoroscopy 로 확장 시
-- X-ray Detector가 mammography 전용으로 사용 시 (21 CFR 892.1750 → 특정 분류 검토)
+- X-ray Detector가 mammography 전용으로 사용 시 (21 CFR 892.1715 Full Field Digital Mammographic System / product code MUE → 별도 분류·임상데이터 요건 검토)
 - GUI SW에 Class III 진단 기능(예: AI 기반 cancer screening 판독) 추가 시
 
 ---
@@ -276,3 +276,5 @@ PMA 제출 시 Form FDA-3674 + ClinicalTrials.gov 등록 증빙 필수 (2007-12-
 | Acceptance of Clinical Data to Support Medical Device Applications — FAQ | FDA CDRH | 외국 임상 데이터 인정 |
 | MDCG 2020-5 Equivalence (MDR) | MDCG | EU 동등성·충분성 기준 |
 | 의료기기 임상시험 관리기준 (KGCP) | MFDS | 국내 임상 기준 |
+
+> **[1차출처 정정 2026-10-28]** openFDA device/classification 대조. X-ray Detector = **21 CFR 892.1680 / MQB / Solid State X-Ray Imager (Flat Panel/Digital Imager)**, Handheld X-ray Source = **21 CFR 892.1720 / IZL / System, X-Ray, Mobile**. 종전 표기 892.1750은 Computed Tomography(JAK·OAS·SFV), 892.1650은 C-Arm/Image-Intensified Fluoroscopic(JAA·OII·OIK·OWB)으로 **자사 제품과 무관**했다.

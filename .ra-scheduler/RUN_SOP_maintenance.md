@@ -88,7 +88,43 @@ SELECT DISTINCT ?celex ?date WHERE {
 - 중영향: 이슈만 생성(라벨 `ra-maint`,`for-quarterly`) → 분기 회차가 처리.
 - 의견수렴 마감 임박(FDA 60일·MFDS 행정예고 20일/입법예고 40일) 항목은 이슈 제목에 `[마감 D-n]` 표기.
 
+
+### 2-E. 적재 게이트 — 사실성 검증 (2026-10-28 신설)
+
+> 배경: 2026-10-10 외부 교차검증(`ra-hermes` kb-eval, 1회성)이 이미 적재된 KB에서 규제 식별자·조항번호
+> 오류를 찾아냈고, 10-14~10-23 사이 정정 커밋 6건이 발생했다. QA_GATE(§3)는 산문 체크리스트라
+> **기계 집행이 없었고**, `check_integrity.py` 는 문서 무결성만 본다. 사실성 게이트가 없었다.
+
+**KB 문서를 커밋하기 전에 반드시 실행한다.**
+
+```bash
+python3 .ra-scheduler/verify_facts.py --files <이번 회차가 건드린 .md ...>
+```
+
+- 종료코드 **0**이어야 커밋한다. 0이 아니면 **커밋 금지** — 위반을 정정하거나, 1차출처로 확정할 수 없으면
+  해당 주장을 본문에서 빼고 `[검증 필요]` + `VERIFICATION_REGISTER.md` 등록으로 대체한다.
+- 네트워크가 막힌 회차는 `--offline` 으로 돌리고, STATE에 `facts_gate: offline` 을 기록한다.
+  다음 회차가 네트워크 모드로 재검사한다.
+
+**검사 축과 1차출처**
+
+| 축 | 대상 | 1차출처 |
+|---|---|---|
+| A | 동일 CFR 번호에 붙은 명칭 주장의 교차 변종 | (네트워크 불요, **참고 신호**) |
+| B | `21 CFR nnn.nnnn (명칭)` 주장 | **규정 제목** = govinfo CFR XML / **product code 명칭** = openFDA device/classification |
+| C | 표준 접두 오기(`ISO 62366`·`IEC 14971` 등) | 표기 규범 사전 |
+
+> **혼동 주의 (실제로 오판한 적 있음).** openFDA `device_name` 은 **product code 명칭**이고
+> CFR **규정 제목**과 다른 레이어다. 예: `892.1680` 규정 제목 = "Stationary x-ray system",
+> 하위 코드 `MQB` 명칭 = "Solid State X-Ray Imager (Flat Panel/Digital Imager)". **둘 다 정당한 표기**이므로
+> 한쪽만 대조하면 정상 문서를 오류로 잡는다. 검증기는 둘 다 본다.
+
+**게이트의 한계 — 이것으로 사람 확인을 대체하지 않는다.**
+API 1차출처가 없는 축(EUR-Lex 조항 본문, MDR Annex 항 번호, IEC/ISO 유료 원문, 고시 조문)은
+A축(교차 일관성)으로만 걸린다. 단일 출처 오류는 통과할 수 있다. 그 축은 QA_GATE §2 사람 검토가 책임진다.
+
 ### 2-D. 마감
+
 - **회차 종료 시 아래 4개를 반드시 수행한다 (2026-09-10 신설).**
   1. **동기 검증**: `git rev-list --left-right --count HEAD...origin/main` 로 로컬·원격 차이를 기록. 0이 아니면 STATE에 `sync_drift: <n>` 기록.
   2. **마감 승격**: open 이슈 중 `[마감 D-n]` 이 **D-30 이내**로 진입한 건은 제목 앞에 `[임박]`을 붙이고 STATE `open_followups` 최상단으로 올린다.

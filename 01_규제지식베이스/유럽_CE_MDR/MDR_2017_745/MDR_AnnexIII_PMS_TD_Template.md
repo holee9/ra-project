@@ -159,10 +159,9 @@ Annex III — PMS Technical Documentation
 
 > **적용**: Class IIa (X-ray Detector, GUI SW), Class IIb (Handheld X-ray Source)
 >
-> **주기**: MDR Article 86(1) 기준
+> **주기**: MDR Article 86 기준
 > - Class IIa: 최소 **2년**마다
-> - Class IIb: 최소 **2년**마다
-> - Class III 및 이식형 기기: 최소 **1년**마다
+> - Class IIb/III: 최소 **1년**마다
 > - NB가 요청할 경우 수시 제출 가능
 
 ### PSUR 구성 템플릿
@@ -256,7 +255,7 @@ PSUR 결론에 반영된 사항:
 
 TD 갱신 필요 여부: □ 예 (해당 섹션: ___)  □ 아니오
 CER 갱신 필요 여부: □ 예  □ 아니오
-다음 PSUR 예정: YYYY-MM-DD (Class IIa/IIb: 2년 후 / Class III·이식형: 1년 후)
+다음 PSUR 예정: YYYY-MM-DD (Class IIa: 2년 후 / Class IIb/III: 1년 후)
 NB 제출 일정: YYYY-MM-DD
 ```
 
@@ -269,8 +268,8 @@ NB 제출 일정: YYYY-MM-DD
 | 근거 법령 | MDR 2017/745 Article 83~86, Annex III | 21 CFR Part 803 (MDR), 21 CFR Part 822 (PMS) | 의료기기법 제31조, 제조·수입허가 조건 |
 | 보고 체계 명칭 | PMSR (Class I) / PSUR (IIa~III) | Medical Device Report (MDR) / PMSR | 이상사례 보고 + 시판 후 조사(PMS) |
 | Class I 보고 주기 | 요청 시 또는 자체 유지 | 해당 없음 (exempt 多) | 5년마다 재심사 신청 (해당 시) |
-| Class IIa/IIb 주기 | **2년**마다 PSUR | MDR 보고 후 30일/5일 | 이상사례: 즉시/15일/30일 |
-| Class III·이식형 주기 | **1년**마다 PSUR | MDR 보고 후 30일/5일 | 이상사례: 즉시/15일/30일 |
+| Class IIa 주기 | **2년**마다 PSUR | MDR 보고 후 30일/5일 | 이상사례: 즉시/15일/30일 |
+| Class IIb/III 주기 | **1년**마다 PSUR | MDR 보고 후 30일/5일 | 이상사례: 즉시/15일/30일 |
 | 제출 경로 | EUDAMED (단계적 의무화 中) | MedWatch (FDA Gateway) | 의약품안전나라 (이상사례 보고시스템) |
 | 데이터 공개 | EUDAMED 공개 예정 | MAUDE DB 공개 | 이상사례 통계 공개 |
 | 구체적 가이던스 | MDCG 2022-21, MDCG 2025-10 | FDA Guidance "Post-Market Surveillance" | MFDS 시판 후 안전관리 가이던스 |
@@ -282,7 +281,7 @@ NB 제출 일정: YYYY-MM-DD
 | 요구사항 | X-ray Detector (Class IIa) | Handheld X-ray Source (Class IIb) | GUI SW (Class IIa) |
 |---|---|---|---|
 | 적용 보고서 유형 | PSUR | PSUR | PSUR |
-| PSUR 갱신 주기 | **2년** | **2년** | **2년** |
+| PSUR 갱신 주기 | **2년** | **1년** | **2년** |
 | PMCF 필요성 | 동등성 클레임 검토 후 결정 | 이온화 방사선 → 임상 데이터 적극 수집 권고 | SaMD → 사용 중 오류 데이터 수집 필수 |
 | PMS 담당 데이터 소스 | DQE 저하, 픽셀 결함, 환자선량 초과 | 선량 초과, 기계적 손상, 배터리 이상 | SW 오류, 영상 표시 오류, 사용성 이슈 |
 | EUDAMED 의무 | UDI 등록 + Vigilance 보고 | UDI 등록 + Vigilance 보고 | UDI 등록 (SaMD) + Vigilance |

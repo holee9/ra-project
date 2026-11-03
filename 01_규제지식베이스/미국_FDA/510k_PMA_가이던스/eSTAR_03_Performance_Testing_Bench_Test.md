@@ -24,7 +24,7 @@
 | 21 CFR 1020.32 | Computed Tomography Equipment | (해당 없음) |
 | 21 CFR 1020.40 | Cabinet X-ray System — 방출 한도 0.5 mR/hr | Handheld Source (cabinet형 해당 시) |
 | 21 CFR 892.1680 | Stationary X-ray System — Class II, Special Controls | Detector, GUI SW |
-| 21 CFR 892.1650 | Mobile X-ray System | Handheld Source (portable 해당 시) |
+| 21 CFR 892.1720 | System, X-Ray, Mobile (IZL) | Handheld Source (portable 해당 시) |
 
 ### 1.3 X-ray 검출기 관련 핵심 표준 (Fact)
 
@@ -149,7 +149,7 @@ eSTAR Section G (Performance Testing):
 ### 3.2 제품 2: Handheld X-ray Source (휴대용 X-ray 발생장치)
 
 #### 3.2.1 적용 규정·분류 확인 [제품분류 — 등급분류 문서 참조·firm 확정]
-- **Mobile/Portable Radiographic System**: 21 CFR 892.1650 (Class II) + 21 CFR 1020.30
+- **Mobile/Portable Radiographic System**: 21 CFR 892.1720 (Class II, IZL) + 21 CFR 1020.30
 - **Cabinet X-ray 해당 여부**: 장치가 "enclosed cabinet" 형태이면 21 CFR 1020.40 추가 적용
 - Handheld 휴대형 X-ray의 경우 21 CFR 1020.30 "portable X-ray" 적용이 일반적
 - Product Code: IZL (Mobile X-ray System) — 사전 Pre-Sub으로 분류 확인 권장
@@ -312,7 +312,7 @@ eSTAR Section G (Performance Testing — Software):
 
 | 항목 | X-ray Detector | Handheld X-ray Source | 촬영실 GUI SW |
 |------|---------------|----------------------|--------------|
-| 핵심 규정 | 21 CFR 892.1680 + 1020.30 | 21 CFR 892.1650 + 1020.30 | 21 CFR 892.2050 + SW guidance |
+| 핵심 규정 | 21 CFR 892.1680 + 1020.30 | 21 CFR 892.1720 + 1020.30 | 21 CFR 892.2050 + SW guidance |
 | 핵심 표준 | IEC 62220-1-1, IEC 60601-2-54 | IEC 60601-2-28, IEC 60601-1 | IEC 62304, IEC 62366-1 |
 | 핵심 시험 | DQE, MTF, NPS, Dose linearity | Emission, HVL, Reproducibility, Thermal | V&V (SRS→RTM→Test report) |
 | 예상 소요 | 6~8주 | 4~6주 | 8~12주 |
@@ -343,3 +343,5 @@ eSTAR Section G (Performance Testing — Software):
 
 ---
 작성: 도메인 전문가 · 검토(QA9, 2026-06-09): 적용규정·분류는 등급분류 문서 참조·firm 확정 산출물. · 상태: 조건부 · 일자: 2026-06-09
+
+> **[1차출처 정정 2026-10-28]** openFDA device/classification 대조. X-ray Detector = **21 CFR 892.1680 / MQB / Solid State X-Ray Imager (Flat Panel/Digital Imager)**, Handheld X-ray Source = **21 CFR 892.1720 / IZL / System, X-Ray, Mobile**. 종전 표기 892.1750은 Computed Tomography(JAK·OAS·SFV), 892.1650은 C-Arm/Image-Intensified Fluoroscopic(JAA·OII·OIK·OWB)으로 **자사 제품과 무관**했다.

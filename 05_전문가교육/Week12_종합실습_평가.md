@@ -102,7 +102,7 @@ Handheld X-ray Source 국내 기술문서 5대 섹션 구성:
 
 | 항목 | MFDS (한국) | FDA (미국) | MDR (EU) |
 |---|---|---|---|
-| 등급 | **3등급** | **Class II** (21 CFR 892.1750) | **Class IIb** (MDR Annex VIII Rule 9) |
+| 등급 | **3등급** | **Class II** (21 CFR 892.1680, MQB) | **Class IIb** (MDR Annex VIII Rule 9) |
 | 허가 유형 | 품목 허가 (직접 심사) | 510(k) (Traditional) | CE Marking (NB Annex IX 또는 Annex X) |
 | 핵심 표준 | IEC 60601-2-28, 60601-1 | IEC 60601-2-28, 21 CFR 1020.30 | IEC 60601-2-28, EN 60601 series |
 | 방사선 안전 기준 | 국내 고시 (방사선 발생장치 안전기준) | 21 CFR 1020.30 (Electronic Product Radiation Control) | Directive 2013/59/Euratom (기본 안전 기준) |
@@ -275,7 +275,7 @@ CMOS 기반 기술적 우위 근거 (FDA AI 예상 대응):
 
 #### 객관식 샘플 문항 (각 1점 × 15)
 
-**Q1.** FDA 21 CFR Part 892.1750에 해당하는 의료기기 분류로 올바른 것은?
+**Q1.** 자사 X-ray Detector가 해당하는 FDA 분류규정(21 CFR 892.1680, product code MQB)의 기기 등급으로 올바른 것은?
 - ① Class I (Exempt)
 - ② **Class II (510(k) required)**
 - ③ Class III (PMA required)

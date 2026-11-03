@@ -188,7 +188,7 @@ Day 90     → 목표 Decision (이론치); 실제 평균 130~160일 (AI 포함)
 | 항목 | 내용 |
 |------|------|
 | Product Code | **IZL** (Mobile X-ray, 참고) / **EAF** 검토 | 
-| 21 CFR | Part 892.1750 (Mobile X-ray) |
+| 21 CFR | Part 892.1720 (System, X-Ray, Mobile / product code IZL) |
 | Class | II |
 | Predicate | 기존 Handheld dental/medical X-ray (K번호 조회 필수) |
 | SE 핵심 비교 항목 | kVp range, mA, focal spot, filtration, leakage radiation |

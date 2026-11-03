@@ -317,7 +317,7 @@
 
 | 항목 | 내용 |
 |---|---|
-| **등급** | MFDS Class III / FDA Class II (21 CFR 892.1650) / MDR Class IIa (Rule 10) |
+| **등급** | MFDS Class III / FDA Class II (21 CFR 892.1680, MQB) / MDR Class IIa (Rule 10) |
 | **Design Input 핵심** | IEC 62220-1-1 DQE ≥ 지정값, IEC 60601-1 전기 안전, MFDS 방사선 피폭 한도, MDR GSPR §10(영상 품질) |
 | **Verification 핵심** | DQE·MTF·NPS 측정 (IEC 62220-1-1), IEC 60601-1 전기 안전 시험, EMC (IEC 60601-1-2) |
 | **Validation 핵심** | 임상 영상 품질 평가, 방사선사 사용성 시험 (IEC 62366-1) |
@@ -328,7 +328,7 @@
 
 | 항목 | 내용 |
 |---|---|
-| **등급** | MFDS Class III / FDA Class II (21 CFR 892.1650) / MDR Class IIb-III (Rule 10·17) |
+| **등급** | MFDS Class III / FDA Class II (21 CFR 892.1720, IZL) / MDR Class IIb-III (Rule 10·17) |
 | **Design Input 핵심** | 21 CFR 1020.30 방사선 성능 기준, IEC 60601-2-28 X선관 시험, IEC 60601-1-3 방사선방호, 배터리 안전 (IEC 62133-2) |
 | **Verification 핵심** | 누설방사선 측정, HVL 측정, 조사야 정확도, 배터리 안전 시험, 낙하·충격 시험 |
 | **Validation 핵심** | 실제 임상 환경 포터블 조작 사용성, 방사선 피폭 조건 Validation, 충전 사이클 내구성 |
