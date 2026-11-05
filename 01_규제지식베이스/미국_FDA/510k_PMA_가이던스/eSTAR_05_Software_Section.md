@@ -11,7 +11,7 @@
 | IEC 62304:2006+A1:2015 *Medical device software — Software life cycle processes* | 2015-06 (A1 개정) | FDA 인정 Consensus Standard. MFDS KS P IEC 62304으로 채택 |
 | FDA *General Principles of Software Validation* | 2002-01-11 | 여전히 유효 (V&V 원칙) |
 | MDCG 2019-11 Rev.1 *Qualification and Classification of Software* | 2025-06-17 | 최신. MDR 2017/745·IVDR 2017/746 동시 적용 |
-| MFDS 의료기기 소프트웨어 허가·심사 가이드라인 | 2025-05-07 개정 | 담당: 디지털헬스규제지원과 |
+| MFDS 의료기기 소프트웨어 허가·심사 가이드라인 (안내서-0612-05) | 2025-05-07 개정 | 담당: 디지털헬스규제지원과. **본판은 내장형 SW로 적용범위 제한** — 독립형 SW(SaMD)는 '디지털의료기기소프트웨어 허가 심사 가이드라인' 참조 (원문 PDF 대조 2026-11-05) |
 
 > **RTA 주의**: eSTAR Software Section 미작성·문서 누락 시 Technical Screening Hold 또는 RTA 사유.
 
@@ -309,7 +309,7 @@ IEC 62304 §8.1.2, §5.3.3 요건:
 
 | 항목 | FDA (미국) | MFDS (국내) | MDR (EU) |
 |---|---|---|---|
-| 주요 가이던스 | *Content of Premarket Submissions for Device SW Functions* (2023) | 의료기기 SW 허가심사 가이드라인 (2025-05-07) | MDR Annex II §6.1 + MDCG 2019-11 Rev.1 (2025-06) |
+| 주요 가이던스 | *Content of Premarket Submissions for Device SW Functions* (2023) | 내장형: 의료기기 SW 허가심사 가이드라인 (2025-05-07, 내장형으로 제한) / **독립형(SaMD): 디지털의료기기소프트웨어 허가 심사 가이드라인** (원문 이관 명시) | MDR Annex II §6.1 + MDCG 2019-11 Rev.1 (2025-06) |
 | 기반 표준 | IEC 62304:2006+A1:2015 (인정 표준) | KS P IEC 62304 (동등 채택) | IEC 62304 (EU 조화 표준, CS 목록 수록) |
 | 분류 체계 | Documentation Level: Basic / Enhanced | 안전 등급: A / B / C (IEC 62304 준거) | IEC 62304 Class A/B/C + MDR Annex VIII 규칙 |
 | 기술문서 제출 방식 | eSTAR 10개 섹션 | 기술문서 (사용목적·원리·성능·안전성) 내 SW 섹션 | Technical Documentation (Annex II) §6.1 |
