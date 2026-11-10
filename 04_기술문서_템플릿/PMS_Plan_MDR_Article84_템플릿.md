@@ -34,8 +34,8 @@
 
 | 제품 | MDR 등급 (추정) | PMS Plan 의무 | 보고서 유형 | FDA 522 | MFDS 시판후조사 |
 |---|---|---|---|---|---|
-| **X-ray Detector** | Class IIa/IIb | **필수** | PSUR 2년/매년 | 해당 없음 (비이식형) | 신개발 시 3~4년 조사 |
-| **Handheld X-ray Source** | Class IIb | **필수** | PSUR 매년 | 해당 없음 (비이식형) | 신개발 시 4~6년 조사 |
+| **X-ray Detector** | Class IIa/IIb | **필수** | PSUR 2년 | 해당 없음 (비이식형) | 신개발 시 3~4년 조사 |
+| **Handheld X-ray Source** | Class IIb | **필수** | PSUR 2년 | 해당 없음 (비이식형) | 신개발 시 4~6년 조사 |
 | **촬영실 GUI SW (SaMD)** | Class IIa (MDR §22) | **필수** | PSUR 2년 | 해당 없음 | 소프트웨어 신개발 시 해당 |
 
 ---
